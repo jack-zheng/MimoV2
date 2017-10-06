@@ -1,10 +1,8 @@
-from flask import Flask, request, abort, jsonify
-
-app = Flask(__name__)
-
+from project import app
+from flask import request, abort, jsonify
 
 # identify list object to store tasks
-tasks = [{'id':1, 'title':"t1"}]
+tasks = [{'id': 1, 'title': "t1"}]
 
 
 @app.route('/', methods=['GET'])
@@ -36,7 +34,7 @@ def post_task():
 
 @app.route('/todo/api/v1/tasks', methods=['GET'])
 def get_tasks():
-    response = jsonify({'tasks':tasks})
+    response = jsonify({'tasks': tasks})
     response.status_code = 200
     return response
 
@@ -46,7 +44,7 @@ def get_task(task_id):
     task = [task for task in tasks if task['id'] == task_id]
     if len(task) == 0:
         abort(404)
-    response = jsonify({'task':task})
+    response = jsonify({'task': task})
     response.status_code = 200
     return response
 
@@ -72,7 +70,7 @@ def update_task():
     if json_ret.get('status'):
         item['status'] = json_ret.get('status')
     # now we only overwrite the value pass and keep others as before
-    
+
     response = jsonify(item)
     response.status_code = 201
     return response
@@ -87,8 +85,3 @@ def delete_task(task_id):
     tasks.remove(task[0])
     response = jsonify({"Remove": "Success"})
     return response
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
-

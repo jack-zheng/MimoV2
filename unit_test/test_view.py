@@ -1,9 +1,10 @@
-import unittest
-from mimov2 import app
 import json
+import unittest
+
+from project import app
 
 
-class MimoTestCase(unittest.TestCase):
+class ViewTestCase(unittest.TestCase):
 
     def setUp(self):
         self.app = app.test_client()
