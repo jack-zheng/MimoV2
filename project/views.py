@@ -15,30 +15,20 @@ def post_task():
 
     # new a task and save it to db, return it's detail as response
     request_json = request.get_json()
-
     # create a new task to store the post value
-    new_task = Task()
+    task = json_to_task_obj_converter(request_json)
+    task.save()
 
-    new_task.title = request_json.get('title')
-
-    if request_json.get('desc'):
-        new_task.desc = request_json.get('desc')
-
-    if request_json.get('status'):
-        new_task.status = request_json.get('status')
-
-    if request_json.get('category'):
-        new_task.category = request_json.get('category')
-
-    if request_json.get('time'):
-        new_task.cost_time = request_json.get('time')
-
-    new_task.save()
-
-    response = jsonify(task_obj_to_json_converter(new_task))
+    response = jsonify(task_obj_to_json_converter(task))
     response.status_code = 201
-
     return response
+
+
+def json_to_task_obj_converter(request_json):
+    task = Task()
+    for key in request_json:
+        task.__setattr__(key, request_json.get(key))
+    return task
 
 
 @app.route('/todo/api/v1/tasks', methods=['GET'])
@@ -48,6 +38,7 @@ def get_tasks():
     for task in all_tasks:
         obj = task_obj_to_json_converter(task)
         results.append(obj)
+
     response = jsonify(results)
     response.status_code = 200
     return response
@@ -56,10 +47,7 @@ def get_tasks():
 def task_obj_to_json_converter(task):
     task_json = {}
     for column in Task.__table__.columns:
-        if column.key == 'cost_time':
-            task_json['time'] = task.cost_time
-        else:
-            task_json[column.key] = task.__getattribute__(column.key)
+        task_json[column.key] = task.__getattribute__(column.key)
 
     return task_json
 
@@ -90,14 +78,8 @@ def update_task():
 
     # reset value of search out item and update it with new value
     json_ret = request.get_json()
-    if json_ret.get('title'):
-        query_task_ret.title = json_ret.get('title')
-
-    if json_ret.get('desc'):
-        query_task_ret.desc = json_ret.get('desc')
-
-    if json_ret.get('status'):
-        query_task_ret.status = json_ret.get('status')
+    for key in json_ret:
+        query_task_ret.__setattr__(key, json_ret[key])
 
     query_task_ret.save()
     # now we only overwrite the value pass and keep others as before

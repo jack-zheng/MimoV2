@@ -22,8 +22,10 @@ class ViewTestCase(unittest.TestCase):
 
         self.item01 = '{"title":"first target"}'
         self.item02 = '{"title": "second target", "desc": "my 2 target"}'
-        self.full_entity = '{"title": "full entity", "desc": "desc full", "status": "Done", "time": 2.0, \
+        self.full_entity = '{"title": "full entity", "desc": "desc full", "status": "Done", "time": 2.0,\
                        "category": 2}'
+        self.full_entity_update = '{"id": id_replace, "title": "full entity", "desc": "desc update",\
+         "status": "Block", "time": 100.0, "category": 100}'
 
         # prepare a dynamic task for test
         self.get_time_milli = lambda: int(round(time.time() * 1000))
@@ -83,18 +85,25 @@ class ViewTestCase(unittest.TestCase):
         query_id = self.get_task_id()
         resp = self.app.get('/todo/api/v1/tasks/{}'.format(str(query_id)))
         self.assertEqual(resp.status_code, 200)
+        json_resp = json.loads(resp.data)
+
+        # assert every field in db is contains in response
+        query_task = models.Task.query.filter_by(id=query_id).first();
+        for column in query_task.__table__._columns:
+            self.assertEqual(query_task.__getattribute__(column.key), json_resp[column.key])
 
     # Update
     def test_update_list(self):
         update_id = self.get_task_id()
-        time_milli = str(self.get_time_milli())
-        update_task = '{"id": %s, "title": "%s"}' % (update_id, time_milli)
+        update_task = self.full_entity_update.replace("id_replace", str(update_id))
+        json_update = json.loads(update_task)
         resp = self.app.put('/todo/api/v1/tasks', data=update_task, headers={"Content-type": "application/json"})
         self.assertEqual(resp.status_code, 201)
 
         # query db and the update one is exiting
         query_ret = models.Task.query.filter_by(id=update_id).first()
-        self.assertEqual(query_ret.title, time_milli)
+        for column in query_ret.__table__._columns:
+            self.assertEqual(query_ret.__getattribute__(column.key), json_update[column.key])
 
     # Delete
     def test_list_deletion(self):
