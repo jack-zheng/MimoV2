@@ -7,7 +7,7 @@ class Task(db.Model):
     title = db.Column(db.String(64), index=True)
     desc = db.Column(db.String(400), index=True, default='N/A')
     status = db.Column(db.String(20), index=True, default='In Progress')
-    cost_time = db.Column(db.Float, default=0.0)
+    time = db.Column(db.Float, default=0.0)
     category = db.Column(db.Integer, default=1)
 
     @staticmethod

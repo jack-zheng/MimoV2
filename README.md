@@ -10,6 +10,7 @@ integrate with SQLITE
 2. has write the script to do db action
 3. python manage_db.py db migrate + upgrade, then the db schema will be changed
 4. python manage_db.py db migrate --message 'some message you want'
+5. sqlite is not support the rename of column, so I have to do this db change manually
 
 Phase III
 deploy to server
