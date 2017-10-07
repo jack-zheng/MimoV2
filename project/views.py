@@ -16,11 +16,23 @@ def post_task():
     # new a task and save it to db, return it's detail as response
     request_json = request.get_json()
 
-    title = request_json.get('title')
-    desc = 'N/A' if not request_json.get('description') else request_json.get('description')
-    status = 'In Progress' if not request_json.get('status') else request_json.get('status')
+    # create a new task to store the post value
+    new_task = Task()
 
-    new_task = Task(title=title, desc=desc, status=status)
+    new_task.title = request_json.get('title')
+
+    if request_json.get('desc'):
+        new_task.desc = request_json.get('desc')
+
+    if request_json.get('status'):
+        new_task.status = request_json.get('status')
+
+    if request_json.get('category'):
+        new_task.category = request_json.get('category')
+
+    if request_json.get('time'):
+        new_task.cost_time = request_json.get('time')
+
     new_task.save()
 
     response = jsonify(task_obj_to_json_converter(new_task))
@@ -42,12 +54,13 @@ def get_tasks():
 
 
 def task_obj_to_json_converter(task):
-    task_json = {
-        'id': task.id,
-        'title': task.title,
-        'description': task.desc,
-        'status': task.status
-    }
+    task_json = {}
+    for column in Task.__table__.columns:
+        if column.key == 'cost_time':
+            task_json['time'] = task.cost_time
+        else:
+            task_json[column.key] = task.__getattribute__(column.key)
+
     return task_json
 
 
@@ -80,8 +93,8 @@ def update_task():
     if json_ret.get('title'):
         query_task_ret.title = json_ret.get('title')
 
-    if json_ret.get('description'):
-        query_task_ret.desc = json_ret.get('description')
+    if json_ret.get('desc'):
+        query_task_ret.desc = json_ret.get('desc')
 
     if json_ret.get('status'):
         query_task_ret.status = json_ret.get('status')
