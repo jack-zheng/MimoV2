@@ -14,7 +14,7 @@ class ViewTestCase(unittest.TestCase):
         app.config['TESTING'] = True
         app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'test.db')
         db.create_all()
-        # cls.prepare_data()
+        cls.prepare_data()
 
     # set up will be invoked every time test method run
     def setUp(self):
@@ -48,7 +48,7 @@ class ViewTestCase(unittest.TestCase):
     def tearDownClass(cls):
         print("tear down class invoked");
         db.session.remove()
-        #db.drop_all()
+        db.drop_all()
 
     # create a hello test as a start
     def test_hello(self):
