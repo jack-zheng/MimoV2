@@ -21,9 +21,12 @@ usage of Coverage.py
 
 Phase III
 deploy to server
+1. integrate with docker
+2. nginx + uWSGI learning
+3. simple demo of deploy to server
 
 
 ##TODO LIST
-* measure of CC
+* apache or nginx
 * migrate to docker
 * build status, once check in to git, give a feed back
