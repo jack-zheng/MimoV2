@@ -22,6 +22,8 @@ usage of Coverage.py
 Phase III
 deploy to server
 1. integrate with docker
+    * flask + docker
+    * nginx + docker
 2. nginx + uWSGI learning
 3. simple demo of deploy to server
 
