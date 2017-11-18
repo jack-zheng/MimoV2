@@ -8,9 +8,11 @@ Phase II
 integrate with SQLITE
 1. use flask-migrate to manage the db migrate, upgrade which is a impl of Alembic
 2. has write the script to do db action
-3. python manage_db.py db migrate + upgrade, then the db schema will be changed
-4. python manage_db.py db migrate --message 'some message you want'
-5. sqlite is not support the rename of column, so I have to do this db change manually
+3. usage of alembic db management
+    *. python manage_db.py db migrate --message 'some message you want'
+    *. python manage_db.py db upgrade, then the db schema will be changed
+    *. python manage_db.py db history, to check the change history
+4. SQLITE is not support the rename of column, so I have to do this db change manually
 
 usage of Coverage.py
 1. coverage run test.py | this command finish the data collect
@@ -32,3 +34,9 @@ deploy to server
 * apache or nginx
 * migrate to docker
 * build status, once check in to git, give a feed back
+
+---------
+## Command Reminder
+*. get tasks: curl http://localhost:5000/todo/api/v1/tasks
+*. post tasks: curl -i -H "Content-Type: application/json" -X POST -d '{"title":"Read a book"}' http://localhost:5000/todo/api/v1/tasks
+*. post tasks:  curl -i -H "Content-Type: application/json" -X PUT -d '{"title":"Read a book02", "id":1}' http://localhost:5000/todo/api/v1/tasks

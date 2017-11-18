@@ -8,11 +8,11 @@ WORKDIR /app
 ADD . /app
 
 # Set proxy server, replace host:/port with values for your servers
-ENV http_proxy http://proxy.successfactors.com:8080
-ENV https_proxy http://proxy.successfactors.com:8080
+#ENV http_proxy http://proxy.XX.com:8080
+#ENV https_proxy http://proxy.xx.com:8080
 
 # Install any needed packages specified in requirements.txt
-RUN pip install -r requirements.txt
+RUN pip install -i http://pypi.douban.com/simple -r requirements.txt
 
 # Make port 80 available to the world outside this container
 EXPOSE 80
