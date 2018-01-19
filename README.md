@@ -12,6 +12,7 @@ integrate with SQLITE
     *. python manage_db.py db migrate --message 'some message you want'
     *. python manage_db.py db upgrade, then the db schema will be changed
     *. python manage_db.py db history, to check the change history
+    *. when OS is windows, mirgate with --message will be failed
 4. SQLITE is not support the rename of column, so I have to do this db change manually
 
 usage of Coverage.py
