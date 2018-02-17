@@ -1,0 +1,379 @@
+5-9
+morning meeting 10.30-11.30 
+lunch 11.30-12.00
+ATDD test design (testlink case) 12.30-2.00
+Qray UP class refactor 2.00 - 6.00
+ATDD test design 6.40-8.00
+
+5-10
+UI confirm with luming 10.15-10.30
+training of ATDD 10.30-11.40
+Jam Delta Ticket fix and XPI call 1.30-3.14
+Qray fix, external user super class 3.20-4.00
+practice ATDD 4.00-6.00
+
+5-11
+some left works, check CC, re-install Qray: 10.40-11.40
+Qray install and fix: 1.30-2.00
+KT session from Phil: 2.00 -4.00
+Acceptance Test Design: 4.00-5.00
+KT session of local environment set up: 5.00-5.30
+
+5-12
+CS issue check, unsuccessful: 10.00-11.20
+Phil lunch: 11.20-1.40
+KT: 2.00-4.30
+ATDD, Acceptance Test Design: 4.30-6.00
+
+5-15
+AT design 10.10 - 10.30
+Qray fix for JR and XiaoFeng 10.30 - 11.30
+AT design 1.10-3.30
+Github account migrate: 4.00 - 5.00
+Plan meeting: 5.00 - 6.00
+
+5-16
+QA weekly meeting: 10.30 - 11.10
+CS issue, should be data issue, system contains multiple records with same is but different status(active/inactive): 12.40 - 2.10
+BQ verify(PLT-59000): 2.25-2.55
+MR order: 2.55 - 3.15
+CS issue root cause search: 3.15 - 4.00
+AT Meeting: 4.00 - 5.00
+CS issue: 5.00-6.00
+
+5-17
+XPI support to Jason: 10.10 - 10.50
+CS issue: 10.50 -11.40
+ATDD: 1.30 - 2.30
+CC run analysis: 2.30 - 3.30
+user and provisioning rate down: new code raise, user 4k, provisioning 600
+picklist: maybe case missed, but not found
+Qray fix, resolve ant ivy task and switch to trunk qacand: 3.30-4.50
+Scrum: 5.00-5.15
+CS issue: 5.15 - 6.00
+
+5-18
+CS issue: 10.25 - 11.30
+CS issue: 2.20 - 3.46
+XPI: 3.50 - 4.10
+UI5 sanity analysis: 4.25 - 6.00
+
+5-19
+UP project meeting: 10.30 - 11.45 
+patch verify, email server not stable cause may time to debug: 1.30 - 4.00
+sanity UI5 analysis: 4.00 - 4.30
+fix daily run instance (external schema), unsuccessful, RBP on access denied: 4.30 - 4.40
+CS issue track: 4.40 - 5.20
+ATDD Automation: 5.20 - 6.00
+
+5-22
+PD analysis, seems many environment fails, can't login with cgrant: 10.40 - 11.40
+ATDD basic code finish, finish user stories 1, and part of 2:1.10 - 3.40
+PD analysis: 3.45 - 5.00
+Scrum: 5.00 - 5.20
+PD, mistake branch deployment/preview: 5.20 -  6.00
+
+5-23
+PD fix, switch to preview next week, skiped: 10.10 - 10.30
+Weekly meeting: 10.30 - 11.20
+external api job set to daily, pending JR permission setting: 12.10 - 12.50
+CS issue: 1.00 - 1.50
+confluence job info: 1.50 - 2.20
+IP restriction meeting: 3.00 - 4.10
+talking about structure of ATDD: 4.10 - 5.00
+CS issue update: 5.15 - 6.00
+
+5-24
+jam delta Qray: 10.10 - 11.10
+ad hoc, PLT-58839 update: 11.10 - 11.35
+jam delta Qray: 1.30 - 3.20
+ad hoc, job setting for patch test(Edwin/ChangYi): 3.20 - 4.12
+jam delta Qray: 4.15 - 6.00
+
+5-25
+other auto task, PD: 10.10 - 10.25
+CS issue, PLT-59438: 10.25 - 11.40
+CS issue, db query ticket: 1.30 - 2.20
+jam delta Qray: 2.25 - 6.00
+
+5-26
+UP project meeting: 10.00 - 11.00
+CS issue 11.10 - 11.25
+ad hoc, edwin patch test: 12.30 - 3.00
+Jam delta Qray: 3.10 - 6.00
+
+5-31
+ad hoc, email check, Cats: 10.00 - 10.25
+UP QA meeting: 10.30 - 11.10
+Jam Delta Export Qray: 12:20 - 6.00
+
+6-1
+SAF git setup: 10.15-11.00
+CS issue meeting: 11.00-11.40
+SAF git setup: 12.40 - 2.40
+Jam Delta Qray: 2.40 - 4.30
+ad hoc, git migrate: 4.30 - 6.00
+
+6-2
+CS issue: 10.15 - 10.30
+UP project meeting: 10.30 - 12.00
+ad hoc, git migrate: 12.50 - 2.30
+other automation, PD check: 2.30 - 2.45
+ad hoc, support about SSO migrate: 2.50 - 4.00
+Jam delta export Qray: 4.00 - 6.00
+
+6-4
+part time work: ATDD 3:00 - 5.30
+
+6-5
+CS issue: 10.10 - 10.40
+Qray ATDD: 10.40 - 11.40
+Qray ATDD: 1.00 - 3.00
+Suport, Linda, Star: 3.00 - 4.00
+git mirage, knowledge learning, test 4.00 - 6.00  
+
+6-6
+ATDD job check: 10.10 - 10.30
+QA weekly meeting: 10.30 - 12.00
+Qray fix: 12.40 - 1.10
+ATDD job check: 1.10 - 3.00
+Git migrat: 3.00 - 4.00
+ATDD cases: 4.00 - 6.00
+
+6-7
+ATDD finish case structure today: 10.30 - 11.40
+ATDD finish case structure today: 12.40 - 2.10
+Auto support, git BBM for JR: 2.10 - 3.00
+Jam delta Qray enahnce: 3.00 - 4.00
+ATDD job setting and status update on Jira: 4.00 - 5.00
+Qray fix: 5.00 - 6.00
+
+6-8
+ad hoc, CS, Qray: 10.20 - 11.50  
+ATDD confirm UI, API : 1.00 - 2.00
+ATDD UI impl: 2.00 - 5.00
+ad hoc: 5.00 - 6.00
+
+6-9
+UP project meeting: 10.00 - 11.00
+sync ATDD status, emil, update status:11.00 - 11.30
+ATDD auto impl:1.00 - 2.30
+ad hoc, qray job check: 2.30 - 3.00
+ATDD impl: 3.00 - 4.00
+ad hoc, git migrate Xiaofeng, git CLI: 4.00 - 4.50 
+
+6-12
+daily run failure analysis, full run case review: 10.30 - 11.30
+full run analysis: 1.00 - 2.00
+ATDD automation: 2.00 - 6.00
+
+6-13
+daily failure analysis, DB, ad hoc : 10.10 - 11.00
+QA weekly meeting: 11.00 - 11.40
+ATDD automation: 1.10 - 4.50
+Qray suport jessie: 4.50 - 6.10
+ 
+6-14
+ATDD: 10.10 - 11.30
+ATDD: 1.20 - 6.00
+
+6-15
+ATDD: 10.10 - 11.40
+ATDD automation, almost done, waiting for release: 1.30 - 3.00 
+Full run analysis: 3.00 - 6.00
+
+6-16
+full analysis, tomcat/oracle: 10.00-10.30
+ATDD, auto enhance after release:10.30 - 11.30
+ATDD, auto enhance: 2.20 -6.00
+
+6-19
+ATDD, ad hoc company inactive:10.10-11.40
+ATDD enhance: 12.50 - 5.00
+project meeting: 5.00 - 6.00
+
+6-20
+ATDD, suport George, domain knowledge: 10.10 - 10.30
+ATDD: 10.30 - 11.30
+ATDD: 12.30 - 3.20
+One-One: 3.20 - 4.40
+ATDD UI enhance: 4.40 - 6.00
+ATDD UI enhance: 6.40 - 8.00
+
+6-21
+ATDD UI enhance: 10.15-11.10
+ad hoc, team git migrate: 11.10 - 11.40
+ATDD, UI enhance: 1.30 - 2.40
+GACE check: 2.40 - 6.00
+
+
+
+6-22
+ATDD, new feature discusses and manual test, config: 10.10 - 11.40  
+run analysis: 1.00 - 5.00
+atdd, upgrade check: 5.00 - 6.00
+
+6-23
+project meeting: 10.00 - 11.00
+ATDD, permission enhance: 1.20 - 2.10
+ATDD, new feature api document: 2.20 - 5.00
+https://confluence.successfactors.com/display/QA/IP+Restriction+Management+%28PLT-57393%29+OData+API+Document
+full run analysis: 5.00 - 6.00
+
+6-26
+QA all hands: 11.30 - 12.00
+ATDD, meta data check: 1.20 - 1.50
+full run analysis: 2.00 - 3.30
+ad hoc, jovi qray job scheduler: 3.30 - 4.00
+full run analysis: 4.00 - 6.00
+full run analysis: 7.00 - 8.00
+
+6-27
+full run analysis: 10.15 - 11.40
+full run analysis: 12.30 - 1.30
+provisioning API familiar: 1.30 - 3.10
+postman api knowledge get: 3.20 - 4.50
+ad hoc of common UI: 4.50 - 5.20
+
+6-28
+ATDD manual testing first: 10.15 - 11.30
+ATDD auto enhance: 12.20 - 6.00 
+
+6-29
+ATDD manual test first: 10.15 - 11.40
+ATDD external user login test: 1.20 - 3.40
+Learning: jrwang_UU2
+ONB: jrwang_UU5
+ATDD security did https://jira.successfactors.com/browse/XPI-11954 : 3.40 - 5.00
+ATDD communication about the status of new feature: 5.00 - 6.00
+
+6-30
+Project meeting: 10.20 - 11.40
+new feature related and adhoc: 12.20 - 2.30
+ATDD, new case add, performance check: 2.30 - 6.00
+
+delete all cache file of company: 
+cache type check url: http://<api server address>:8080/cache?cache=<cachetype>
+delete cache data:
+check cache key:  
+ODATA_META_FRAGMENT_CACHE
+ODataMetadataCache
+COENGINE_ENTITY_CACHE
+COEngineMetaCache
+delete DB data:
+SELECT * FROM QACANDROT_SHJHUANG.SYS_CONFIG WHERE SYS_CONFIG_KEY LIKE '%odata%';
+SELECT * FROM QACANDROT_SHJHUANG.SYS_CONFIG WHERE SYS_CONFIG_KEY LIKE '%coengine%';
+SELECT * FROM QACANDROT_SHJHUANG.SYS_CONFIG WHERE SYS_CONFIG_KEY LIKE '%fragment%';
+
+7-3
+AD hoc from Xiaofeng: 10.30 -10.50
+PLT-60475 verify, env is not stable :10.50 - 11.40
+Qray fix: 12.20 - 1.30
+Metadata Driver test: 1.30 - 3.00
+Qray fix: 3.00 - 5.00
+ATDD, user experience discusses: 5.00-5.40
+
+7-4
+ad hoc from jieyan: 10.15 - 10.30
+UP QA meeting: 10.30 - 11.10
+Full run job setting: 11.10 - 11.35
+Cryse, KBA verify: 12.40 - 1.10
+fix KBA case: 1.20 - 2.00
+ad hoc HR ticket: 2.00 - 2.20
+Qray fix: 2.20 - 3.30
+KT provision: 3.30 - 5.20
+https://portal.wdf.sap.corp/irj/portal?NavigationTarget=navurl://4e999dae58e73df5b11a7e6b85163507&url=/Infocenters/Human%20Resources%20for%20SAP/Employee%20Services/Overview/HRdirect
+
+7-5
+daily run check + ad hoc from XiaoFeng: 10.00 - 10.30
+SAF fix: 1.30 - 2.30
+provisioning API meeting: 2.30 - 3.00
+add auto case: 3.00 - 6.00
+
+7-6
+ad hoc of daily run: 10.15 - 10.50
+auto case: 10.50 - 11.40
+auto case: 1.00 - 3.30
+cache check: 3.30 - 4.00
+Qray fix: 4.00 - 6.00
+
+7-7
+ad hoc from linda: 10.10 - 10.40 
+patch: 10.40 - 11.00
+Qray log fix, should be work now: 11.00 - 11.30
+hana type new feature enhance: 1.30 - 2.00
+Qray fail trace: 2.00 - 3.00
+XPI, session affinity:3.00 - 4.00
+Qray fix: 4.00 - 6.00
+
+7-10
+ad hoc, xiaofeng bbm: 10.00 - 10.30
+project meeting: 10.30 - 11.40
+Qray fix, block, check jenkins log when job free: 1.00 - 1.30 
+ad hoc: instance extend + REM ticket verify: 1.30 - 4.00
+ad hoc: issue of access control and ip restriction: 4.00 - 5.00
+Qray fix: 5.00 - 6.00
+
+7-11
+UP meeting: 10.30 - 11.30
+Full run analysis: 1.00 - 6.00
+
+7-12
+Full run analysis: 10.00 - 11.10
+REM verify: 11.10 - 11.30
+ad hoc: 1.00 - 2.30
+regression auto + manual: 2.30 - 6.00
+
+7-13
+manual regression: 10.15 - 11.40
+regression: 1.00 - 3.00
+GDPR meeting: 3.00 - 4.30
+Regression: 4.30 - 6.00
+
+7-14
+AD hoc, CS issue, GACE: 10.10 - 11.40
+CS issue, PLT-60486: 1.00 - 3.00
+CS issue, env block: 3.00 - 6.00
+
+7-17
+REM verify, Coy: 10.00 - 10.20
+full, initial_load_check: 10.20 - 11.40
+full: 1.00 - 6.00
+
+7-18
+UP meeting: 10.30 - 11.30
+manual + auto full: 1.00 - 6.00
+
+7-19
+full regression: 10.00 - 11.30
+full regression: 1.00 - 6.00
+
+7-20
+prepare demo: 10.00 - 11.30
+env blocked: 1.00 - 6.00
+
+7-21
+full run: 10.00 - 11.40
+full run: 1.00 - 6.00
+
+7-24
+cs issue ad hoc: 10.00 - 10.30
+company clone vai client trace: 10.30 - 11.30 
+full regression: 1.00 - 6.00
+
+7-25
+full: 10.00 - 11.30
+autocand deployment block : 1.00 -  6.00
+
+7-26
+full run: 10.00 - 11.40
+full run: 1.00 - 6.00
+
+7-27
+api server issue investigate: 10.00 - 12.30
+full run: 1.30 - 6.00
+
+7-28
+UP meeting: 10.30 - 11.40
+Coy, patch check: 1.00 - 2.30
+full run: 2.30 - 6.00
