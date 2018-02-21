@@ -65,16 +65,16 @@ def get_task(task_id):
 @app.route('/todo/api/v1/tasks', methods=['PUT'])
 def update_task():
     if not request.get_json():
-        abort(400)
+        abort(400, 'No json object found')
 
     if 'id' not in request.get_json():
-        abort(400)
+        abort(400, 'No id attribute found')
 
     task_id = request.get_json().get('id')
     # query to get task with this special id
     query_task_ret = Task.query.filter_by(id=task_id).first()
     if not query_task_ret:
-        abort(404)
+        abort(404, 'No record with id {} in db'.format(task_id))
 
     # reset value of search out item and update it with new value
     json_ret = request.get_json()

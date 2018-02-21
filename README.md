@@ -9,11 +9,13 @@ integrate with SQLITE
 1. use flask-migrate to manage the db migrate, upgrade which is a impl of Alembic
 2. has write the script to do db action
 3. usage of alembic db management
+    *. when first time run, use: python manage_db.py db init
     *. python manage_db.py db migrate --message 'some message you want'
     *. python manage_db.py db upgrade, then the db schema will be changed
     *. python manage_db.py db history, to check the change history
     *. when OS is windows, mirgate with --message will be failed
 4. SQLITE is not support the rename of column, so I have to do this db change manually
+5. cause I used key word 'desc' as column name, so it gives a comma wrap to it
 
 usage of Coverage.py
 1. coverage run test.py | this command finish the data collect

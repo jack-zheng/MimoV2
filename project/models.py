@@ -5,10 +5,12 @@ from sqlalchemy import desc
 class Task(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     title = db.Column(db.String(64), index=True)
-    desc = db.Column(db.String(400), index=True, default='N/A')
+    desc = db.Column(db.String(200), index=True, default='N/A')
     status = db.Column(db.String(20), index=True, default='In Progress')
     time = db.Column(db.Float, default=0.0)
+    timeperiod = db.Column(db.String(20), index=True)
     category = db.Column(db.Integer, default=1)
+    release = db.Column(db.Integer)
 
     @staticmethod
     def get_all():
@@ -21,11 +23,11 @@ class Task(db.Model):
     def delete(self):
         db.session.delete(self)
         db.session.commit()
-
+    
     @staticmethod
     def get_max_id_record():
         return Task.query.order_by(desc(Task.id)).first()
-
+    
     def __repr__(self):
         return '<Task %r>' % self.title
 

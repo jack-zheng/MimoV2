@@ -20,21 +20,25 @@ class ViewTestCase(unittest.TestCase):
     def setUp(self):
         self.app = app.test_client()
 
-        self.item01 = '{"title":"first target"}'
-        self.item02 = '{"title": "second target", "desc": "my 2 target"}'
-        self.full_entity = '{"title": "full entity", "desc": "desc full", "status": "Done", "time": 2.0,\
-                       "category": 2}'
-        self.full_entity_update = '{"id": id_replace, "title": "full entity", "desc": "desc update",\
-         "status": "Block", "time": 100.0, "category": 100}'
+        self.full_entity = '{"title": "full entity", "desc": "desc full",\
+                             "status": "Done", "time": 60.0,\
+                            "category": 2, "timeperiod": "12.00-13.00",\
+                            "release": 1708}'
 
+        self.update_entity = '{"id": id_replace, "title": "title update", "desc": "desc update",\
+                             "status": "Done", "time": 30.0,\
+                            "category": 3, "timeperiod": "13.00-13.30",\
+                            "release": 1802}'
+        '''
         # prepare a dynamic task for test
         self.get_time_milli = lambda: int(round(time.time() * 1000))
-
+        '''
     @staticmethod
     def prepare_data():
         print("prepare data method invoked");
         # insert some tasks for test
-        task1 = models.Task(title='t1', desc='desc1', status='In Progress')
+        task1 = models.Task(title='t1', desc='desc1', status='In Progress', release=1708, timeperiod='12.00-13.00', \
+                            time=60.0, category=1)
         task2 = models.Task(title='t2', desc='desc2', status='In Progress')
         db.session.add(task1)
         db.session.add(task2)
@@ -54,22 +58,22 @@ class ViewTestCase(unittest.TestCase):
     def test_hello(self):
         response = self.app.get('/')
         self.assertEqual(response.data.decode('utf-8'), 'Hello World')
-
+    
     # Post
     def test_post_list(self):
-        rand_full_entity = self.full_entity.replace('full entity', str(self.get_time_milli()))
-        rand_full_json = json.loads(rand_full_entity)
-        resp = self.app.post('/todo/api/v1/tasks', data=rand_full_entity, headers={"Content-type": "application/json"})
+        full_json = json.loads(self.full_entity)
+        print(full_json)
+        resp = self.app.post('/todo/api/v1/tasks', data=self.full_entity, headers={"Content-type": "application/json"})
         self.assertEqual(resp.status_code, 201)
 
         # iterate dict and assert resp contains value
-        for key in rand_full_json:
-            self.assertIn(str(rand_full_json[key]), str(resp.data))
+        for key in full_json:
+            self.assertIn(str(full_json[key]), str(resp.data))
 
-        query_ret = models.Task.query.filter_by(title=rand_full_json['title']).first()
-        for key in rand_full_json:
-            self.assertEqual(query_ret.__getattribute__(key), rand_full_json[key], "attribute: %s, entity value: %s"\
-                             % (query_ret.__getattribute__(key), rand_full_json[key]))
+        query_ret = models.Task.query.filter_by(title=full_json['title']).first()
+        for key in full_json:
+            self.assertEqual(query_ret.__getattribute__(key), full_json[key], "attribute: %s, entity value: %s"\
+                             % (query_ret.__getattribute__(key), full_json[key]))
 
     # Get all
     def test_get_list(self):
@@ -95,7 +99,7 @@ class ViewTestCase(unittest.TestCase):
     # Update
     def test_update_list(self):
         update_id = self.get_task_id()
-        update_task = self.full_entity_update.replace("id_replace", str(update_id))
+        update_task = self.update_entity.replace("id_replace", str(update_id))
         json_update = json.loads(update_task)
         resp = self.app.put('/todo/api/v1/tasks', data=update_task, headers={"Content-type": "application/json"})
         self.assertEqual(resp.status_code, 201)
@@ -103,7 +107,9 @@ class ViewTestCase(unittest.TestCase):
         # query db and the update one is exiting
         query_ret = models.Task.query.filter_by(id=update_id).first()
         for column in query_ret.__table__._columns:
-            self.assertEqual(query_ret.__getattribute__(column.key), json_update[column.key])
+            self.assertEqual(query_ret.__getattribute__(column.key), json_update[column.key],
+                             "key: %s, expected: %s, actual: %s" % (column.key, query_ret.__getattribute__(column.key),\
+                                                                    json_update[column.key]))
 
     # Delete
     def test_list_deletion(self):
