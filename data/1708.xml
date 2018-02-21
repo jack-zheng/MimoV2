@@ -4,35 +4,35 @@
     <task>
       morning meeting
       <time>
-        10.30-11.30
+        2.30-3.30
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       lunch
       <time>
-        11.30-12.00
+        3.30-4.00
         <minutes>30.0</minutes>
       </time>
     </task>
     <task>
       ATDD test design (testlink case)
       <time>
-        12.30-2.00
+        4.30-6.00
         <minutes>90.0</minutes>
       </time>
     </task>
     <task>
       Qray UP class refactor
       <time>
-        2.00-6.00
-        <minutes>240.0</minutes>
+        6.00-10.00
+        <minutes>960.0</minutes>
       </time>
     </task>
     <task>
       ATDD test design
       <time>
-        6.40-8.00
+        10.40-12.00
         <minutes>80.0</minutes>
       </time>
     </task>
@@ -41,36 +41,36 @@
     <task>
       UI confirm with luming
       <time>
-        10.15-10.30
+        2.15-2.30
         <minutes>15.0</minutes>
       </time>
     </task>
     <task>
       training of ATDD
       <time>
-        10.30-11.40
+        2.30-3.40
         <minutes>70.0</minutes>
       </time>
     </task>
     <task>
       Jam Delta Ticket fix and XPI call
       <time>
-        1.30-3.14
+        5.30-7.14
         <minutes>104.0</minutes>
       </time>
     </task>
     <task>
       Qray fix, external user super class
       <time>
-        3.20-4.00
+        7.20-8.00
         <minutes>40.0</minutes>
       </time>
     </task>
     <task>
       practice ATDD
       <time>
-        4.00-6.00
-        <minutes>120.0</minutes>
+        8.00-10.00
+        <minutes>840.0</minutes>
       </time>
     </task>
   </day>
@@ -78,35 +78,35 @@
     <task>
       some left works, check CC, re-install Qray
       <time>
-        10.40-11.40
+        2.40-3.40
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       Qray install and fix
       <time>
-        1.30-2.00
+        5.30-6.00
         <minutes>30.0</minutes>
       </time>
     </task>
     <task>
       KT session from Phil
       <time>
-        2.00-4.00
+        6.00-8.00
         <minutes>120.0</minutes>
       </time>
     </task>
     <task>
       Acceptance Test Design
       <time>
-        4.00-5.00
+        8.00-9.00
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       KT session of local environment set up
       <time>
-        5.00-5.30
+        9.00-9.30
         <minutes>30.0</minutes>
       </time>
     </task>
@@ -115,29 +115,29 @@
     <task>
       CS issue check, unsuccessful
       <time>
-        10.00-11.20
+        2.00-3.20
         <minutes>80.0</minutes>
       </time>
     </task>
     <task>
       Phil lunch
       <time>
-        11.20-1.40
+        3.20-5.40
         <minutes>140.0</minutes>
       </time>
     </task>
     <task>
       KT
       <time>
-        2.00-4.30
+        6.00-8.30
         <minutes>150.0</minutes>
       </time>
     </task>
     <task>
       ATDD, Acceptance Test Design
       <time>
-        4.30-6.00
-        <minutes>90.0</minutes>
+        8.30-10.00
+        <minutes>810.0</minutes>
       </time>
     </task>
   </day>
@@ -145,36 +145,36 @@
     <task>
       AT design
       <time>
-        10.10-10.30
+        2.10-2.30
         <minutes>20.0</minutes>
       </time>
     </task>
     <task>
       Qray fix for JR and XiaoFeng
       <time>
-        10.30-11.30
+        2.30-3.30
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       AT design
       <time>
-        1.10-3.30
+        5.10-7.30
         <minutes>140.0</minutes>
       </time>
     </task>
     <task>
       Github account migrate
       <time>
-        4.00-5.00
+        8.00-9.00
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       Plan meeting
       <time>
-        5.00-6.00
-        <minutes>60.0</minutes>
+        9.00-10.00
+        <minutes>780.0</minutes>
       </time>
     </task>
   </day>
@@ -182,50 +182,50 @@
     <task>
       QA weekly meeting
       <time>
-        10.30-11.10
+        2.30-3.10
         <minutes>40.0</minutes>
       </time>
     </task>
     <task>
       CS issue, should be data issue, system contains multiple records with same is but different status(active/inactive)
       <time>
-        12.40-2.10
+        4.40-6.10
         <minutes>90.0</minutes>
       </time>
     </task>
     <task>
       BQ verify(PLT-59000)
       <time>
-        2.25-2.55
+        6.25-6.55
         <minutes>30.0</minutes>
       </time>
     </task>
     <task>
       MR order
       <time>
-        2.55-3.15
+        6.55-7.15
         <minutes>20.0</minutes>
       </time>
     </task>
     <task>
       CS issue root cause search
       <time>
-        3.15-4.00
+        7.15-8.00
         <minutes>45.0</minutes>
       </time>
     </task>
     <task>
       AT Meeting
       <time>
-        4.00-5.00
+        8.00-9.00
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       CS issue
       <time>
-        5.00-6.00
-        <minutes>60.0</minutes>
+        9.00-10.00
+        <minutes>780.0</minutes>
       </time>
     </task>
   </day>
@@ -233,50 +233,50 @@
     <task>
       XPI support to Jason
       <time>
-        10.10-10.50
+        2.10-2.50
         <minutes>40.0</minutes>
       </time>
     </task>
     <task>
       CS issue
       <time>
-        10.50-11.40
+        2.50-3.40
         <minutes>50.0</minutes>
       </time>
     </task>
     <task>
       ATDD
       <time>
-        1.30-2.30
+        5.30-6.30
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       CC run analysis
       <time>
-        2.30-3.30
+        6.30-7.30
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       Qray fix, resolve ant ivy task and switch to trunk qacand
       <time>
-        3.30-4.50
+        7.30-8.50
         <minutes>80.0</minutes>
       </time>
     </task>
     <task>
       Scrum
       <time>
-        5.00-5.15
+        9.00-9.15
         <minutes>15.0</minutes>
       </time>
     </task>
     <task>
       CS issue
       <time>
-        5.15-6.00
-        <minutes>45.0</minutes>
+        9.15-10.00
+        <minutes>765.0</minutes>
       </time>
     </task>
   </day>
@@ -284,29 +284,29 @@
     <task>
       CS issue
       <time>
-        10.25-11.30
+        2.25-3.30
         <minutes>65.0</minutes>
       </time>
     </task>
     <task>
       CS issue
       <time>
-        2.20-3.46
+        6.20-7.46
         <minutes>86.0</minutes>
       </time>
     </task>
     <task>
       XPI
       <time>
-        3.50-4.10
+        7.50-8.10
         <minutes>20.0</minutes>
       </time>
     </task>
     <task>
       UI5 sanity analysis
       <time>
-        4.25-6.00
-        <minutes>95.0</minutes>
+        8.25-10.00
+        <minutes>815.0</minutes>
       </time>
     </task>
   </day>
@@ -314,43 +314,43 @@
     <task>
       UP project meeting
       <time>
-        10.30-11.45
+        2.30-3.45
         <minutes>75.0</minutes>
       </time>
     </task>
     <task>
       patch verify, email server not stable cause may time to debug
       <time>
-        1.30-4.00
+        5.30-8.00
         <minutes>150.0</minutes>
       </time>
     </task>
     <task>
       sanity UI5 analysis
       <time>
-        4.00-4.30
+        8.00-8.30
         <minutes>30.0</minutes>
       </time>
     </task>
     <task>
       fix daily run instance (external schema), unsuccessful, RBP on access denied
       <time>
-        4.30-4.40
+        8.30-8.40
         <minutes>10.0</minutes>
       </time>
     </task>
     <task>
       CS issue track
       <time>
-        4.40-5.20
+        8.40-9.20
         <minutes>40.0</minutes>
       </time>
     </task>
     <task>
       ATDD Automation
       <time>
-        5.20-6.00
-        <minutes>40.0</minutes>
+        9.20-10.00
+        <minutes>760.0</minutes>
       </time>
     </task>
   </day>
@@ -358,36 +358,36 @@
     <task>
       PD analysis, seems many environment fails, can't login with cgrant
       <time>
-        10.40-11.40
+        2.40-3.40
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       ATDD basic code finish, finish user stories 1, and part of 2
       <time>
-        1.10-3.40
+        5.10-7.40
         <minutes>150.0</minutes>
       </time>
     </task>
     <task>
       PD analysis
       <time>
-        3.45-5.00
+        7.45-9.00
         <minutes>75.0</minutes>
       </time>
     </task>
     <task>
       Scrum
       <time>
-        5.00-5.20
+        9.00-9.20
         <minutes>20.0</minutes>
       </time>
     </task>
     <task>
       PD, mistake branch deployment/preview
       <time>
-        5.20-6.00
-        <minutes>40.0</minutes>
+        9.20-10.00
+        <minutes>760.0</minutes>
       </time>
     </task>
   </day>
@@ -395,57 +395,57 @@
     <task>
       PD fix, switch to preview next week, skiped
       <time>
-        10.10-10.30
+        2.10-2.30
         <minutes>20.0</minutes>
       </time>
     </task>
     <task>
       Weekly meeting
       <time>
-        10.30-11.20
+        2.30-3.20
         <minutes>50.0</minutes>
       </time>
     </task>
     <task>
       external api job set to daily, pending JR permission setting
       <time>
-        12.10-12.50
+        4.10-4.50
         <minutes>40.0</minutes>
       </time>
     </task>
     <task>
       CS issue
       <time>
-        1.00-1.50
+        5.00-5.50
         <minutes>50.0</minutes>
       </time>
     </task>
     <task>
       confluence job info
       <time>
-        1.50-2.20
+        5.50-6.20
         <minutes>30.0</minutes>
       </time>
     </task>
     <task>
       IP restriction meeting
       <time>
-        3.00-4.10
+        7.00-8.10
         <minutes>70.0</minutes>
       </time>
     </task>
     <task>
       talking about structure of ATDD
       <time>
-        4.10-5.00
+        8.10-9.00
         <minutes>50.0</minutes>
       </time>
     </task>
     <task>
       CS issue update
       <time>
-        5.15-6.00
-        <minutes>45.0</minutes>
+        9.15-10.00
+        <minutes>765.0</minutes>
       </time>
     </task>
   </day>
@@ -453,36 +453,36 @@
     <task>
       jam delta Qray
       <time>
-        10.10-11.10
+        2.10-3.10
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       ad hoc, PLT-58839 update
       <time>
-        11.10-11.35
+        3.10-3.35
         <minutes>25.0</minutes>
       </time>
     </task>
     <task>
       jam delta Qray
       <time>
-        1.30-3.20
+        5.30-7.20
         <minutes>110.0</minutes>
       </time>
     </task>
     <task>
       ad hoc, job setting for patch test(Edwin/ChangYi)
       <time>
-        3.20-4.12
+        7.20-8.12
         <minutes>52.0</minutes>
       </time>
     </task>
     <task>
       jam delta Qray
       <time>
-        4.15-6.00
-        <minutes>105.0</minutes>
+        8.15-10.00
+        <minutes>825.0</minutes>
       </time>
     </task>
   </day>
@@ -490,29 +490,29 @@
     <task>
       other auto task, PD
       <time>
-        10.10-10.25
+        2.10-2.25
         <minutes>15.0</minutes>
       </time>
     </task>
     <task>
       CS issue, PLT-59438
       <time>
-        10.25-11.40
+        2.25-3.40
         <minutes>75.0</minutes>
       </time>
     </task>
     <task>
       CS issue, db query ticket
       <time>
-        1.30-2.20
+        5.30-6.20
         <minutes>50.0</minutes>
       </time>
     </task>
     <task>
       jam delta Qray
       <time>
-        2.25-6.00
-        <minutes>215.0</minutes>
+        6.25-10.00
+        <minutes>935.0</minutes>
       </time>
     </task>
   </day>
@@ -520,29 +520,29 @@
     <task>
       UP project meeting
       <time>
-        10.00-11.00
+        2.00-3.00
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       CS issue
       <time>
-        11.10-11.25
+        3.10-3.25
         <minutes>15.0</minutes>
       </time>
     </task>
     <task>
       ad hoc, edwin patch test
       <time>
-        12.30-3.00
+        4.30-7.00
         <minutes>150.0</minutes>
       </time>
     </task>
     <task>
       Jam delta Qray
       <time>
-        3.10-6.00
-        <minutes>170.0</minutes>
+        7.10-10.00
+        <minutes>890.0</minutes>
       </time>
     </task>
   </day>
@@ -550,22 +550,22 @@
     <task>
       ad hoc, email check, Cats
       <time>
-        10.00-10.25
+        2.00-2.25
         <minutes>25.0</minutes>
       </time>
     </task>
     <task>
       UP QA meeting
       <time>
-        10.30-11.10
+        2.30-3.10
         <minutes>40.0</minutes>
       </time>
     </task>
     <task>
       Jam Delta Export Qray
       <time>
-        12.20-6.00
-        <minutes>340.0</minutes>
+        4.20-10.00
+        <minutes>1060.0</minutes>
       </time>
     </task>
   </day>
@@ -573,36 +573,36 @@
     <task>
       SAF git setup
       <time>
-        10.15-11.00
+        2.15-3.00
         <minutes>45.0</minutes>
       </time>
     </task>
     <task>
       CS issue meeting
       <time>
-        11.00-11.40
+        3.00-3.40
         <minutes>40.0</minutes>
       </time>
     </task>
     <task>
       SAF git setup
       <time>
-        12.40-2.40
+        4.40-6.40
         <minutes>120.0</minutes>
       </time>
     </task>
     <task>
       Jam Delta Qray
       <time>
-        2.40-4.30
+        6.40-8.30
         <minutes>110.0</minutes>
       </time>
     </task>
     <task>
       ad hoc, git migrate
       <time>
-        4.30-6.00
-        <minutes>90.0</minutes>
+        8.30-10.00
+        <minutes>810.0</minutes>
       </time>
     </task>
   </day>
@@ -610,43 +610,43 @@
     <task>
       CS issue
       <time>
-        10.15-10.30
+        2.15-2.30
         <minutes>15.0</minutes>
       </time>
     </task>
     <task>
       UP project meeting
       <time>
-        10.30-12.00
+        2.30-4.00
         <minutes>90.0</minutes>
       </time>
     </task>
     <task>
       ad hoc, git migrate
       <time>
-        12.50-2.30
+        4.50-6.30
         <minutes>100.0</minutes>
       </time>
     </task>
     <task>
       other automation, PD check
       <time>
-        2.30-2.45
+        6.30-6.45
         <minutes>15.0</minutes>
       </time>
     </task>
     <task>
       ad hoc, support about SSO migrate
       <time>
-        2.50-4.00
+        6.50-8.00
         <minutes>70.0</minutes>
       </time>
     </task>
     <task>
       Jam delta export Qray
       <time>
-        4.00-6.00
-        <minutes>120.0</minutes>
+        8.00-10.00
+        <minutes>840.0</minutes>
       </time>
     </task>
   </day>
@@ -654,7 +654,7 @@
     <task>
       part time work ATDD
       <time>
-        3.00-5.30
+        7.00-9.30
         <minutes>150.0</minutes>
       </time>
     </task>
@@ -663,36 +663,36 @@
     <task>
       CS issue
       <time>
-        10.10-10.40
+        2.10-2.40
         <minutes>30.0</minutes>
       </time>
     </task>
     <task>
       Qray ATDD
       <time>
-        10.40-11.40
+        2.40-3.40
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       Qray ATDD
       <time>
-        1.00-3.00
+        5.00-7.00
         <minutes>120.0</minutes>
       </time>
     </task>
     <task>
       Suport, Linda, Star
       <time>
-        3.00-4.00
+        7.00-8.00
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       git mirage, knowledge learning, test
       <time>
-        4.00-6.00
-        <minutes>120.0</minutes>
+        8.00-10.00
+        <minutes>840.0</minutes>
       </time>
     </task>
   </day>
@@ -700,43 +700,43 @@
     <task>
       ATDD job check
       <time>
-        10.10-10.30
+        2.10-2.30
         <minutes>20.0</minutes>
       </time>
     </task>
     <task>
       QA weekly meeting
       <time>
-        10.30-12.00
+        2.30-4.00
         <minutes>90.0</minutes>
       </time>
     </task>
     <task>
       Qray fix
       <time>
-        12.40-1.10
+        4.40-5.10
         <minutes>30.0</minutes>
       </time>
     </task>
     <task>
       ATDD job check
       <time>
-        1.10-3.00
+        5.10-7.00
         <minutes>110.0</minutes>
       </time>
     </task>
     <task>
       Git migrat
       <time>
-        3.00-4.00
+        7.00-8.00
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       ATDD cases
       <time>
-        4.00-6.00
-        <minutes>120.0</minutes>
+        8.00-10.00
+        <minutes>840.0</minutes>
       </time>
     </task>
   </day>
@@ -744,43 +744,43 @@
     <task>
       ATDD finish case structure today
       <time>
-        10.30-11.40
+        2.30-3.40
         <minutes>70.0</minutes>
       </time>
     </task>
     <task>
       ATDD finish case structure today
       <time>
-        12.40-2.10
+        4.40-6.10
         <minutes>90.0</minutes>
       </time>
     </task>
     <task>
       Auto support, git BBM for JR
       <time>
-        2.10-3.00
+        6.10-7.00
         <minutes>50.0</minutes>
       </time>
     </task>
     <task>
       Jam delta Qray enahnce
       <time>
-        3.00-4.00
+        7.00-8.00
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       ATDD job setting and status update on Jira
       <time>
-        4.00-5.00
+        8.00-9.00
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       Qray fix
       <time>
-        5.00-6.00
-        <minutes>60.0</minutes>
+        9.00-10.00
+        <minutes>780.0</minutes>
       </time>
     </task>
   </day>
@@ -788,29 +788,29 @@
     <task>
       ad hoc, CS, Qray
       <time>
-        10.20-11.50
+        2.20-3.50
         <minutes>90.0</minutes>
       </time>
     </task>
     <task>
       ATDD confirm UI, API 
       <time>
-        1.00-2.00
+        5.00-6.00
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       ATDD UI impl
       <time>
-        2.00-5.00
+        6.00-9.00
         <minutes>180.0</minutes>
       </time>
     </task>
     <task>
       ad hoc
       <time>
-        5.00-6.00
-        <minutes>60.0</minutes>
+        9.00-10.00
+        <minutes>780.0</minutes>
       </time>
     </task>
   </day>
@@ -818,42 +818,42 @@
     <task>
       UP project meeting
       <time>
-        10.00-11.00
+        2.00-3.00
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       sync ATDD status, emil, update status
       <time>
-        11.00-11.30
+        3.00-3.30
         <minutes>30.0</minutes>
       </time>
     </task>
     <task>
       ATDD auto impl
       <time>
-        1.00-2.30
+        5.00-6.30
         <minutes>90.0</minutes>
       </time>
     </task>
     <task>
       ad hoc, qray job check
       <time>
-        2.30-3.00
+        6.30-7.00
         <minutes>30.0</minutes>
       </time>
     </task>
     <task>
       ATDD impl
       <time>
-        3.00-4.00
+        7.00-8.00
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       ad hoc, git migrate Xiaofeng, git CLI
       <time>
-        4.00-4.50
+        8.00-8.50
         <minutes>50.0</minutes>
       </time>
     </task>
@@ -862,22 +862,22 @@
     <task>
       daily run failure analysis, full run case review
       <time>
-        10.30-11.30
+        2.30-3.30
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       full run analysis
       <time>
-        1.00-2.00
+        5.00-6.00
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       ATDD automation
       <time>
-        2.00-6.00
-        <minutes>240.0</minutes>
+        6.00-10.00
+        <minutes>960.0</minutes>
       </time>
     </task>
   </day>
@@ -885,29 +885,29 @@
     <task>
       daily failure analysis, DB, ad hoc 
       <time>
-        10.10-11.00
+        2.10-3.00
         <minutes>50.0</minutes>
       </time>
     </task>
     <task>
       QA weekly meeting
       <time>
-        11.00-11.40
+        3.00-3.40
         <minutes>40.0</minutes>
       </time>
     </task>
     <task>
       ATDD automation
       <time>
-        1.10-4.50
+        5.10-8.50
         <minutes>220.0</minutes>
       </time>
     </task>
     <task>
       Qray suport jessie
       <time>
-        4.50-6.10
-        <minutes>80.0</minutes>
+        8.50-10.10
+        <minutes>800.0</minutes>
       </time>
     </task>
   </day>
@@ -915,15 +915,15 @@
     <task>
       ATDD
       <time>
-        10.10-11.30
+        2.10-3.30
         <minutes>80.0</minutes>
       </time>
     </task>
     <task>
       ATDD
       <time>
-        1.20-6.00
-        <minutes>280.0</minutes>
+        5.20-10.00
+        <minutes>1000.0</minutes>
       </time>
     </task>
   </day>
@@ -931,22 +931,22 @@
     <task>
       ATDD
       <time>
-        10.10-11.40
+        2.10-3.40
         <minutes>90.0</minutes>
       </time>
     </task>
     <task>
       ATDD automation, almost done, waiting for release
       <time>
-        1.30-3.00
+        5.30-7.00
         <minutes>90.0</minutes>
       </time>
     </task>
     <task>
       Full run analysis
       <time>
-        3.00-6.00
-        <minutes>180.0</minutes>
+        7.00-10.00
+        <minutes>900.0</minutes>
       </time>
     </task>
   </day>
@@ -954,22 +954,22 @@
     <task>
       full analysis, tomcat/oracle
       <time>
-        10.00-10.30
+        2.00-2.30
         <minutes>30.0</minutes>
       </time>
     </task>
     <task>
       ATDD, auto enhance after release
       <time>
-        10.30-11.30
+        2.30-3.30
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       ATDD, auto enhance
       <time>
-        2.20-6.00
-        <minutes>220.0</minutes>
+        6.20-10.00
+        <minutes>940.0</minutes>
       </time>
     </task>
   </day>
@@ -977,22 +977,22 @@
     <task>
       ATDD, ad hoc company inactive
       <time>
-        10.10-11.40
+        2.10-3.40
         <minutes>90.0</minutes>
       </time>
     </task>
     <task>
       ATDD enhance
       <time>
-        12.50-5.00
+        4.50-9.00
         <minutes>250.0</minutes>
       </time>
     </task>
     <task>
       project meeting
       <time>
-        5.00-6.00
-        <minutes>60.0</minutes>
+        9.00-10.00
+        <minutes>780.0</minutes>
       </time>
     </task>
   </day>
@@ -1000,42 +1000,42 @@
     <task>
       ATDD, suport George, domain knowledge
       <time>
-        10.10-10.30
+        2.10-2.30
         <minutes>20.0</minutes>
       </time>
     </task>
     <task>
       ATDD
       <time>
-        10.30-11.30
+        2.30-3.30
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       ATDD
       <time>
-        12.30-3.20
+        4.30-7.20
         <minutes>170.0</minutes>
       </time>
     </task>
     <task>
       One-One
       <time>
-        3.20-4.40
+        7.20-8.40
         <minutes>80.0</minutes>
       </time>
     </task>
     <task>
       ATDD UI enhance
       <time>
-        4.40-6.00
-        <minutes>80.0</minutes>
+        8.40-10.00
+        <minutes>800.0</minutes>
       </time>
     </task>
     <task>
       ATDD UI enhance
       <time>
-        6.40-8.00
+        10.40-12.00
         <minutes>80.0</minutes>
       </time>
     </task>
@@ -1044,29 +1044,29 @@
     <task>
       ATDD UI enhance
       <time>
-        10.15-11.10
+        2.15-3.10
         <minutes>55.0</minutes>
       </time>
     </task>
     <task>
       ad hoc, team git migrate
       <time>
-        11.10-11.40
+        3.10-3.40
         <minutes>30.0</minutes>
       </time>
     </task>
     <task>
       ATDD, UI enhance
       <time>
-        1.30-2.40
+        5.30-6.40
         <minutes>70.0</minutes>
       </time>
     </task>
     <task>
       GACE check
       <time>
-        2.40-6.00
-        <minutes>200.0</minutes>
+        6.40-10.00
+        <minutes>920.0</minutes>
       </time>
     </task>
   </day>
@@ -1074,22 +1074,22 @@
     <task>
       ATDD, new feature discusses and manual test, config
       <time>
-        10.10-11.40
+        2.10-3.40
         <minutes>90.0</minutes>
       </time>
     </task>
     <task>
       run analysis
       <time>
-        1.00-5.00
+        5.00-9.00
         <minutes>240.0</minutes>
       </time>
     </task>
     <task>
       atdd, upgrade check
       <time>
-        5.00-6.00
-        <minutes>60.0</minutes>
+        9.00-10.00
+        <minutes>780.0</minutes>
       </time>
     </task>
   </day>
@@ -1097,29 +1097,29 @@
     <task>
       project meeting
       <time>
-        10.00-11.00
+        2.00-3.00
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       ATDD, permission enhance
       <time>
-        1.20-2.10
+        5.20-6.10
         <minutes>50.0</minutes>
       </time>
     </task>
     <task>
       ATDD, new feature api document
       <time>
-        2.20-5.00
+        6.20-9.00
         <minutes>160.0</minutes>
       </time>
     </task>
     <task>
       full run analysis
       <time>
-        5.00-6.00
-        <minutes>60.0</minutes>
+        9.00-10.00
+        <minutes>780.0</minutes>
       </time>
     </task>
   </day>
@@ -1127,42 +1127,42 @@
     <task>
       QA all hands
       <time>
-        11.30-12.00
+        3.30-4.00
         <minutes>30.0</minutes>
       </time>
     </task>
     <task>
       ATDD, meta data check
       <time>
-        1.20-1.50
+        5.20-5.50
         <minutes>30.0</minutes>
       </time>
     </task>
     <task>
       full run analysis
       <time>
-        2.00-3.30
+        6.00-7.30
         <minutes>90.0</minutes>
       </time>
     </task>
     <task>
       ad hoc, jovi qray job scheduler
       <time>
-        3.30-4.00
+        7.30-8.00
         <minutes>30.0</minutes>
       </time>
     </task>
     <task>
       full run analysis
       <time>
-        4.00-6.00
-        <minutes>120.0</minutes>
+        8.00-10.00
+        <minutes>840.0</minutes>
       </time>
     </task>
     <task>
       full run analysis
       <time>
-        7.00-8.00
+        11.00-12.00
         <minutes>60.0</minutes>
       </time>
     </task>
@@ -1171,35 +1171,35 @@
     <task>
       full run analysis
       <time>
-        10.15-11.40
+        2.15-3.40
         <minutes>85.0</minutes>
       </time>
     </task>
     <task>
       full run analysis
       <time>
-        12.30-1.30
+        4.30-5.30
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       provisioning API familiar
       <time>
-        1.30-3.10
+        5.30-7.10
         <minutes>100.0</minutes>
       </time>
     </task>
     <task>
       postman api knowledge get
       <time>
-        3.20-4.50
+        7.20-8.50
         <minutes>90.0</minutes>
       </time>
     </task>
     <task>
       ad hoc of common UI
       <time>
-        4.50-5.20
+        8.50-9.20
         <minutes>30.0</minutes>
       </time>
     </task>
@@ -1208,15 +1208,15 @@
     <task>
       ATDD manual testing first
       <time>
-        10.15-11.30
+        2.15-3.30
         <minutes>75.0</minutes>
       </time>
     </task>
     <task>
       ATDD auto enhance
       <time>
-        12.20-6.00
-        <minutes>340.0</minutes>
+        4.20-10.00
+        <minutes>1060.0</minutes>
       </time>
     </task>
   </day>
@@ -1224,29 +1224,29 @@
     <task>
       ATDD manual test first
       <time>
-        10.15-11.40
+        2.15-3.40
         <minutes>85.0</minutes>
       </time>
     </task>
     <task>
       ATDD external user login test
       <time>
-        1.20-3.40
+        5.20-7.40
         <minutes>140.0</minutes>
       </time>
     </task>
     <task>
       ATDD security did https//jira.successfactors.com/browse/XPI-11954 
       <time>
-        3.40-5.00
+        7.40-9.00
         <minutes>80.0</minutes>
       </time>
     </task>
     <task>
       ATDD communication about the status of new feature
       <time>
-        5.00-6.00
-        <minutes>60.0</minutes>
+        9.00-10.00
+        <minutes>780.0</minutes>
       </time>
     </task>
   </day>
@@ -1254,22 +1254,22 @@
     <task>
       Project meeting
       <time>
-        10.20-11.40
+        2.20-3.40
         <minutes>80.0</minutes>
       </time>
     </task>
     <task>
       new feature related and adhoc
       <time>
-        12.20-2.30
+        4.20-6.30
         <minutes>130.0</minutes>
       </time>
     </task>
     <task>
       ATDD, new case add, performance check
       <time>
-        2.30-6.00
-        <minutes>210.0</minutes>
+        6.30-10.00
+        <minutes>930.0</minutes>
       </time>
     </task>
   </day>
@@ -1277,42 +1277,42 @@
     <task>
       AD hoc from Xiaofeng
       <time>
-        10.30-10.50
+        2.30-2.50
         <minutes>20.0</minutes>
       </time>
     </task>
     <task>
       PLT-60475 verify, env is not stable 
       <time>
-        10.50-11.40
+        2.50-3.40
         <minutes>50.0</minutes>
       </time>
     </task>
     <task>
       Qray fix
       <time>
-        12.20-1.30
+        4.20-5.30
         <minutes>70.0</minutes>
       </time>
     </task>
     <task>
       Metadata Driver test
       <time>
-        1.30-3.00
+        5.30-7.00
         <minutes>90.0</minutes>
       </time>
     </task>
     <task>
       Qray fix
       <time>
-        3.00-5.00
+        7.00-9.00
         <minutes>120.0</minutes>
       </time>
     </task>
     <task>
       ATDD, user experience discusses
       <time>
-        5.00-5.40
+        9.00-9.40
         <minutes>40.0</minutes>
       </time>
     </task>
@@ -1321,56 +1321,56 @@
     <task>
       ad hoc from jieyan
       <time>
-        10.15-10.30
+        2.15-2.30
         <minutes>15.0</minutes>
       </time>
     </task>
     <task>
       UP QA meeting
       <time>
-        10.30-11.10
+        2.30-3.10
         <minutes>40.0</minutes>
       </time>
     </task>
     <task>
       Full run job setting
       <time>
-        11.10-11.35
+        3.10-3.35
         <minutes>25.0</minutes>
       </time>
     </task>
     <task>
       Cryse, KBA verify
       <time>
-        12.40-1.10
+        4.40-5.10
         <minutes>30.0</minutes>
       </time>
     </task>
     <task>
       fix KBA case
       <time>
-        1.20-2.00
+        5.20-6.00
         <minutes>40.0</minutes>
       </time>
     </task>
     <task>
       ad hoc HR ticket
       <time>
-        2.00-2.20
+        6.00-6.20
         <minutes>20.0</minutes>
       </time>
     </task>
     <task>
       Qray fix
       <time>
-        2.20-3.30
+        6.20-7.30
         <minutes>70.0</minutes>
       </time>
     </task>
     <task>
       KT provision
       <time>
-        3.30-5.20
+        7.30-9.20
         <minutes>110.0</minutes>
       </time>
     </task>
@@ -1379,29 +1379,29 @@
     <task>
       daily run check + ad hoc from XiaoFeng
       <time>
-        10.00-10.30
+        2.00-2.30
         <minutes>30.0</minutes>
       </time>
     </task>
     <task>
       SAF fix
       <time>
-        1.30-2.30
+        5.30-6.30
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       provisioning API meeting
       <time>
-        2.30-3.00
+        6.30-7.00
         <minutes>30.0</minutes>
       </time>
     </task>
     <task>
       add auto case
       <time>
-        3.00-6.00
-        <minutes>180.0</minutes>
+        7.00-10.00
+        <minutes>900.0</minutes>
       </time>
     </task>
   </day>
@@ -1409,36 +1409,36 @@
     <task>
       ad hoc of daily run
       <time>
-        10.15-10.50
+        2.15-2.50
         <minutes>35.0</minutes>
       </time>
     </task>
     <task>
       auto case
       <time>
-        10.50-11.40
+        2.50-3.40
         <minutes>50.0</minutes>
       </time>
     </task>
     <task>
       auto case
       <time>
-        1.00-3.30
+        5.00-7.30
         <minutes>150.0</minutes>
       </time>
     </task>
     <task>
       cache check
       <time>
-        3.30-4.00
+        7.30-8.00
         <minutes>30.0</minutes>
       </time>
     </task>
     <task>
       Qray fix
       <time>
-        4.00-6.00
-        <minutes>120.0</minutes>
+        8.00-10.00
+        <minutes>840.0</minutes>
       </time>
     </task>
   </day>
@@ -1446,50 +1446,50 @@
     <task>
       ad hoc from linda
       <time>
-        10.10-10.40
+        2.10-2.40
         <minutes>30.0</minutes>
       </time>
     </task>
     <task>
       patch
       <time>
-        10.40-11.00
+        2.40-3.00
         <minutes>20.0</minutes>
       </time>
     </task>
     <task>
       Qray log fix, should be work now
       <time>
-        11.00-11.30
+        3.00-3.30
         <minutes>30.0</minutes>
       </time>
     </task>
     <task>
       hana type new feature enhance
       <time>
-        1.30-2.00
+        5.30-6.00
         <minutes>30.0</minutes>
       </time>
     </task>
     <task>
       Qray fail trace
       <time>
-        2.00-3.00
+        6.00-7.00
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       XPI, session affinity
       <time>
-        3.00-4.00
+        7.00-8.00
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       Qray fix
       <time>
-        4.00-6.00
-        <minutes>120.0</minutes>
+        8.00-10.00
+        <minutes>840.0</minutes>
       </time>
     </task>
   </day>
@@ -1497,43 +1497,43 @@
     <task>
       ad hoc, xiaofeng bbm
       <time>
-        10.00-10.30
+        2.00-2.30
         <minutes>30.0</minutes>
       </time>
     </task>
     <task>
       project meeting
       <time>
-        10.30-11.40
+        2.30-3.40
         <minutes>70.0</minutes>
       </time>
     </task>
     <task>
       Qray fix, block, check jenkins log when job free
       <time>
-        1.00-1.30
+        5.00-5.30
         <minutes>30.0</minutes>
       </time>
     </task>
     <task>
       ad hoc instance extend + REM ticket verify
       <time>
-        1.30-4.00
+        5.30-8.00
         <minutes>150.0</minutes>
       </time>
     </task>
     <task>
       ad hoc issue of access control and ip restriction
       <time>
-        4.00-5.00
+        8.00-9.00
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       Qray fix
       <time>
-        5.00-6.00
-        <minutes>60.0</minutes>
+        9.00-10.00
+        <minutes>780.0</minutes>
       </time>
     </task>
   </day>
@@ -1541,15 +1541,15 @@
     <task>
       UP meeting
       <time>
-        10.30-11.30
+        2.30-3.30
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       Full run analysis
       <time>
-        1.00-6.00
-        <minutes>300.0</minutes>
+        5.00-10.00
+        <minutes>1020.0</minutes>
       </time>
     </task>
   </day>
@@ -1557,29 +1557,29 @@
     <task>
       Full run analysis
       <time>
-        10.00-11.10
+        2.00-3.10
         <minutes>70.0</minutes>
       </time>
     </task>
     <task>
       REM verify
       <time>
-        11.10-11.30
+        3.10-3.30
         <minutes>20.0</minutes>
       </time>
     </task>
     <task>
       ad hoc
       <time>
-        1.00-2.30
+        5.00-6.30
         <minutes>90.0</minutes>
       </time>
     </task>
     <task>
       regression auto + manual
       <time>
-        2.30-6.00
-        <minutes>210.0</minutes>
+        6.30-10.00
+        <minutes>930.0</minutes>
       </time>
     </task>
   </day>
@@ -1587,29 +1587,29 @@
     <task>
       manual regression
       <time>
-        10.15-11.40
+        2.15-3.40
         <minutes>85.0</minutes>
       </time>
     </task>
     <task>
       regression
       <time>
-        1.00-3.00
+        5.00-7.00
         <minutes>120.0</minutes>
       </time>
     </task>
     <task>
       GDPR meeting
       <time>
-        3.00-4.30
+        7.00-8.30
         <minutes>90.0</minutes>
       </time>
     </task>
     <task>
       Regression
       <time>
-        4.30-6.00
-        <minutes>90.0</minutes>
+        8.30-10.00
+        <minutes>810.0</minutes>
       </time>
     </task>
   </day>
@@ -1617,22 +1617,22 @@
     <task>
       AD hoc, CS issue, GACE
       <time>
-        10.10-11.40
+        2.10-3.40
         <minutes>90.0</minutes>
       </time>
     </task>
     <task>
       CS issue, PLT-60486
       <time>
-        1.00-3.00
+        5.00-7.00
         <minutes>120.0</minutes>
       </time>
     </task>
     <task>
       CS issue, env block
       <time>
-        3.00-6.00
-        <minutes>180.0</minutes>
+        7.00-10.00
+        <minutes>900.0</minutes>
       </time>
     </task>
   </day>
@@ -1640,22 +1640,22 @@
     <task>
       REM verify, Coy
       <time>
-        10.00-10.20
+        2.00-2.20
         <minutes>20.0</minutes>
       </time>
     </task>
     <task>
       full, initial_load_check
       <time>
-        10.20-11.40
+        2.20-3.40
         <minutes>80.0</minutes>
       </time>
     </task>
     <task>
       full
       <time>
-        1.00-6.00
-        <minutes>300.0</minutes>
+        5.00-10.00
+        <minutes>1020.0</minutes>
       </time>
     </task>
   </day>
@@ -1663,15 +1663,15 @@
     <task>
       UP meeting
       <time>
-        10.30-11.30
+        2.30-3.30
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       manual + auto full
       <time>
-        1.00-6.00
-        <minutes>300.0</minutes>
+        5.00-10.00
+        <minutes>1020.0</minutes>
       </time>
     </task>
   </day>
@@ -1679,15 +1679,15 @@
     <task>
       full regression
       <time>
-        10.00-11.30
+        2.00-3.30
         <minutes>90.0</minutes>
       </time>
     </task>
     <task>
       full regression
       <time>
-        1.00-6.00
-        <minutes>300.0</minutes>
+        5.00-10.00
+        <minutes>1020.0</minutes>
       </time>
     </task>
   </day>
@@ -1695,15 +1695,15 @@
     <task>
       prepare demo
       <time>
-        10.00-11.30
+        2.00-3.30
         <minutes>90.0</minutes>
       </time>
     </task>
     <task>
       env blocked
       <time>
-        1.00-6.00
-        <minutes>300.0</minutes>
+        5.00-10.00
+        <minutes>1020.0</minutes>
       </time>
     </task>
   </day>
@@ -1711,15 +1711,15 @@
     <task>
       full run
       <time>
-        10.00-11.40
+        2.00-3.40
         <minutes>100.0</minutes>
       </time>
     </task>
     <task>
       full run
       <time>
-        1.00-6.00
-        <minutes>300.0</minutes>
+        5.00-10.00
+        <minutes>1020.0</minutes>
       </time>
     </task>
   </day>
@@ -1727,22 +1727,22 @@
     <task>
       cs issue ad hoc
       <time>
-        10.00-10.30
+        2.00-2.30
         <minutes>30.0</minutes>
       </time>
     </task>
     <task>
       company clone vai client trace
       <time>
-        10.30-11.30
+        2.30-3.30
         <minutes>60.0</minutes>
       </time>
     </task>
     <task>
       full regression
       <time>
-        1.00-6.00
-        <minutes>300.0</minutes>
+        5.00-10.00
+        <minutes>1020.0</minutes>
       </time>
     </task>
   </day>
@@ -1750,15 +1750,15 @@
     <task>
       full
       <time>
-        10.00-11.30
+        2.00-3.30
         <minutes>90.0</minutes>
       </time>
     </task>
     <task>
       autocand deployment block 
       <time>
-        1.00-6.00
-        <minutes>300.0</minutes>
+        5.00-10.00
+        <minutes>1020.0</minutes>
       </time>
     </task>
   </day>
@@ -1766,15 +1766,15 @@
     <task>
       full run
       <time>
-        10.00-11.40
+        2.00-3.40
         <minutes>100.0</minutes>
       </time>
     </task>
     <task>
       full run
       <time>
-        1.00-6.00
-        <minutes>300.0</minutes>
+        5.00-10.00
+        <minutes>1020.0</minutes>
       </time>
     </task>
   </day>
@@ -1782,15 +1782,15 @@
     <task>
       api server issue investigate
       <time>
-        10.00-12.30
+        2.00-4.30
         <minutes>150.0</minutes>
       </time>
     </task>
     <task>
       full run
       <time>
-        1.30-6.00
-        <minutes>270.0</minutes>
+        5.30-10.00
+        <minutes>990.0</minutes>
       </time>
     </task>
   </day>

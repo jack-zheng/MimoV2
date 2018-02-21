@@ -1,6 +1,6 @@
 import re
 import logging
-from datetime import datetime
+from datetime import datetime, timedelta
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 import sys
@@ -19,11 +19,50 @@ def parse_task_time(line):
         formatstr = " ".join(line.split())
         timeregx = r'\d+[.:]\d{2}\s*-\s*\d+[.:]\d{2}'
         time = re.compile(timeregx).findall(formatstr)[0].replace(" ", "").replace(":", ".")
+        time = time_plus12(time)
+        time = time_zone_minus_8(time)
         taskcontext = re.sub(timeregx, "", formatstr).strip().replace(":", "")
         return [taskcontext, time]
     else:
         # log it if line can't be parse
         logging.warning("unparsed line: [%s]" % line)
+
+
+def time_plus12(time):
+    """
+    if time format is 10:00-11.00 keep as before,
+    if time format is 2.00-3.00, transfer to 14.00-15.00
+    :param time:
+    :return:
+    """
+    timelist = []
+    split01 = time.split('-')
+    for sub in split01:
+        split02 = sub.split('.')
+        timelist.append(split02[0])
+        timelist.append(split02[1])
+    if int(timelist[0]) < 9:
+        timelist[0] = str(int(timelist[0]) + 12)
+    if int(timelist[2]) < 9:
+        timelist[2] = str(int(timelist[2]) + 12)
+    return timelist[0] + '.' + timelist[1] + '-' + timelist[2] + '.' + timelist[3]
+
+
+def time_zone_minus_8(time):
+    """
+    transfer to utc time, lcoal time is GTM(+8)
+    :param time:
+    :return:
+    """
+    timelist = []
+    split01 = time.split('-')
+    for sub in split01:
+        split02 = sub.split('.')
+        timelist.append(split02[0])
+        timelist.append(split02[1])
+    timelist[0] = str(int(timelist[0]) - 8)
+    timelist[2] = str(int(timelist[2]) - 8)
+    return timelist[0] + '.' + timelist[1] + '-' + timelist[2] + '.' + timelist[3]
 
 
 def parse_time(time):
@@ -56,7 +95,7 @@ def parse_date(line):
 
 
 def insert_to_db(daynode, release):
-    timestamp = datetime.strptime(daynode.get('timestamp'), "%Y-%m-%d")
+    timestamp = datetime.strptime(daynode.get('timestamp'), "%Y-%m-%d") + timedelta(hours=-8)
     release = release
     tasks = daynode.findall('task')
     for task in tasks:
@@ -213,6 +252,22 @@ if __name__ == '__main__':
             # assert count == 2
             ret = models.Task.get_all()
             self.assertEqual(len(ret), 2)
+
+        def test_time_plus12(self):
+            time01 = '12.00-13.00'
+            time02 = '1.00-2.00'
+            time03 = '1.10-1.20'
+            ret01 = time_plus12(time01)
+            self.assertEqual(time01, ret01)
+            ret02 = time_plus12(time02)
+            self.assertEqual(ret02, '13.00-14.00')
+            ret03 = time_plus12(time03)
+            self.assertEqual(ret03, '13.10-13.20')
+
+        def test_time_zone_minus_8(self):
+            time01 = '12.00-13.00'
+            ret01 = time_zone_minus_8(time01)
+            self.assertEqual(ret01, '4.00-5.00')
 
         @classmethod
         def tearDownClass(cls):
