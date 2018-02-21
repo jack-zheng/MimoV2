@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
-<release build="1708">
-  <day datetime="2017-05-09">
+<release version="1708">
+  <day timestamp="2017-05-09">
     <task>
       morning meeting
       <time>
@@ -37,7 +37,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-05-10">
+  <day timestamp="2017-05-10">
     <task>
       UI confirm with luming
       <time>
@@ -74,7 +74,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-05-11">
+  <day timestamp="2017-05-11">
     <task>
       some left works, check CC, re-install Qray
       <time>
@@ -111,7 +111,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-05-12">
+  <day timestamp="2017-05-12">
     <task>
       CS issue check, unsuccessful
       <time>
@@ -141,7 +141,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-05-15">
+  <day timestamp="2017-05-15">
     <task>
       AT design
       <time>
@@ -178,7 +178,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-05-16">
+  <day timestamp="2017-05-16">
     <task>
       QA weekly meeting
       <time>
@@ -229,7 +229,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-05-17">
+  <day timestamp="2017-05-17">
     <task>
       XPI support to Jason
       <time>
@@ -280,7 +280,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-05-18">
+  <day timestamp="2017-05-18">
     <task>
       CS issue
       <time>
@@ -310,7 +310,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-05-19">
+  <day timestamp="2017-05-19">
     <task>
       UP project meeting
       <time>
@@ -354,7 +354,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-05-22">
+  <day timestamp="2017-05-22">
     <task>
       PD analysis, seems many environment fails, can't login with cgrant
       <time>
@@ -391,7 +391,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-05-23">
+  <day timestamp="2017-05-23">
     <task>
       PD fix, switch to preview next week, skiped
       <time>
@@ -449,7 +449,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-05-24">
+  <day timestamp="2017-05-24">
     <task>
       jam delta Qray
       <time>
@@ -486,7 +486,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-05-25">
+  <day timestamp="2017-05-25">
     <task>
       other auto task, PD
       <time>
@@ -516,7 +516,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-05-26">
+  <day timestamp="2017-05-26">
     <task>
       UP project meeting
       <time>
@@ -546,7 +546,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-05-31">
+  <day timestamp="2017-05-31">
     <task>
       ad hoc, email check, Cats
       <time>
@@ -569,7 +569,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-06-01">
+  <day timestamp="2017-06-01">
     <task>
       SAF git setup
       <time>
@@ -606,7 +606,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-06-02">
+  <day timestamp="2017-06-02">
     <task>
       CS issue
       <time>
@@ -650,7 +650,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-06-04">
+  <day timestamp="2017-06-04">
     <task>
       part time work ATDD
       <time>
@@ -659,7 +659,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-06-05">
+  <day timestamp="2017-06-05">
     <task>
       CS issue
       <time>
@@ -696,7 +696,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-06-06">
+  <day timestamp="2017-06-06">
     <task>
       ATDD job check
       <time>
@@ -740,7 +740,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-06-07">
+  <day timestamp="2017-06-07">
     <task>
       ATDD finish case structure today
       <time>
@@ -784,7 +784,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-06-08">
+  <day timestamp="2017-06-08">
     <task>
       ad hoc, CS, Qray
       <time>
@@ -814,7 +814,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-06-09">
+  <day timestamp="2017-06-09">
     <task>
       UP project meeting
       <time>
@@ -858,7 +858,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-06-12">
+  <day timestamp="2017-06-12">
     <task>
       daily run failure analysis, full run case review
       <time>
@@ -881,7 +881,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-06-13">
+  <day timestamp="2017-06-13">
     <task>
       daily failure analysis, DB, ad hoc 
       <time>
@@ -911,7 +911,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-06-14">
+  <day timestamp="2017-06-14">
     <task>
       ATDD
       <time>
@@ -927,7 +927,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-06-15">
+  <day timestamp="2017-06-15">
     <task>
       ATDD
       <time>
@@ -950,7 +950,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-06-16">
+  <day timestamp="2017-06-16">
     <task>
       full analysis, tomcat/oracle
       <time>
@@ -973,7 +973,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-06-19">
+  <day timestamp="2017-06-19">
     <task>
       ATDD, ad hoc company inactive
       <time>
@@ -996,7 +996,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-06-20">
+  <day timestamp="2017-06-20">
     <task>
       ATDD, suport George, domain knowledge
       <time>
@@ -1040,7 +1040,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-06-21">
+  <day timestamp="2017-06-21">
     <task>
       ATDD UI enhance
       <time>
@@ -1070,7 +1070,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-06-22">
+  <day timestamp="2017-06-22">
     <task>
       ATDD, new feature discusses and manual test, config
       <time>
@@ -1093,7 +1093,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-06-23">
+  <day timestamp="2017-06-23">
     <task>
       project meeting
       <time>
@@ -1123,7 +1123,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-06-26">
+  <day timestamp="2017-06-26">
     <task>
       QA all hands
       <time>
@@ -1167,7 +1167,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-06-27">
+  <day timestamp="2017-06-27">
     <task>
       full run analysis
       <time>
@@ -1204,7 +1204,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-06-28">
+  <day timestamp="2017-06-28">
     <task>
       ATDD manual testing first
       <time>
@@ -1220,7 +1220,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-06-29">
+  <day timestamp="2017-06-29">
     <task>
       ATDD manual test first
       <time>
@@ -1250,7 +1250,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-06-30">
+  <day timestamp="2017-06-30">
     <task>
       Project meeting
       <time>
@@ -1273,7 +1273,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-07-03">
+  <day timestamp="2017-07-03">
     <task>
       AD hoc from Xiaofeng
       <time>
@@ -1317,7 +1317,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-07-04">
+  <day timestamp="2017-07-04">
     <task>
       ad hoc from jieyan
       <time>
@@ -1375,7 +1375,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-07-05">
+  <day timestamp="2017-07-05">
     <task>
       daily run check + ad hoc from XiaoFeng
       <time>
@@ -1405,7 +1405,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-07-06">
+  <day timestamp="2017-07-06">
     <task>
       ad hoc of daily run
       <time>
@@ -1442,7 +1442,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-07-07">
+  <day timestamp="2017-07-07">
     <task>
       ad hoc from linda
       <time>
@@ -1493,7 +1493,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-07-10">
+  <day timestamp="2017-07-10">
     <task>
       ad hoc, xiaofeng bbm
       <time>
@@ -1537,7 +1537,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-07-11">
+  <day timestamp="2017-07-11">
     <task>
       UP meeting
       <time>
@@ -1553,7 +1553,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-07-12">
+  <day timestamp="2017-07-12">
     <task>
       Full run analysis
       <time>
@@ -1583,7 +1583,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-07-13">
+  <day timestamp="2017-07-13">
     <task>
       manual regression
       <time>
@@ -1613,7 +1613,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-07-14">
+  <day timestamp="2017-07-14">
     <task>
       AD hoc, CS issue, GACE
       <time>
@@ -1636,7 +1636,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-07-17">
+  <day timestamp="2017-07-17">
     <task>
       REM verify, Coy
       <time>
@@ -1659,7 +1659,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-07-18">
+  <day timestamp="2017-07-18">
     <task>
       UP meeting
       <time>
@@ -1675,7 +1675,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-07-19">
+  <day timestamp="2017-07-19">
     <task>
       full regression
       <time>
@@ -1691,7 +1691,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-07-20">
+  <day timestamp="2017-07-20">
     <task>
       prepare demo
       <time>
@@ -1707,7 +1707,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-07-21">
+  <day timestamp="2017-07-21">
     <task>
       full run
       <time>
@@ -1723,7 +1723,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-07-24">
+  <day timestamp="2017-07-24">
     <task>
       cs issue ad hoc
       <time>
@@ -1746,7 +1746,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-07-25">
+  <day timestamp="2017-07-25">
     <task>
       full
       <time>
@@ -1762,7 +1762,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-07-26">
+  <day timestamp="2017-07-26">
     <task>
       full run
       <time>
@@ -1778,7 +1778,7 @@
       </time>
     </task>
   </day>
-  <day datetime="2017-07-27">
+  <day timestamp="2017-07-27">
     <task>
       api server issue investigate
       <time>

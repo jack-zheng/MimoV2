@@ -3,7 +3,8 @@ import unittest
 
 from project import app, db, models
 from config import basedir
-import os, time
+import os
+from datetime import datetime
 
 
 class ViewTestCase(unittest.TestCase):
@@ -23,7 +24,7 @@ class ViewTestCase(unittest.TestCase):
         self.full_entity = '{"title": "full entity", "desc": "desc full",\
                              "status": "Done", "time": 60.0,\
                             "category": 2, "timeperiod": "12.00-13.00",\
-                            "release": 1708}'
+                            "release": 1708, "timestamp":"2017-05-06"}'
 
         self.update_entity = '{"id": id_replace, "title": "title update", "desc": "desc update",\
                              "status": "Done", "time": 30.0,\
@@ -62,7 +63,6 @@ class ViewTestCase(unittest.TestCase):
     # Post
     def test_post_list(self):
         full_json = json.loads(self.full_entity)
-        print(full_json)
         resp = self.app.post('/todo/api/v1/tasks', data=self.full_entity, headers={"Content-type": "application/json"})
         self.assertEqual(resp.status_code, 201)
 
@@ -72,8 +72,24 @@ class ViewTestCase(unittest.TestCase):
 
         query_ret = models.Task.query.filter_by(title=full_json['title']).first()
         for key in full_json:
-            self.assertEqual(query_ret.__getattribute__(key), full_json[key], "attribute: %s, entity value: %s"\
+            if key == 'timestamp':
+                self.assertIn(full_json[key], str(query_ret.__getattribute__(key)))
+            else:
+                self.assertEqual(full_json[key], query_ret.__getattribute__(key), "attribute: %s, entity value: %s"\
                              % (query_ret.__getattribute__(key), full_json[key]))
+
+    def test_post_no_timestamp(self):
+        """
+        when no timestamp set in request, use utc now as default value
+        :return:
+        """
+        self.test_entity = '{"title": "no timestamp"}'
+        resp = self.app.post('/todo/api/v1/tasks', data=self.test_entity, headers={"Content-type": "application/json"})
+        self.assertEqual(resp.status_code, 201)
+        self.record_id = json.loads(resp.data)['id']
+        query_ret = models.Task.query.filter_by(id=self.record_id).first()
+        time_off = datetime.utcnow() - query_ret.timestamp
+        self.assertTrue(time_off.seconds < 1)
 
     # Get all
     def test_get_list(self):
@@ -107,7 +123,10 @@ class ViewTestCase(unittest.TestCase):
         # query db and the update one is exiting
         query_ret = models.Task.query.filter_by(id=update_id).first()
         for column in query_ret.__table__._columns:
-            self.assertEqual(query_ret.__getattribute__(column.key), json_update[column.key],
+            if column.key == 'timestamp':
+                pass
+            else:
+                self.assertEqual(query_ret.__getattribute__(column.key), json_update[column.key],
                              "key: %s, expected: %s, actual: %s" % (column.key, query_ret.__getattribute__(column.key),\
                                                                     json_update[column.key]))
 
@@ -121,7 +140,8 @@ class ViewTestCase(unittest.TestCase):
         query_ret = models.Task.query.filter_by(id=find_id).first()
         self.assertFalse(query_ret)
 
-    # get existing task id for test, using when delete, update testing
+
+    # get existing task id for testing, using when delete, update testing
     @staticmethod
     def get_task_id():
         id_ret = models.Task.query.with_entities(models.Task.id).first()

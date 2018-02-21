@@ -1,6 +1,7 @@
 from project import app
 from flask import request, abort, jsonify
 from project.models import Task
+from datetime import datetime
 
 
 @app.route('/', methods=['GET'])
@@ -17,6 +18,11 @@ def post_task():
     request_json = request.get_json()
     # create a new task to store the post value
     task = json_to_task_obj_converter(request_json)
+
+    # if no timestamp in task, or timestamp is none, use utc now instead
+    if not task.timestamp:
+        task.timestamp = datetime.utcnow()
+
     task.save()
 
     response = jsonify(task_obj_to_json_converter(task))
@@ -27,7 +33,10 @@ def post_task():
 def json_to_task_obj_converter(request_json):
     task = Task()
     for key in request_json:
-        task.__setattr__(key, request_json.get(key))
+        if key == "timestamp":
+            task.timestamp = datetime.strptime(request_json.get(key), "%Y-%m-%d")
+        else:
+            task.__setattr__(key, request_json.get(key))
     return task
 
 
@@ -47,7 +56,10 @@ def get_tasks():
 def task_obj_to_json_converter(task):
     task_json = {}
     for column in Task.__table__.columns:
-        task_json[column.key] = task.__getattribute__(column.key)
+        if column.key == 'timestamp' and task.timestamp:
+            task_json[column.key] = datetime.strftime(task.timestamp, "%Y-%m-%d")
+        else:
+            task_json[column.key] = task.__getattribute__(column.key)
 
     return task_json
 

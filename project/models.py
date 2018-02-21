@@ -11,6 +11,7 @@ class Task(db.Model):
     timeperiod = db.Column(db.String(20), index=True)
     category = db.Column(db.Integer, default=1)
     release = db.Column(db.Integer)
+    timestamp = db.Column(db.DateTime)
 
     @staticmethod
     def get_all():

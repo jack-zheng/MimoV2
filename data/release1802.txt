@@ -1,0 +1,407 @@
+11 - 7
+to-do list prepare. ad hoc, Fanyan, create hana schema: 10.00 - 11.40 
+migrate qray lib: 1.00 - 1.30
+cici GACE create 2 job, couple + decouple, 15mins: 1.30 - 1.50
+harness demo: 2.00 - 4.30
+rem/cs: 4.30 - 6.00
+
+11-8
+REM/CS, adhoc nick, coy: 10.00 - 11.40
+REM/CS: 1.10 - 2.30
+adhoc, tarisa, cici: 2.30 - 3.30
+REM/CS, tarisa suport: 3.30 - 5.00
+support email: 5.00 - 6.20
+
+11-9
+Qray migration follow: 10.00 - 10.30 
+Customer issue retro: 10.30 - 11.20
+interview prepar: 1.00 - 3.00
+ad hoc, cici gace: 3.00 -  3.40
+hana enhance check: 3.40 - 4.00
+meeting: 4.00 - 6.00
+
+11-10
+hana db column change: 10.00 - 10.30
+sync meeting: 10.30 - 11.40
+jam delta export qa env testing + qray enhance:1.00 - 5.00
+ad hoc, cici password: 5.00 - 5.40
+
+11-13
+qray harness migration, blocked, waiting for Terry's permission apply: 10.00 - 10.40
+task sync, jam delta + hana db check list: 10.40 - 11.20
+supt qray fix: 1.00 - 6.00
+
+11-14
+qray migration: 10.00 - 10.30
+preday one training: 10.30 - 11.40
+ant task: 1.00 - 2.30
+SUPT report API: 2.30 - 3.40
+PM support: 3.40 - 4.40
+ant task: 4.40 - 6.00
+
+11-15
+qray migration: 10.00 - 11.00
+Siemens analysis: 11.00 - 11.40
+qray migration: 1.10 - 3.10
+Siemens, env is slow: 3.10 - 5.20
+CS ticket: 5.20 - 6.20
+
+11-16
+CS ticket, ad hoc coy: 10.00 - 11.00
+ad hoc Sarah, jiao yong: 11.00 - 11.40
+Eric, perf API confirm: 1.30  - 2.20
+qray migration: 2.20 - 2.30
+ad hoc Nic: 2.30 - 3.15
+robust qray: 3.20 - 4.10
+ant task: 4.10 - 4.50
+CS: 4.40 - 5.00
+qray CC enhance, talk with Emil: 
+ 
+11-17
+CS issue: 10.00 - 10.30
+meeting: 10.30 - 11.40
+ad hoc cici: 1.00 - 1.20
+siemens sanity, Ip restriction/ provisioning access: 1.20 - 1.40
+qray migration: 1.40 - 3.00
+jam delta migration: 3.00 - 4.00
+qray migration: 4.00 - 6.00
+
+11-20
+fix account: 10.00 - 10.40
+CS issue: 10.40 - 10.50
+ant task finish: 10.50 - 11.40 
+ant task finish: 1.10 - 6.00
+
+11-21
+UP regular meeting: 10.15 - 11.30
+jam delta process: 1.00 - 3.00
+all hands: 3.00 - 4:50
+jam delta process: 4.50 - 6.00
+
+11-22
+CS issue: 10.20 - 11.20
+performance api integration: 1.30 - 3.30
+ad hoc, wang he, provisioning setting: 3.40 - 4.20
+scrum meeting: 4.30 - 5.00
+company creation failed trace, need fix account maybe: 5.10 - 5.50
+
+11-23
+ratro: 10.30 - 11.30
+jam delta process, confirm process and file ticket to get testing FTP address, COSD-21048: 1.30 - 1.50
+audit, code remove: 1.50 - 3.50
+preview hana migration ticket: 3.50 - 5.00
+audit report code remove: 5.00 - 6.00
+
+11-24
+project meeting: 10.30 - 11.30
+CS issue: 1.20 - 2.20
+KT of instance life cycle, confluence: 2.20 - 7.20
+
+11-27
+CDissue/REM: 10.00 - 11.00
+Slack/Jenkins config: 11:00 - 12:00
+Slack/Jenkins config: 1:00 - 3.00
+prepare for KT: 3.00 - 4.30
+Instance Life cycle KT: 4:30 - 5.40
+KT aftermath: 5.40 - 6.10
+
+11-28
+CS issue, ip restriction/ftp: 10:00 - 11.40 
+fix BQ: 1.00 - 1.30
+testlink auto rate, calculate automation rate of provisioning KT, by the end of Thusday: 1.30 - 3.30
+non-gdpr audit: 3.30 - 6.00
+
+11-29
+BQ fix: 10.00 - 12.00
+new job and set capillary turn off, schedule, by the end of tomorrow: 1.00 - 2.00
+non-gdpr test design: 2.00 - 4.30
+scrum meeting: 4.30 - 4.45
+delta job check and COSR ticket: 4.45 - 6.00
+
+11-30
+CS ticket: 10.00 - 11.30
+KT, testlink enhance for tools team: 12.30 - 1.20
+non-gdpr test design: 1.20 - 5.30
+ad hoc from nick: 5.30 - 6.00
+
+12-1
+Project.meeting: 10.30 - 11.30
+Jam delta verification, sftp account  https://sftp4.successfactors.com/EFTClient/Account/Login.htm /I306454_121792 / qHe6Vcn4zz1: 1.00 - 2.30
+India BBM ad hoc: 2.30 - 3.00
+code remove. audit user sync, zouliang, fix check: 3.00 - 3.30
+jenkins & slack migration ++: 3.30 - 6.00
+
+12-4
+cs issue, cosd trace, code remove: 10.00 - 11.40
+code remove feature check: 1.20 - 2.30
+instance lifycycle transfer: 2.30 - 4.30
+scrum meeting: 4.30 - 4.50
+ad hoc, cc, jessie, India: 4.50 - 6.10
+
+12-5
+cs ticket review: 10.00 - 10.30 
+weekly meeting: 10.30 - 11.40
+change user to Kafk process: 1.30 - 4.00
+go through no sql process: 4.00 - 5.00
+document of multiple audit report: 5.00 - 6.00
+
+12-6 
+document for change user multiple audit record: 10.00 - 11.40
+ad hoc from api, default local: 1.00 - 1.30
+cici ad hoc debug: 1.30 - 2.00
+case of instance lifecycle, confirm with Terry: 2.00 - 2.30
+document for change user multiple audit record: 2.30 - 4.00
+Sarah CAL process check: 4.00 - 6.00
+https://jam4.sapjam.com/groups/5G8YLe48avYnS3ztUnNGDB/documents/FBlQYWZdXXUtzqSrTy3RAz/video_viewer
+video about code remove behavior change, PLT-64847: 6.30 - 7.20
+
+
+12-7
+ad hoc, Trista: 1.00 - 2.30
+remove report from provisioning: 2.30 - 2.50
+non-gdpr testing: 2.50 - 4.30
+non-gdpr testlink: 4.30 - 6.00
+
+12-8
+Ad hoc, provisioning account: 10.00 - 10.30
+Project meeting: 10.30 - 11.50
+automation: 1.00 - 6.00
+
+12-11
+xiaofeng job: 10.00 - 10.30 
+all hands: 10.30 - 12.00
+ad hoc, xiaofeng: 1.20 - 1.50
+sap talk: 2.00 - 3.00
+auto, audit - Kafka: 3.00 - 4.30
+scrum: 4.30 - 5.00
+auto, audit - Kafka: 5.00 - 6.00
+
+12-12
+CS ticket, jam delta job investigate: 10.00 - 10.30
+auto audit-kafka: 10.30 - 11.40
+auto audit-kafka: 1.00 - 6.00
+
+12-13
+fix qray: 10.00 - 11.40
+audit kafka automation: 1.00 - 4.00
+meeting with jessica: 4.00 - 5.00
+audit kafka auto: 5.00 - 6.00
+
+12-14
+ad hoc, cici: 10.00 - 11.10
+qray: 11.10 - 11.30
+qray: 1.00 - 2.10
+job - kafka: 2.10 - 6.00
+
+12-15
+qray fix: 10.00 - 10.30
+project meeting: 10.30 - 11.30
+provisioing dbpool meeting: 11.30 - 12.20
+ad hoc, yan: 1.30 - 2.00
+provisioning nancy, audit testing: 2.00 - 3.00
+audit auto: 3.00 - 6.00
+
+12-18:
+ad hoc questions, review email: 10.00 - 10.30
+audit auto: 10.30 - 11.40
+audit auto: 1.00 - 4.00
+scrum meeting: 4.00 - 4.30:
+audit auto: 4.30 - 6.00
+
+12-19
+email review, ad hoc: 10.10 - 10.30
+Weekly meeting: 10.30 - 11.30
+Instance life cycle transfer: 1.30 - 3.30
+new feature: 3.30 - 4.30
+instance life cycle transfer: 4.30 - 6.00
+
+12-20
+new hire process for lisa: 10.00 - 11.00
+provisioning api enhance: 11.00 - 11.40
+provisioning api enhance investigate: 1.00 - 2.40
+multiple record when change user fix + scrum: 2.40 - 5.30
+audit-kafka: 5.30 - 6.00
+
+12-21
+Audit feature fix: 10.00 - 10.40 
+Rachel meeting: 10.40 - 11.40
+lisa training: 1.30 - 2.00
+provisioning api enhance: 2.00 - 4.20
+provisioning api auto: 4.30 - 6.00
+
+12-22
+Email, ad hoc: 10.00 - 10.30
+Project meeting: 10.30 - 11.30
+ad hoc, olivia fix:1.00 - 2.10 
+Provisioning API: 2.10 - 5.00
+Lisa: 5.00 - 5.25
+
+1-2
+Email check: 10.15 - 10.30
+QA meeting: 10.30 - 11.40
+prov api auto: 1.30 - 5.00
+audit-kafka: 5.00 - 6.00
+
+1-3
+email + xpi: 10.00 - 11.30
+audit - kafka: 1.10 - 3.30
+xpi document: 4.00 - 4.30
+scrum meeting: 4.30 - 5.00
+audit-kafka job: 5.00 - 6.00
+
+1-4
+Create / clone company issue: 10.30 - 11.10
+Create / clone company issue: 1.20 - 3.20
+audit - kafka UI, bad env quite: 3.30 - 4.20
+audit - kafka qray, env like a shit, so does my emotion: 4.30 - 6.00
+
+1-5
+Project meeting: 10.30 - 11.40
+audit-kafka: 1.30 - 4.00
+code review: 4.00 - 6.00
+
+1-8
+email check: 10.15 - 10.30
+audit - kafka: 10.30 - 11.40
+Lisa code review: 12.50 - 1.20
+audit - kafka: 1.20 - 6.00
+
+1-9
+email check + fix code: 10.15 - 11.30
+Audit-kafka: 1.00 - 3.00
+Provisioning Maintenance Meeting: 3.00 - 4.10
+audit-kafka: 4.10 - 7.30
+
+1-10
+email + lisa training: 10.15 - 10.40
+audit-kafka: 10.40 - 11.40
+audti - kafka: 1.00 - 3.30
+continues run job setting: 3.30 - 4.30
+audit-kafka: 4.30 - 7.00
+
+1-11
+lisa training: 10.10 - 10.30
+audit-kafka ui: 10.30 - 11.40
+team lunch: 11.40 - 2.00
+lisa env config: 2.00 - 3.00
+audit-kafka: 3.10 - 5.00
+D-kom 5.00 - 6.00
+
+1-12
+Email + clone company log fetch: 10.15 - 10.30
+Project meeting: 10.30 - 12.00
+cs issue: 1.00 - 2.00
+translation auto: 2.00 - 2.30
+resolve jira ticket, xpi, cs, rem: 2.30 - 3.40
+jira ticket + qray config + aep config: 3.40 - 4.30
+full analysis: 4.30 - 6.00
+
+1-15
+email check + Lisa review code fix: 10.15 - 10.30
+Jira ticket for client version not sync: 10.30 - 11.00
+company instance calculate: 11.00 - 12.00
+translation, static sfmessage sync to read_audit_translations table: 1.00 - 6.30
+company instance management: 7.00 - 7.30
+
+1-16
+translation automation: 10.15 - 10.30
+up regular meeting: 10.30 - 11.30
+translation automation: 12.50 - 6.30
+
+1-17
+CS ticket, ad hoc Lina : 10.10 - 11.50
+traslation: 3.00 - 6.00
+
+1-18: 
+Rachel meeting: 10.30 - 11.30
+translation automation: 1.20 - 6.30
+
+1-19
+translation job: 10.10 - 10.30
+Project meeting: 10.30 - 11.50
+fix CommonVariable, qray: 1.00 - 2.00
+script to fetch new case: 2.00 - 4.00
+code review: 4.00 - 6.00
+
+1-22
+email check: 10.20 - 10.30
+QA all hands: 10.30 - 12.00
+catch up sm_user_info check: 1.00 - 3.00
+Master Data Purge: 3.00 - 6.00
+
+1-23
+email check + qray fix: 10.15 -  11.30
+master data purge: 1.00 - 3.00
+JR test design review: 3.00 - 3.40
+master data purge: 3.40 -  6.30
+
+1-24
+master data purge: 10.15 - 12.00
+master data purge: 1.20 -4.00
+birthday party: 4.00 - 4.30
+master data purge: 4.30 - 6.00
+
+1-25
+master data purge: 10.15 - 12.00
+master data purge: 1.20- 6.30
+
+1-26
+Project meeting: 10.30 - 12.00
+master data purge: 12.50 - 6.00
+
+1-29
+master purge automation: 10.15 - 11.30
+master purge automation: 1.00 - 3.00
+sys audit purge: 3.00 - 6.00
+
+1-30
+qa weekly meeting: 10.30 - 11.30
+audit perge: 1.30 - 6.00
+
+1-31
+PTO: 10.00 - 12.00
+sys audit purge: 1.30 - 6.30
+
+2-1
+audit purge: 10.30 - 11.40
+audit purge: 1.30 - 3.00
+core team sync up: 3.00 - 4.00
+audit purge: 4.00 - 6.00
+
+2-2
+project meeting: 10.30 - 11.40
+audit purge: 1.30 - 6.00
+
+2-5
+email check + full run check: 10.20 - 11.40
+full run check: 1.00 - 6.00
+
+2-6
+full analysis: 10.20 - 11.40
+full analysis: 1.00 - 6.00
+
+2-7
+full analysis: 10.20 - 11.40
+ad hoc, nancy, Lisa: 12.40 - 1.40
+full analysis: 1.40 - 6.00
+
+2-8
+full analysis: 10.20 - 11.40
+full analysis: 1.20 - 6.20
+
+2-9
+CS ticket: 10.00 - 10.30
+project meeting: 10.30 - 11.40
+
+demo meeting: 1.30 - 2.20
+cs ticket: 2.20 - 2.40
+jessie, qray instance migrate: 2.40 - 3.30
+CS ticket + investigate: 3.30 - 5.20
+Rebacca, XPI: 5.20 - 6.00
+
+2-12
+full run: 1.00 - 6.00
+
+2-13
+full run: 10.20 - 12.00
+full run: 1.00 - 7.00

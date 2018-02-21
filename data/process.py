@@ -9,13 +9,12 @@ processfiles = [file for file in os.listdir('.') if file.endswith('.txt') and fi
 for file in processfiles:
     with open(file, 'r', encoding='utf8') as f:
         lines  = f.readlines()
-        build = re.search(r'\d{4}', f.name).group(0)
-        year = build[:2]
-        print("parsed build %s, year %s" % (build, year))
+        version = re.search(r'\d{4}', f.name).group(0)
+        year = version[:2]
 
     # define root node 
     releasenode = ET.Element('release')
-    releasenode.set('build', build)
+    releasenode.set('version', version)
 
 
     dayinfo = []
@@ -26,6 +25,8 @@ for file in processfiles:
             if dayinfo:
                 # when line is date and there is a day info stored, flush it and init dayinfo list
                 daynode = pi.to_day_element(dayinfo)
+                # insert record to db
+                pi.insert_to_db(daynode, version)
                 releasenode.append(daynode)
                 del dayinfo[:]
                 dayinfo.append(datestr)
@@ -38,7 +39,7 @@ for file in processfiles:
             if parsed_line:
                 dayinfo.append(parsed_line)
 
-    with open(build + ".xml", 'w') as f:
+    with open(version + ".xml", 'w') as f:
         f.write(pi.prettify(releasenode))
                 
 

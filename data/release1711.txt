@@ -1,0 +1,358 @@
+8-7
+PD analysis: 10.00 - 10.30 
+CS issue(PLT-60353) analysis + 1711 planning: 10.30 - 11.30
+
+ad hoc call,
+prov audit report, PD manual update, tomcat test update, Linda ad hoc permission grant: 1.00 - 6.00 
+
+sync with Terry about PT test job migration, http://10.160.198.25:8080/Lok
+
+8-8
+CS, instance fix: 10.00 - 10.30
+UP meeting: 10.30 - 12.30
+Cici env setup: 1.30 - 2.30
+CS issue: 2.30 - 3.30
+instance fix, 05 can't be deleted because there is connection still alive: 3.30 - 4.00
+CC: 4.00 - 6.00
+
+8-9
+cs : 10.00 - 10.30
+cs: 10.30 - 12.00
+cs, prov API transfer: 1.00 - 3.30
+GACE, CC: 3.30 - 6.00 
+
+8-10
+CC: 10.00 - 12.00
+DB upgrade/migrate meeting: 1.00 - 2.00
+CC + ad hoc sandeep: 2.00 - 6.00
+
+8-11
+Project meeting: 10.00 - 11.30
+file ticket PD: done
+verify on preview env, api create company:
+apply create company 权限, qapatch: done
+
+8-14:
+ad hoc, patch analysis of Coy, Hana company creation, prov audit: 10.00 - 12.00
+daily run reduce( remove some temporary), ad hoc CiCi: 1.00 - 3.00 
+check create company API/UI/Client command's backend logic:3.00 - 6.00
+
+8-15:
+ad hoc, Jen Prov API, daily run enhance: 10.00 - 11.30
+prov API meeting: 11.30 - 12.00
+enhance prov API cases: 1.00 - 3.30
+ad hoc CiCi, api enhance, WTS account enhance: 3.30 - 6.00
+
+8-16:
+WTS fix: done 
+PLT-61766 check: followed by other guy
+daily run API pass, in progress: 10.00 - 12.00
+API test design start: 1.00 - 6.00
+
+8-16
+API create company finish + API transfer test ready + test design: 10.00 - 11.30
+dev local setup: 1.00 - 5.00
+GDPR meeting: 5.00 - 6.00
+
+8-17
+project meeting: 10.30 - 12.00
+Terry GDPR API test design + auto: 2.30 - 4.30
+Read log: 1.00 - 2.00
+Prov Access Control enhance, run next week: 
+
+dev local setup, for unit test: 4.30 - 6.00
+
+
+8-18:
+TODO - EC on instance, https://jira.successfactors.com/browse/CCL-96 update user with column enhanced, liveprofile db enhanced: 
+ad hoc, Qray for Hana:
+Golden Gate update: 
+
+8-21:
+Terry GDPR API: 10.00 - 12.00
+Qray, new member question solve, Ryan Peng: 1.00 -2.00
+local dev env: 2.00 - 6.00
+
+8-22
+dev local: 10.00 - 10.30
+meeting: 10.30 - 11.30
+dev local: 1.00 - 2.00 
+GDPR meeting: 2.00 - 3.30
+local dev: 3.30 - 4.00
+ad hoc, Ryan peng: 4.00 - 4.30
+fix qray:  4.30 - 6.00
+
+8-23
+Qray fix: 10.00 - 11.30
+Qray fix: 1.00 - 6.00
+
+8-24
+ChangYi, read log code view: 10.00 - 11.00
+CiCi, support: 11.00 - 11.30
+readLog code review + test design: 1.00 - 6.00 
+
+8-25
+fix jenken fail: 10.00 - 10.30
+meeting: 10.30 - 11.30
+read log UT test: 1.00 - 6.00
+
+8-28
+ad hoc + jira ticket follow: 10.00 - 12.00
+new feature( Read Log Auto): 1.00 - 6.00
+
+8-29:
+PTO morning: 10.00 - 12.00
+GDPR meeting: 1.00 - 1.30
+new feature auto: 1.30 - 6.00
+
+8-30:
+ad hoc, daily check, Xiaofeng, Luming: 10.00 - 12.00
+fix table miss: 1.00 - 2.30
+ad hoc, CiCi: 2.30 - 3.00
+auto read log: 3.00 - 6.00
+
+8-31:
+abby fix verify: done 1h
+coy patch verify: delay to next week 1h
+Terry hana company clone verify: clone company contains create company steps, so blocked
+daily create company fail track: done, known issue STE-3967 1h
+Xiaofeng, AEP job check: 
+daily check: 1h
+
+9-01:
+project meeting: 1h
+read log test design + auto: 1.5h
+coy patch test: 1h
+CiCi BBM: 2h
+
+9-4:
+daily analysis: 10.00 - 11.00
+new feature auto: 11.00 - 12.00
+auto test: 1.00 - 5.00
+ad hoc, meeting, training: 5.00 - 6.00
+
+9-5:
+ad hoc, xiao|nancy|JR support: 10.00 - 11.00
+offshare account: 11.00 - 11.30
+automation read log: 12.20 - 3.00
+meeting: 3.00 - 4.00
+ad hoc, cici + nancy: 4.00 - 6.00
+
+9-6
+auto read log: 10.00 - 11.00
+ad hoc, Cici, xiaofeng etc: 11.00 - 11.40 
+xiaofeng ad hoc, fix url: 1.00 - 2.00
+auto read log: 2.00 - 4.00
+meeting : 4.00 - 4.30
+auto read log: 4.30 - 5.30
+fix account prov: 5.30 - 6.00
+
+9-7
+adhoc, nancy, JR: 10.00 - 11.00
+auto read log code change: 11.00 - 11.40
+auto read log: 1.00 - 1.30
+ad hoc, rebacca + nancy: 1.30 - 2.00
+ad hoc nancy: 2.00 - 2.30
+auto env enhance, fix qacand prover no permission issue, caused by multiple: 2.30 - 6.00
+
+9-8
+daily check: 10.00 - 10.30
+meeting: 10.30 - 11.30
+prov access control re-check: 1.00 - 1.30
+fix qray + Cici job setup, caused by Jenkins job setting, svn set as revert mode: 1.30 - 3.00
+set provisioner permission API test design:3.00 - 5.00
+Qray migration: 5.00 - 6.00
+
+9-11
+PTO: 9.00 - 11.00
+Qray fix: 1.00 - 2.30
+set prov permission: 2.30 - 5.30
+ad hoc: 5.30 - 6.00
+
+9-12
+daily check: 10.00 - 10.30
+patch analysis: 10.30 - 11.00
+Qray fix, log is useful,  pay more attention about this: 11.00 - 11.30
+pd: 1.00 - 2.00
+splunk account fix: 2.00 - 2.30
+set permission auto: 2.30 - 4.30
+
+9-13
+patch + daily + qray fix: 10.00 - 11.30
+patch verify: 12.50 - 2.20 
+auto set permission: 2.30 - 6.00
+
+9-14
+patch very: 10.00 - 10.30
+daily check: 10.30 - 11.00
+prov access re-produce:11.00 - 11.30
+auto finish: 1.00 - 2.00
+patch issue coy + richard: 2.00 - 2.30
+CS issue: 2.30 - 5.00
+Qray fix + GDPR meeting: 5.00 - 6.00
+
+9-15
+Qray fix: 10.00 - 12.00
+Qray fix: 1.00 - 2.00
+meeting with Jason: 2.30 - 3.30 
+project meeting: 3.30 - 4.30
+Qray fix hana: 4.30 - 6.00
+
+9-18
+PTO: 10.00 - 12.00
+Qray hana fix: 1.00 - 6.00
+
+9-19
+ad hoc, qray, PD: 10.00 - 11.30
+auto full run: 12:30 - 4.30
+GDPR meeting: 4.30 - 5.00
+auto full run: 5.00 - 6.00
+
+9-20
+set permission auto: 10.00 - 11.50
+full run: 1.00 - 6.00
+
+9-21 
+auto full run: 10.00 - 11.30
+auto full run: 1.00 - 6.00
+
+9-22
+auto + meeting: 10.00 - 11.00
+project meeting 11.00 - 12.00
+auto full: 1.00 - 1.30
+CS issue: 1.30 - 6.00
+
+9-25
+auto full: 10.00 - 11.40
+auto full: 1.00 - 4.00
+Qray: 4.00 - 5.00
+auto full: 5.00 - 6.00
+
+9-26
+Terry enhance test: 10.00 - 11.30
+Terry enhance test: 1.00 - 4.00
+ad hoc, cici, XPI: 4.00 - 5.00
+new feature auto: 5.00 - 6.00
+
+9-27
+patch verify: 10.00 - 11.00
+new feature auto: 11.00 - 11.30
+new feature auto, blocked: 1.00 - 2.30
+CS issue, REM: 2.30 - 6.00
+
+9-28
+$ git show --pretty="" --name-only bd61ad98  | show file change of one commit
+Terry new feature check: 10.00 - 11.00
+CS, REM: 11.00 - 11.30 
+PM support, ad hoc: 1.00 - 1.30
+CS, REM: 1.30 - 5.00
+
+10-10
+coy's fix verify, hana db pool is not stable, take more time to verify: 9.50 - 10.30
+full run analysis, kick instance disable permission cache and run:  10.30 - 11.30
+full analysis: 1.00 - 6.00
+
+10-11
+code fix, auto fix user permission part: 9.50 - 11.50
+auto: 1.00 - 2.20
+simense: 2.20 - 2.40
+auto: 2.40 - 6.00
+
+10-12:
+auto: 10.00 - 11.30
+rem check: 1.30 - 2.30
+auto: 2.30 - 6.00
+
+10-13:
+auto: 10.00 - 10.30
+meeting/project: 10.30 - 11.10
+auto: 1.30 - 2.30
+meeting/bulk performance: 2.30 - 4.20
+auto: 4.20 - 6.00
+
+10-14:
+auto: 10.00 - 11.40
+auto: 12.30 - 6.00
+
+10-16
+auto: 10.00 - 11.30
+auto: 1.00 - 6.00
+
+
+10-17
+auto: 10.00 - 11.30 
+auto: 1.00 - 6.00
+
+10-18
+auto: 10.00 - 11.30 
+auto: 1.00 - 4.00
+plan meeting:4.00 - 6.00
+
+10-19
+manual regression: 10.00 - 11.30
+test plan update: 1.00 - 6.00
+
+10-20
+test plan update: 10.00 - 10.30
+planing meeting: 10.30 - 11.30
+test plan update: 1.30 - 2.30
+fix qray cases: 2.30 - 3.30
+case report plugin: 3.30 - 6.00
+
+10-23
+qray migration: 10.00 - 11.30
+job migration: 1.00 - 1.30
+ad hoc of nancy: 1.30 - 2.00
+job migration: 2.00 - 6.00
+
+10-24
+job migrate: 10.00 - 11.30
+job migrate config: 1.00 - 6.00
+
+10-25
+interview prepare: 10.00 - 10.50
+job migrate: 10.50 - 11.30
+job migrate: 1.00 - 3.30
+interview: 3.30 - 4.10
+job migrate: 4.10 -  6.00
+
+10-26
+job migrate: 10.00 - 11.40
+hana provisioning audit: 12.50 - 2.00
+CS ticket: 2.00 - 4.00
+qray case fix: 4.00 - 5.00
+meeting: 5.00 - 6.00
+
+10-27
+ad hoc, cc config, lyle instance fix, REM: 10.00 - 11.30
+REM: 1.00 - 6.00
+
+10-30
+CS/REM: 9.20 - 11.30
+CS/REM: 1.30 - 5.00
+enhance testlink report: 5.0 - 6.00
+
+10-31
+prov api support, email, Aniket: 10.00 - 10.30
+ChangYi, GACE fix, inbound test fix: 10.30 - 11.30
+qray related: 1.00 - 1.30
+qray framework meeting: 1.30  - 3.30
+capillary record case check: 3.30 - 6.00
+
+11-1
+email, adhoc, audit fix: 10.00 - 11.30
+capillary case check: 1.00 - 3.30
+pro api reply: 3.30 - 4.40
+fix delete company script: 4.50- 6.00
+
+11-2
+physical examination: 9.00 - 12.00
+rest: 1.00 - 2.00
+Qray structure + fix 3.0 work space: 2.00 - 6.00 
+
+11-3
+Structure of Qray refine: 10.00 - 10.30
+project meeting: 10.30 - 11.40
+CC review: 1.20 - 1.40
+qray case fix: 1.40 - 3.50
+rem/cs ticket reply: 4.00 - 6.00
