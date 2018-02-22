@@ -19,8 +19,6 @@ def parse_task_time(line):
         formatstr = " ".join(line.split())
         timeregx = r'\d+[.:]\d{2}\s*-\s*\d+[.:]\d{2}'
         time = re.compile(timeregx).findall(formatstr)[0].replace(" ", "").replace(":", ".")
-        time = time_plus12(time)
-        time = time_zone_minus_8(time)
         taskcontext = re.sub(timeregx, "", formatstr).strip().replace(":", "")
         return [taskcontext, time]
     else:
@@ -66,18 +64,10 @@ def time_zone_minus_8(time):
 
 
 def parse_time(time):
-    """
-        time format: 12.00-13.00 or 1.00-2.00
-        return cost time in minutes
-    """
     times = time.split('-')
     period_time = []
     for sub in times:
-        if len(sub) == 5:
-            # time format: 12.00
-            t = datetime.strptime(sub, '%H.%M')
-        else:
-            t = datetime.strptime(sub+"PM", '%I.%M%p')
+        t = datetime.strptime(sub, '%H.%M')
         period_time.append(t)
     return period_time
 
@@ -141,14 +131,18 @@ def to_day_element(tasks):
 
         # set time detail
         timenode = ET.SubElement(tasknode, 'time')
-        timenode.text = task[1]
+        timestr = time_plus12(task[1])
+        timestr = time_zone_minus_8(timestr)
+        timenode.text = timestr
 
         # set minutis
-        
-        period = parse_time(task[1])
+        period = parse_time(timestr)
         minutestr = (period[1] - period[0]).seconds/60
         minutesnode = ET.SubElement(timenode, 'minutes')
         minutesnode.text = str(minutestr)
+
+        # tmp work around, most stable way is fix the logic miss of parse time
+
 
         daynode.append(tasknode)
 

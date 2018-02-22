@@ -19,7 +19,7 @@
       prov audit report, PD manual update, tomcat test update, Linda ad hoc permission grant
       <time>
         5.00-10.00
-        <minutes>1020.0</minutes>
+        <minutes>300.0</minutes>
       </time>
     </task>
   </day>
@@ -63,7 +63,7 @@
       CC
       <time>
         8.00-10.00
-        <minutes>840.0</minutes>
+        <minutes>120.0</minutes>
       </time>
     </task>
   </day>
@@ -93,7 +93,7 @@
       GACE, CC
       <time>
         7.30-10.00
-        <minutes>870.0</minutes>
+        <minutes>150.0</minutes>
       </time>
     </task>
   </day>
@@ -116,7 +116,7 @@
       CC + ad hoc sandeep
       <time>
         6.00-10.00
-        <minutes>960.0</minutes>
+        <minutes>240.0</minutes>
       </time>
     </task>
   </day>
@@ -146,7 +146,7 @@
       check create company API/UI/Client command's backend logic
       <time>
         7.00-10.00
-        <minutes>900.0</minutes>
+        <minutes>180.0</minutes>
       </time>
     </task>
     <task>
@@ -174,7 +174,7 @@
       ad hoc CiCi, api enhance, WTS account enhance
       <time>
         7.30-10.00
-        <minutes>870.0</minutes>
+        <minutes>150.0</minutes>
       </time>
     </task>
     <task>
@@ -188,7 +188,7 @@
       API test design start
       <time>
         5.00-10.00
-        <minutes>1020.0</minutes>
+        <minutes>300.0</minutes>
       </time>
     </task>
   </day>
@@ -211,7 +211,7 @@
       GDPR meeting
       <time>
         9.00-10.00
-        <minutes>780.0</minutes>
+        <minutes>60.0</minutes>
       </time>
     </task>
   </day>
@@ -241,7 +241,7 @@
       dev local setup, for unit test
       <time>
         8.30-10.00
-        <minutes>810.0</minutes>
+        <minutes>90.0</minutes>
       </time>
     </task>
     <task>
@@ -262,7 +262,7 @@
       local dev env
       <time>
         6.00-10.00
-        <minutes>960.0</minutes>
+        <minutes>240.0</minutes>
       </time>
     </task>
   </day>
@@ -313,7 +313,7 @@
       fix qray
       <time>
         8.30-10.00
-        <minutes>810.0</minutes>
+        <minutes>90.0</minutes>
       </time>
     </task>
   </day>
@@ -329,7 +329,7 @@
       Qray fix
       <time>
         5.00-10.00
-        <minutes>1020.0</minutes>
+        <minutes>300.0</minutes>
       </time>
     </task>
   </day>
@@ -352,7 +352,7 @@
       readLog code review + test design
       <time>
         5.00-10.00
-        <minutes>1020.0</minutes>
+        <minutes>300.0</minutes>
       </time>
     </task>
   </day>
@@ -375,7 +375,7 @@
       read log UT test
       <time>
         5.00-10.00
-        <minutes>1020.0</minutes>
+        <minutes>300.0</minutes>
       </time>
     </task>
   </day>
@@ -391,7 +391,7 @@
       new feature( Read Log Auto)
       <time>
         5.00-10.00
-        <minutes>1020.0</minutes>
+        <minutes>300.0</minutes>
       </time>
     </task>
     <task>
@@ -412,7 +412,7 @@
       new feature auto
       <time>
         5.30-10.00
-        <minutes>990.0</minutes>
+        <minutes>270.0</minutes>
       </time>
     </task>
     <task>
@@ -440,7 +440,7 @@
       auto read log
       <time>
         7.00-10.00
-        <minutes>900.0</minutes>
+        <minutes>180.0</minutes>
       </time>
     </task>
   </day>
@@ -470,7 +470,7 @@
       ad hoc, meeting, training
       <time>
         9.00-10.00
-        <minutes>780.0</minutes>
+        <minutes>60.0</minutes>
       </time>
     </task>
   </day>
@@ -507,7 +507,7 @@
       ad hoc, cici + nancy
       <time>
         8.00-10.00
-        <minutes>840.0</minutes>
+        <minutes>120.0</minutes>
       </time>
     </task>
   </day>
@@ -558,7 +558,7 @@
       fix account prov
       <time>
         9.30-10.00
-        <minutes>750.0</minutes>
+        <minutes>30.0</minutes>
       </time>
     </task>
   </day>
@@ -602,7 +602,7 @@
       auto env enhance, fix qacand prover no permission issue, caused by multiple
       <time>
         6.30-10.00
-        <minutes>930.0</minutes>
+        <minutes>210.0</minutes>
       </time>
     </task>
   </day>
@@ -646,7 +646,7 @@
       Qray migration
       <time>
         9.00-10.00
-        <minutes>780.0</minutes>
+        <minutes>60.0</minutes>
       </time>
     </task>
   </day>
@@ -676,7 +676,7 @@
       ad hoc
       <time>
         9.30-10.00
-        <minutes>750.0</minutes>
+        <minutes>30.0</minutes>
       </time>
     </task>
   </day>
@@ -743,7 +743,7 @@
       auto set permission
       <time>
         6.30-10.00
-        <minutes>930.0</minutes>
+        <minutes>210.0</minutes>
       </time>
     </task>
   </day>
@@ -794,7 +794,7 @@
       Qray fix + GDPR meeting
       <time>
         9.00-10.00
-        <minutes>780.0</minutes>
+        <minutes>60.0</minutes>
       </time>
     </task>
   </day>
@@ -831,7 +831,7 @@
       Qray fix hana
       <time>
         8.30-10.00
-        <minutes>810.0</minutes>
+        <minutes>90.0</minutes>
       </time>
     </task>
   </day>
@@ -847,7 +847,7 @@
       Qray hana fix
       <time>
         5.00-10.00
-        <minutes>1020.0</minutes>
+        <minutes>300.0</minutes>
       </time>
     </task>
   </day>
@@ -877,7 +877,7 @@
       auto full run
       <time>
         9.00-10.00
-        <minutes>780.0</minutes>
+        <minutes>60.0</minutes>
       </time>
     </task>
   </day>
@@ -893,7 +893,7 @@
       full run
       <time>
         5.00-10.00
-        <minutes>1020.0</minutes>
+        <minutes>300.0</minutes>
       </time>
     </task>
   </day>
@@ -909,7 +909,7 @@
       auto full run
       <time>
         5.00-10.00
-        <minutes>1020.0</minutes>
+        <minutes>300.0</minutes>
       </time>
     </task>
   </day>
@@ -939,7 +939,7 @@
       CS issue
       <time>
         5.30-10.00
-        <minutes>990.0</minutes>
+        <minutes>270.0</minutes>
       </time>
     </task>
   </day>
@@ -969,7 +969,7 @@
       auto full
       <time>
         9.00-10.00
-        <minutes>780.0</minutes>
+        <minutes>60.0</minutes>
       </time>
     </task>
   </day>
@@ -999,7 +999,7 @@
       new feature auto
       <time>
         9.00-10.00
-        <minutes>780.0</minutes>
+        <minutes>60.0</minutes>
       </time>
     </task>
   </day>
@@ -1029,7 +1029,7 @@
       CS issue, REM
       <time>
         6.30-10.00
-        <minutes>930.0</minutes>
+        <minutes>210.0</minutes>
       </time>
     </task>
   </day>
@@ -1080,7 +1080,7 @@
       full analysis
       <time>
         5.00-10.00
-        <minutes>1020.0</minutes>
+        <minutes>300.0</minutes>
       </time>
     </task>
     <task>
@@ -1108,7 +1108,7 @@
       auto
       <time>
         6.40-10.00
-        <minutes>920.0</minutes>
+        <minutes>200.0</minutes>
       </time>
     </task>
     <task>
@@ -1129,7 +1129,7 @@
       auto
       <time>
         6.30-10.00
-        <minutes>930.0</minutes>
+        <minutes>210.0</minutes>
       </time>
     </task>
     <task>
@@ -1164,7 +1164,7 @@
       auto
       <time>
         8.20-10.00
-        <minutes>820.0</minutes>
+        <minutes>100.0</minutes>
       </time>
     </task>
     <task>
@@ -1178,7 +1178,7 @@
       auto
       <time>
         4.30-10.00
-        <minutes>1050.0</minutes>
+        <minutes>330.0</minutes>
       </time>
     </task>
     <task>
@@ -1192,7 +1192,7 @@
       auto
       <time>
         5.00-10.00
-        <minutes>1020.0</minutes>
+        <minutes>300.0</minutes>
       </time>
     </task>
     <task>
@@ -1206,7 +1206,7 @@
       auto
       <time>
         5.00-10.00
-        <minutes>1020.0</minutes>
+        <minutes>300.0</minutes>
       </time>
     </task>
     <task>
@@ -1227,7 +1227,7 @@
       plan meeting
       <time>
         8.00-10.00
-        <minutes>840.0</minutes>
+        <minutes>120.0</minutes>
       </time>
     </task>
     <task>
@@ -1241,7 +1241,7 @@
       test plan update
       <time>
         5.00-10.00
-        <minutes>1020.0</minutes>
+        <minutes>300.0</minutes>
       </time>
     </task>
     <task>
@@ -1276,7 +1276,7 @@
       case report plugin
       <time>
         7.30-10.00
-        <minutes>870.0</minutes>
+        <minutes>150.0</minutes>
       </time>
     </task>
     <task>
@@ -1304,7 +1304,7 @@
       job migration
       <time>
         6.00-10.00
-        <minutes>960.0</minutes>
+        <minutes>240.0</minutes>
       </time>
     </task>
     <task>
@@ -1318,7 +1318,7 @@
       job migrate config
       <time>
         5.00-10.00
-        <minutes>1020.0</minutes>
+        <minutes>300.0</minutes>
       </time>
     </task>
     <task>
@@ -1353,7 +1353,7 @@
       job migrate
       <time>
         8.10-10.00
-        <minutes>830.0</minutes>
+        <minutes>110.0</minutes>
       </time>
     </task>
     <task>
@@ -1388,7 +1388,7 @@
       meeting
       <time>
         9.00-10.00
-        <minutes>780.0</minutes>
+        <minutes>60.0</minutes>
       </time>
     </task>
     <task>
@@ -1402,7 +1402,7 @@
       REM
       <time>
         5.00-10.00
-        <minutes>1020.0</minutes>
+        <minutes>300.0</minutes>
       </time>
     </task>
     <task>
@@ -1451,7 +1451,7 @@
       capillary record case check
       <time>
         7.30-10.00
-        <minutes>870.0</minutes>
+        <minutes>150.0</minutes>
       </time>
     </task>
   </day>
@@ -1481,7 +1481,7 @@
       fix delete company script
       <time>
         8.50-10.00
-        <minutes>790.0</minutes>
+        <minutes>70.0</minutes>
       </time>
     </task>
   </day>
@@ -1504,7 +1504,44 @@
       Qray structure + fix 3.0 work space
       <time>
         6.00-10.00
-        <minutes>960.0</minutes>
+        <minutes>240.0</minutes>
+      </time>
+    </task>
+  </day>
+  <day timestamp="2017-11-03">
+    <task>
+      Structure of Qray refine
+      <time>
+        2.00-2.30
+        <minutes>30.0</minutes>
+      </time>
+    </task>
+    <task>
+      project meeting
+      <time>
+        2.30-3.40
+        <minutes>70.0</minutes>
+      </time>
+    </task>
+    <task>
+      CC review
+      <time>
+        5.20-5.40
+        <minutes>20.0</minutes>
+      </time>
+    </task>
+    <task>
+      qray case fix
+      <time>
+        5.40-7.50
+        <minutes>130.0</minutes>
+      </time>
+    </task>
+    <task>
+      rem/cs ticket reply
+      <time>
+        8.00-10.00
+        <minutes>120.0</minutes>
       </time>
     </task>
   </day>

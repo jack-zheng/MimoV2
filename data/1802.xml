@@ -33,7 +33,7 @@
       rem/cs
       <time>
         8.30-10.00
-        <minutes>810.0</minutes>
+        <minutes>90.0</minutes>
       </time>
     </task>
   </day>
@@ -70,7 +70,7 @@
       support email
       <time>
         9.00-10.20
-        <minutes>800.0</minutes>
+        <minutes>80.0</minutes>
       </time>
     </task>
   </day>
@@ -114,7 +114,7 @@
       meeting
       <time>
         8.00-10.00
-        <minutes>840.0</minutes>
+        <minutes>120.0</minutes>
       </time>
     </task>
     <task>
@@ -163,7 +163,7 @@
       supt qray fix
       <time>
         5.00-10.00
-        <minutes>1020.0</minutes>
+        <minutes>300.0</minutes>
       </time>
     </task>
     <task>
@@ -205,7 +205,7 @@
       ant task
       <time>
         8.40-10.00
-        <minutes>800.0</minutes>
+        <minutes>80.0</minutes>
       </time>
     </task>
     <task>
@@ -240,7 +240,7 @@
       CS ticket
       <time>
         9.20-10.20
-        <minutes>780.0</minutes>
+        <minutes>60.0</minutes>
       </time>
     </task>
     <task>
@@ -345,7 +345,7 @@
       qray migration
       <time>
         8.00-10.00
-        <minutes>840.0</minutes>
+        <minutes>120.0</minutes>
       </time>
     </task>
     <task>
@@ -373,7 +373,7 @@
       ant task finish
       <time>
         5.10-10.00
-        <minutes>1010.0</minutes>
+        <minutes>290.0</minutes>
       </time>
     </task>
     <task>
@@ -401,7 +401,7 @@
       jam delta process
       <time>
         8.50-10.00
-        <minutes>790.0</minutes>
+        <minutes>70.0</minutes>
       </time>
     </task>
     <task>
@@ -471,7 +471,7 @@
       audit report code remove
       <time>
         9.00-10.00
-        <minutes>780.0</minutes>
+        <minutes>60.0</minutes>
       </time>
     </task>
     <task>
@@ -492,7 +492,7 @@
       KT of instance life cycle, confluence
       <time>
         6.20-11.20
-        <minutes>1020.0</minutes>
+        <minutes>300.0</minutes>
       </time>
     </task>
     <task>
@@ -534,7 +534,7 @@
       KT aftermath
       <time>
         9.40-10.10
-        <minutes>750.0</minutes>
+        <minutes>30.0</minutes>
       </time>
     </task>
     <task>
@@ -562,7 +562,7 @@
       non-gdpr audit
       <time>
         7.30-10.00
-        <minutes>870.0</minutes>
+        <minutes>150.0</minutes>
       </time>
     </task>
     <task>
@@ -597,7 +597,7 @@
       delta job check and COSR ticket
       <time>
         8.45-10.00
-        <minutes>795.0</minutes>
+        <minutes>75.0</minutes>
       </time>
     </task>
     <task>
@@ -625,7 +625,7 @@
       ad hoc from nick
       <time>
         9.30-10.00
-        <minutes>750.0</minutes>
+        <minutes>30.0</minutes>
       </time>
     </task>
   </day>
@@ -662,7 +662,7 @@
       jenkins &amp; slack migration ++
       <time>
         7.30-10.00
-        <minutes>870.0</minutes>
+        <minutes>150.0</minutes>
       </time>
     </task>
   </day>
@@ -699,7 +699,7 @@
       ad hoc, cc, jessie, India
       <time>
         8.50-10.10
-        <minutes>800.0</minutes>
+        <minutes>80.0</minutes>
       </time>
     </task>
   </day>
@@ -736,7 +736,7 @@
       document of multiple audit report
       <time>
         9.00-10.00
-        <minutes>780.0</minutes>
+        <minutes>60.0</minutes>
       </time>
     </task>
   </day>
@@ -780,7 +780,7 @@
       Sarah CAL process check
       <time>
         8.00-10.00
-        <minutes>840.0</minutes>
+        <minutes>120.0</minutes>
       </time>
     </task>
     <task>
@@ -817,7 +817,7 @@
       non-gdpr testlink
       <time>
         8.30-10.00
-        <minutes>810.0</minutes>
+        <minutes>90.0</minutes>
       </time>
     </task>
   </day>
@@ -840,7 +840,7 @@
       automation
       <time>
         5.00-10.00
-        <minutes>1020.0</minutes>
+        <minutes>300.0</minutes>
       </time>
     </task>
     <task>
@@ -889,7 +889,7 @@
       auto, audit - Kafka
       <time>
         9.00-10.00
-        <minutes>780.0</minutes>
+        <minutes>60.0</minutes>
       </time>
     </task>
     <task>
@@ -910,7 +910,7 @@
       auto audit-kafka
       <time>
         5.00-10.00
-        <minutes>1020.0</minutes>
+        <minutes>300.0</minutes>
       </time>
     </task>
     <task>
@@ -938,7 +938,7 @@
       audit kafka auto
       <time>
         9.00-10.00
-        <minutes>780.0</minutes>
+        <minutes>60.0</minutes>
       </time>
     </task>
     <task>
@@ -966,7 +966,7 @@
       job - kafka
       <time>
         6.10-10.00
-        <minutes>950.0</minutes>
+        <minutes>230.0</minutes>
       </time>
     </task>
     <task>
@@ -1008,7 +1008,7 @@
       audit auto
       <time>
         7.00-10.00
-        <minutes>900.0</minutes>
+        <minutes>180.0</minutes>
       </time>
     </task>
     <task>
@@ -1043,7 +1043,7 @@
       audit auto
       <time>
         8.30-10.00
-        <minutes>810.0</minutes>
+        <minutes>90.0</minutes>
       </time>
     </task>
     <task>
@@ -1078,7 +1078,7 @@
       instance life cycle transfer
       <time>
         8.30-10.00
-        <minutes>810.0</minutes>
+        <minutes>90.0</minutes>
       </time>
     </task>
     <task>
@@ -1113,7 +1113,7 @@
       audit-kafka
       <time>
         9.30-10.00
-        <minutes>750.0</minutes>
+        <minutes>30.0</minutes>
       </time>
     </task>
     <task>
@@ -1148,7 +1148,7 @@
       provisioning api auto
       <time>
         8.30-10.00
-        <minutes>810.0</minutes>
+        <minutes>90.0</minutes>
       </time>
     </task>
     <task>
@@ -1213,7 +1213,7 @@
       audit-kafka
       <time>
         9.00-10.00
-        <minutes>780.0</minutes>
+        <minutes>60.0</minutes>
       </time>
     </task>
   </day>
@@ -1250,7 +1250,7 @@
       audit-kafka job
       <time>
         9.00-10.00
-        <minutes>780.0</minutes>
+        <minutes>60.0</minutes>
       </time>
     </task>
   </day>
@@ -1280,7 +1280,7 @@
       audit - kafka qray, env like a shit, so does my emotion
       <time>
         8.30-10.00
-        <minutes>810.0</minutes>
+        <minutes>90.0</minutes>
       </time>
     </task>
   </day>
@@ -1303,7 +1303,7 @@
       code review
       <time>
         8.00-10.00
-        <minutes>840.0</minutes>
+        <minutes>120.0</minutes>
       </time>
     </task>
   </day>
@@ -1333,7 +1333,7 @@
       audit - kafka
       <time>
         5.20-10.00
-        <minutes>1000.0</minutes>
+        <minutes>280.0</minutes>
       </time>
     </task>
   </day>
@@ -1363,7 +1363,7 @@
       audit-kafka
       <time>
         8.10-11.30
-        <minutes>920.0</minutes>
+        <minutes>200.0</minutes>
       </time>
     </task>
   </day>
@@ -1400,7 +1400,7 @@
       audit-kafka
       <time>
         8.30-11.00
-        <minutes>870.0</minutes>
+        <minutes>150.0</minutes>
       </time>
     </task>
   </day>
@@ -1444,7 +1444,7 @@
       D-kom
       <time>
         9.00-10.00
-        <minutes>780.0</minutes>
+        <minutes>60.0</minutes>
       </time>
     </task>
   </day>
@@ -1495,7 +1495,7 @@
       full analysis
       <time>
         8.30-10.00
-        <minutes>810.0</minutes>
+        <minutes>90.0</minutes>
       </time>
     </task>
   </day>
@@ -1525,7 +1525,7 @@
       translation, static sfmessage sync to read_audit_translations table
       <time>
         5.00-10.30
-        <minutes>1050.0</minutes>
+        <minutes>330.0</minutes>
       </time>
     </task>
     <task>
@@ -1555,7 +1555,7 @@
       translation automation
       <time>
         4.50-10.30
-        <minutes>1060.0</minutes>
+        <minutes>340.0</minutes>
       </time>
     </task>
   </day>
@@ -1571,7 +1571,7 @@
       traslation
       <time>
         7.00-10.00
-        <minutes>900.0</minutes>
+        <minutes>180.0</minutes>
       </time>
     </task>
     <task>
@@ -1585,7 +1585,7 @@
       translation automation
       <time>
         5.20-10.30
-        <minutes>1030.0</minutes>
+        <minutes>310.0</minutes>
       </time>
     </task>
   </day>
@@ -1622,7 +1622,7 @@
       code review
       <time>
         8.00-10.00
-        <minutes>840.0</minutes>
+        <minutes>120.0</minutes>
       </time>
     </task>
   </day>
@@ -1652,7 +1652,7 @@
       Master Data Purge
       <time>
         7.00-10.00
-        <minutes>900.0</minutes>
+        <minutes>180.0</minutes>
       </time>
     </task>
   </day>
@@ -1682,7 +1682,7 @@
       master data purge
       <time>
         7.40-10.30
-        <minutes>890.0</minutes>
+        <minutes>170.0</minutes>
       </time>
     </task>
   </day>
@@ -1712,7 +1712,7 @@
       master data purge
       <time>
         8.30-10.00
-        <minutes>810.0</minutes>
+        <minutes>90.0</minutes>
       </time>
     </task>
   </day>
@@ -1728,7 +1728,7 @@
       master data purge
       <time>
         5.20-10.30
-        <minutes>1030.0</minutes>
+        <minutes>310.0</minutes>
       </time>
     </task>
   </day>
@@ -1744,7 +1744,7 @@
       master data purge
       <time>
         4.50-10.00
-        <minutes>1030.0</minutes>
+        <minutes>310.0</minutes>
       </time>
     </task>
   </day>
@@ -1767,7 +1767,7 @@
       sys audit purge
       <time>
         7.00-10.00
-        <minutes>900.0</minutes>
+        <minutes>180.0</minutes>
       </time>
     </task>
   </day>
@@ -1783,7 +1783,7 @@
       audit perge
       <time>
         5.30-10.00
-        <minutes>990.0</minutes>
+        <minutes>270.0</minutes>
       </time>
     </task>
   </day>
@@ -1799,7 +1799,7 @@
       sys audit purge
       <time>
         5.30-10.30
-        <minutes>1020.0</minutes>
+        <minutes>300.0</minutes>
       </time>
     </task>
   </day>
@@ -1829,7 +1829,7 @@
       audit purge
       <time>
         8.00-10.00
-        <minutes>840.0</minutes>
+        <minutes>120.0</minutes>
       </time>
     </task>
   </day>
@@ -1845,7 +1845,7 @@
       audit purge
       <time>
         5.30-10.00
-        <minutes>990.0</minutes>
+        <minutes>270.0</minutes>
       </time>
     </task>
   </day>
@@ -1861,7 +1861,7 @@
       full run check
       <time>
         5.00-10.00
-        <minutes>1020.0</minutes>
+        <minutes>300.0</minutes>
       </time>
     </task>
   </day>
@@ -1877,7 +1877,7 @@
       full analysis
       <time>
         5.00-10.00
-        <minutes>1020.0</minutes>
+        <minutes>300.0</minutes>
       </time>
     </task>
   </day>
@@ -1900,7 +1900,7 @@
       full analysis
       <time>
         5.40-10.00
-        <minutes>980.0</minutes>
+        <minutes>260.0</minutes>
       </time>
     </task>
   </day>
@@ -1916,7 +1916,7 @@
       full analysis
       <time>
         5.20-10.20
-        <minutes>1020.0</minutes>
+        <minutes>300.0</minutes>
       </time>
     </task>
   </day>
@@ -1967,7 +1967,7 @@
       Rebacca, XPI
       <time>
         9.20-10.00
-        <minutes>760.0</minutes>
+        <minutes>40.0</minutes>
       </time>
     </task>
   </day>
@@ -1976,7 +1976,23 @@
       full run
       <time>
         5.00-10.00
-        <minutes>1020.0</minutes>
+        <minutes>300.0</minutes>
+      </time>
+    </task>
+  </day>
+  <day timestamp="2018-02-13">
+    <task>
+      full run
+      <time>
+        2.20-4.00
+        <minutes>100.0</minutes>
+      </time>
+    </task>
+    <task>
+      full run
+      <time>
+        5.00-11.00
+        <minutes>360.0</minutes>
       </time>
     </task>
   </day>

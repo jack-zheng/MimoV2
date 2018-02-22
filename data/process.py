@@ -26,7 +26,6 @@ for file in processfiles:
 
     dayinfo = []
     for line in lines:
-        print('processed line: %s' % line)
         datestr = pi.parse_date(line)
         if datestr:
             datestr = year + "-" + datestr
@@ -36,7 +35,6 @@ for file in processfiles:
                 dayinfo.append(datestr)
             else:
                 dayinfo.append(datestr)
-                print("date: %s, push to dayifo list" % datestr)
         else:
             # if not a date line, then should be task line, parse it
             parsed_line = pi.parse_task_time(line)
