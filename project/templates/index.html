@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Index Page</title>
+</head>
+<body>
+
+  <div id="new_task">
+    <h2>Insert a new task</h2>
+    <form id='task_form' onsubmit="submitForm(this); return false;">
+      title:
+      <input type="text" name="title"/><br>
+      start/end time:
+      <input type="text" name="timeperiod"><br>
+      release:
+      <input type="text" name="release"><br>
+      desc:
+      <input type="text" name="desc"><br>
+      insert time:
+      <input type="text" name="timestamp"><br>
+      status:
+      <input type="text" name="status"><br>
+      category:
+      <input type="text" name="category"><br>
+      <input type="submit" value="Submit">
+      <div>
+       <label>Insert Result</label>
+       <label id="insert_ret"></label>
+     </div> 
+   </form>
+   <script type="text/javascript">
+    function validate_required(field,alerttxt)
+    {
+      if (field.value==null||field.value=="")
+      {
+        alert(alerttxt);
+        return false;
+      }
+      else {
+        return true;
+      }
+    }
+
+    function validate_timeperiod(field, alerttxt)
+    {
+      if(field.value==null||field.value=="")
+      {
+        alert(alerttxt);
+        return false;
+      }
+
+      if(!/^\d{1,2}\.\d{2}-\d{1,2}\.\d{2}$/.test(field.value))
+      {
+        alert("time format is incorrect");
+        return false;
+      }
+
+      return true
+    }
+
+    function validate_form(thisform)
+    {
+      if (validate_required(thisform.title, "Title must be filled out!")==false)
+      { 
+        thisform.title.focus();
+        return false
+      }
+
+      if (validate_timeperiod(thisform.timeperiod, "timeperiod must be filled out!")==false)
+      { 
+        thisform.timeperiod.focus();
+        return false
+      }
+
+      return true;
+    }
+
+    function submitForm(thisform){
+      <!-- if valid fail, return -->
+      if(!validate_form(thisform))
+      {
+        return false;
+      }  
+      <!-- get new task fields values -->
+      var taskform = document.getElementById('task_form');
+      var kids = taskform.children;
+      var taskjson = {}
+      for(var i=0; i<kids.length; i++)
+      {
+        if(kids[i].tagName.toLowerCase() == 'input' && kids[i].value && kids[i].name)
+        {
+          taskjson[kids[i].name] = kids[i].value;
+        }
+      }
+
+      <!-- post request to create new task -->
+      var xhr = new XMLHttpRequest();
+
+      xhr.addEventListener("readystatechange", function () {
+        if (this.readyState === 4) {
+          <!-- show inert result -->
+          document.getElementById("insert_ret").innerHTML = this.responseText
+        }
+      });
+
+      xhr.open("POST", "/todo/api/v1/tasks", true);
+      xhr.setRequestHeader("content-type", "application/json");
+      var tmpjson = JSON.stringify(taskjson);
+      xhr.send(tmpjson);
+      <!-- after request, reset form value -->
+      taskform.reset();
+      return false;
+    }
+  </script>
+</div>
+
+<h2>Task Record Lists</h2>
+{% for task in tasks %}
+<li>Record: title[{{task.title}}], timeperiod[{{task.timeperiod}}], date[{{task.timestamp}}]</li>
+{% endfor %}
+</body>
+</html>

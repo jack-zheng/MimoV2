@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Demos</title>
+</head>
+<body>
+  <div id="demo">
+    <h2>Form submit testing</h2>
+    <form onsubmit="{console.log('tirggered'); return false;}">
+      <input type="submit" name="Submit" value="Submit">
+    </form>
+  </div>
+  <div id="demo">
+    <h2>Hide web element</h2>
+    <div id="hide_div"> Div Need To Be Hiden</div>
+    <button type="button" onclick="hideElement()">Trigger</button>
+    <script>
+      function hideElement(){
+        if(document.getElementById('hide_div').style.display == "none"){
+          document.getElementById('hide_div').style.display = "";
+        } else{
+          document.getElementById('hide_div').style.display = "none";
+        }
+      }
+    </script>
+  </div>
+
+  <div id="demo">
+    <h2>Ajax request forst task record and show out</h2>
+    <div id="ajax get"> Before Request</div>
+    <button type="button" onclick="loadDoc()">Change Content</button>
+    <script>
+      function loadDoc() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("ajax get").innerHTML = this.responseText;
+          }
+        };
+        xhttp.open("GET", "/todo/api/v1/tasks/1", true);
+        xhttp.send();
+      }
+    </script>
+  </div>
+
+  <div id="demo">
+    <h2>Ajax post new task</h2>
+    <p>Post Result:</p>
+    <div id="post result"></div>
+    <button type="button" onclick="newTask()">New Task</button>
+    <script>
+      function newTask(){
+        var data = JSON.stringify({
+          "title": "For Ajax Testing"
+        });
+
+        var xhr = new XMLHttpRequest();
+
+        xhr.addEventListener("readystatechange", function () {
+          if (this.readyState === 4 && this.status == 201) {
+            document.getElementById("post result").innerHTML = this.responseText
+          }
+        });
+
+        xhr.open("POST", "/todo/api/v1/tasks", true);
+        xhr.setRequestHeader("content-type", "application/json");
+        xhr.send(data);
+      }
+    </script>
+  </div>
+
+  <div id="demo">
+    <h2>Submit form and send request</h2>
+    <form id="jsform">
+      Title:<br>
+      <input type="text" name="title"/>
+      <input type="text" name="title"/>
+      <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+    <p>Post Result:</p>
+    <div id="submit_ret"> before submit </div>
+    <script type="text/javascript">
+      function submitForm(){
+        var jsform = document.getElementById('jsform');
+        var kids = jsform.children;
+        var submitstr = '';
+        for(var i=0; i<kids.length; i++)
+        {
+          if(kids[i].tagName.toLowerCase() == 'input')
+          {
+            var elemstr = '';
+            for (var j = 0; j < kids[i].attributes.length; j++) {
+              var attrib = kids[i].attributes[j];
+              console.log('=====> '+kids[i].type)
+              elemstr += (attrib.name + " = " + attrib.value + " <br>");
+            }
+            submitstr += (elemstr + '<br>')
+          }
+
+        }
+        document.getElementById('submit_ret').innerHTML = submitstr;
+        <!-- after request, reset form value -->
+        jsform.reset()
+      }
+    </script>
+  </div>
+</body>
+</html>

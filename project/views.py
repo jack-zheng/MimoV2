@@ -1,5 +1,5 @@
 from project import app
-from flask import request, abort, jsonify
+from flask import request, abort, jsonify, render_template
 from project.models import Task
 from datetime import datetime
 
@@ -7,6 +7,17 @@ from datetime import datetime
 @app.route('/', methods=['GET'])
 def hello():
     return 'Hello World'
+
+
+@app.route('/index', methods=['GET'])
+def index():
+    tasks = Task.get_all()[:10]
+    return render_template('index.html', tasks=tasks)
+
+
+@app.route('/jsdemo', methods=["GET"])
+def handle_data():
+    return render_template('js_demo.html')
 
 
 @app.route('/todo/api/v1/tasks', methods=['POST'])
