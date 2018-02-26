@@ -4,14 +4,13 @@ from sqlalchemy import desc
 
 class Task(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    title = db.Column(db.String(64), index=True)
-    desc = db.Column(db.String(200), index=True)
-    status = db.Column(db.String(20), index=True)
-    time = db.Column(db.Float, default=0.0)
-    timeperiod = db.Column(db.String(20), index=True)
-    category = db.Column(db.Integer)
+    title = db.Column(db.String(64), nullable=False)
+    comment = db.Column(db.String(200))
+    minutes = db.Column(db.Integer, default=0)
+    start_timestamp = db.Column(db.DateTime)
+    end_timestamp = db.Column(db.DateTime)
     release = db.Column(db.Integer)
-    timestamp = db.Column(db.DateTime)
+    update_timestamp = db.Column(db.DateTime)
 
     @staticmethod
     def get_all():
