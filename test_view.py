@@ -5,6 +5,7 @@ from project import app, db, models
 from config import basedir
 import os
 from datetime import datetime
+import sqlalchemy
 
 
 class ViewTestCase(unittest.TestCase):
@@ -15,39 +16,40 @@ class ViewTestCase(unittest.TestCase):
         app.config['TESTING'] = True
         app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'test.db')
         db.create_all()
-        cls.prepare_data()
 
     # set up will be invoked every time test method run
     def setUp(self):
         self.app = app.test_client()
 
-        self.full_entity = '{"title": "full entity", "desc": "desc full",\
-                             "status": "Done", "time": 60.0,\
-                            "category": 2, "timeperiod": "12.00-13.00",\
-                            "release": 1708, "timestamp":"2017-05-06"}'
+        self.full_entity = '{"title": "full entity", "comment": "comment full",\
+                            "minutes": 60, "category": 2,\
+                            "start": "2018-01-01 12:00",\
+                            "end": "2018-01-01 13:00",\
+                            "release": 1708, "updatetime":"2017-05-06 12:00"}'
 
-        self.update_entity = '{"id": id_replace, "title": "title update", "desc": "desc update",\
-                             "status": "Done", "time": 30.0,\
-                            "category": 3, "timeperiod": "13.00-13.30",\
-                            "release": 1802}'
-        '''
-        # prepare a dynamic task for test
-        self.get_time_milli = lambda: int(round(time.time() * 1000))
-        '''
+        self.update_entity = '{"id": id_replace, "title": "title update", "comment": "comment full",\
+                            "minutes": 60, "category": 2,\
+                            "start": "2018-01-01 12:00",\
+                            "end": "2018-01-01 13:00",\
+                            "release": 1708, "updatetime":"2017-05-06 12:00"}'
+
+        self.api_db_map = {'start': 'start_timestamp', 'end': 'end_timestamp', 'updatetime': 'update_timestamp'}
+        self.time_format = "%Y-%m-%d %H:%M"
+
     @staticmethod
-    def prepare_data():
-        print("prepare data method invoked");
-        # insert some tasks for test
-        task1 = models.Task(title='t1', desc='desc1', status='In Progress', release=1708, timeperiod='12.00-13.00', \
-                            time=60.0, category=1)
-        task2 = models.Task(title='t2', desc='desc2', status='In Progress')
-        db.session.add(task1)
-        db.session.add(task2)
+    def insert_one_test_record():
+        t = models.Task(title='testing', comment='t comment',\
+                        release=1708, category=1,\
+                        minutes=60, start_timestamp=datetime.now(), \
+                        end_timestamp=datetime.now(), update_timestamp=datetime.now())
+
+        db.session.add(t)
         db.session.commit()
 
     # tear down will invoked every test method run
     def tearDown(self):
-        pass
+        models.Task.query.delete()
+        db.session.commit()
 
     @classmethod
     def tearDownClass(cls):
@@ -59,7 +61,30 @@ class ViewTestCase(unittest.TestCase):
     def test_hello(self):
         response = self.app.get('/')
         self.assertEqual(response.data.decode('utf-8'), 'Hello World')
-    
+
+    def test_default_update_time(self):
+        """
+        if not set the update time, the update time is utc now by default
+        """
+        title = 'update_time_testing'
+        t = models.Task(title=title)
+        db.session.add(t)
+        db.session.commit()
+
+        expected_time = datetime.utcnow()
+        expected_time_str = expected_time.strftime("%Y-%m-%d %H:%M")
+        query_ret = models.Task.query.filter_by(title=title).first().update_timestamp.strftime("%Y-%m-%d %H:%M")
+        self.assertEqual(expected_time_str, query_ret)
+
+    def test_title_nullable(self):
+        """
+        when there is no title attribute in task obj, insert will throw exception
+        """
+        t = models.Task(comment='c01')
+        db.session.add(t)
+        with self.assertRaises(sqlalchemy.exc.IntegrityError):
+            db.session.commit()
+
     # Post
     def test_post_list(self):
         full_json = json.loads(self.full_entity)
@@ -70,26 +95,36 @@ class ViewTestCase(unittest.TestCase):
         for key in full_json:
             self.assertIn(str(full_json[key]), str(resp.data))
 
-        query_ret = models.Task.query.filter_by(title=full_json['title']).first()
+        query_ret = models.Task.query.filter_by(id=1).first()
+
         for key in full_json:
-            if key == 'timestamp':
-                self.assertIn(full_json[key], str(query_ret.__getattribute__(key)))
+            if key in self.api_db_map.keys():
+                timestr = query_ret.__getattribute__(self.api_db_map.get(key))
+                timestr = timestr.strftime("%Y-%m-%d %H:%M")
+                self.assertEqual(timestr, full_json[key])
             else:
                 self.assertEqual(full_json[key], query_ret.__getattribute__(key), "attribute: %s, entity value: %s"\
                              % (query_ret.__getattribute__(key), full_json[key]))
 
-    def test_post_no_timestamp(self):
+    def test_post_without_update_timestamp(self):
         """
-        when no timestamp set in request, use utc now as default value
+        when no update timestamp set in request, use utc now as default value
         :return:
         """
         self.test_entity = '{"title": "no timestamp"}'
         resp = self.app.post('/todo/api/v1/tasks', data=self.test_entity, headers={"Content-type": "application/json"})
         self.assertEqual(resp.status_code, 201)
-        self.record_id = json.loads(resp.data)['id']
-        query_ret = models.Task.query.filter_by(id=self.record_id).first()
-        time_off = datetime.utcnow() - query_ret.timestamp
-        self.assertTrue(time_off.seconds < 1)
+        query_ret = models.Task.query.filter_by(id=1).first().update_timestamp.strftime(self.time_format)
+        expected_timestr = datetime.utcnow().strftime(self.time_format)
+        self.assertEqual(query_ret, expected_timestr)
+
+        # add a test scenario when time is ""
+        self.test_entity02 = '{"title": "empty timestamp", "updatetime":""}'
+        resp = self.app.post('/todo/api/v1/tasks', data=self.test_entity02, headers={"Content-type": "application/json"})
+        self.assertEqual(resp.status_code, 201)
+        query_ret = models.Task.query.filter_by(id=2).first().update_timestamp.strftime(self.time_format)
+        expected_timestr = datetime.utcnow().strftime(self.time_format)
+        self.assertEqual(query_ret, expected_timestr)
 
     # Get all
     def test_get_list(self):
@@ -102,15 +137,28 @@ class ViewTestCase(unittest.TestCase):
 
     # Get one
     def test_get_list_by_id(self):
-        query_id = self.get_task_id()
-        resp = self.app.get('/todo/api/v1/tasks/{}'.format(str(query_id)))
+        self.insert_one_test_record()
+        resp = self.app.get('/todo/api/v1/tasks/1')
         self.assertEqual(resp.status_code, 200)
         json_resp = json.loads(resp.data)
 
         # assert every field in db is contains in response
-        query_task = models.Task.query.filter_by(id=query_id).first();
+        query_task = models.Task.query.filter_by(id=1).first();
         for column in query_task.__table__._columns:
             self.assertEqual(query_task.__getattribute__(column.key), json_resp[column.key])
+
+    def test_empty_field_will_not_return(self):
+        """
+        if task field is empty, it will not present in json response
+        """
+        title = 'empty field test'
+        t = models.Task(title=title)
+        db.session.add(t)
+        db.session.commit()
+        ret_id = models.Task.query.filter_by(title=title).first()
+        resp = self.app.get('/todo/api/v1/tasks/{}'.format(str(ret_id)))
+        print(resp)
+        self.assertTrue("comment" not in json.loads(resp.data))
 
     # Update
     def test_update_list(self):
@@ -139,7 +187,6 @@ class ViewTestCase(unittest.TestCase):
         # query db and check the task with special id has been deleted
         query_ret = models.Task.query.filter_by(id=find_id).first()
         self.assertFalse(query_ret)
-
 
     # get existing task id for testing, using when delete, update testing
     @staticmethod

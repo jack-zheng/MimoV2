@@ -1,8 +1,8 @@
 """new db structure
 
-Revision ID: 709ca9473efd
+Revision ID: f729f402f0fc
 Revises: 
-Create Date: 2018-02-26 22:00:50.607174
+Create Date: 2018-02-26 22:34:45.575305
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '709ca9473efd'
+revision = 'f729f402f0fc'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -29,10 +29,11 @@ def upgrade():
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('title', sa.String(length=64), nullable=False),
     sa.Column('comment', sa.String(length=200), nullable=True),
+    sa.Column('release', sa.Integer(), nullable=True),
+    sa.Column('category', sa.Integer(), nullable=True),
     sa.Column('minutes', sa.Integer(), nullable=True),
     sa.Column('start_timestamp', sa.DateTime(), nullable=True),
     sa.Column('end_timestamp', sa.DateTime(), nullable=True),
-    sa.Column('release', sa.Integer(), nullable=True),
     sa.Column('update_timestamp', sa.DateTime(), nullable=True),
     sa.PrimaryKeyConstraint('id')
     )

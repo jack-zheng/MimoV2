@@ -1,16 +1,18 @@
 from project import db
 from sqlalchemy import desc
+from datetime import datetime
 
 
 class Task(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     title = db.Column(db.String(64), nullable=False)
     comment = db.Column(db.String(200))
+    release = db.Column(db.Integer)
+    category = db.Column(db.Integer)
     minutes = db.Column(db.Integer, default=0)
     start_timestamp = db.Column(db.DateTime)
     end_timestamp = db.Column(db.DateTime)
-    release = db.Column(db.Integer)
-    update_timestamp = db.Column(db.DateTime)
+    update_timestamp = db.Column(db.DateTime, default=datetime.utcnow())
 
     @staticmethod
     def get_all():

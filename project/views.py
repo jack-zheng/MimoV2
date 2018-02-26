@@ -1,7 +1,9 @@
 from project import app
-from flask import request, abort, jsonify, render_template
+from flask import request, abort, jsonify, render_template, g
 from project.models import Task
 from datetime import datetime
+
+json_time_fields = ['start', 'end', 'updatetime']
 
 
 @app.route('/', methods=['GET'])
@@ -22,17 +24,16 @@ def handle_data():
 
 @app.route('/todo/api/v1/tasks', methods=['POST'])
 def post_task():
-    if not request.get_json() or 'title' not in request.get_json():
-        abort(400)
+    if not request.get_json():
+        abort(400, "Title should not be empty")
+
+    if 'title' not in request.get_json():
+        abort(400, "Request not in json format")
 
     # new a task and save it to db, return it's detail as response
     request_json = request.get_json()
     # create a new task to store the post value
     task = json_to_task_obj_converter(request_json)
-
-    # if no timestamp in task, or timestamp is none, use utc now instead
-    if not task.timestamp:
-        task.timestamp = datetime.utcnow()
 
     task.save()
 
@@ -44,8 +45,14 @@ def post_task():
 def json_to_task_obj_converter(request_json):
     task = Task()
     for key in request_json:
-        if key == "timestamp":
-            task.timestamp = datetime.strptime(request_json.get(key), "%Y-%m-%d")
+        if key in json_time_fields:
+            parsed_time = datetime.strptime(request_json.get(key), "%Y-%m-%d %H:%M")
+            if key == json_time_fields[0]:
+                task.start_timestamp = parsed_time
+            elif key == json_time_fields[1]:
+                task.end_timestamp = parsed_time
+            elif key == json_time_fields[2]:
+                task.update_timestamp = parsed_time
         else:
             task.__setattr__(key, request_json.get(key))
     return task
@@ -67,10 +74,15 @@ def get_tasks():
 def task_obj_to_json_converter(task):
     task_json = {}
     for column in Task.__table__.columns:
-        if column.key == 'timestamp' and task.timestamp:
-            task_json[column.key] = datetime.strftime(task.timestamp, "%Y-%m-%d")
-        else:
-            task_json[column.key] = task.__getattribute__(column.key)
+        if task.__getattribute__(column.key):
+            if column.key == Task.start_timestamp.key:
+                task_json[json_time_fields[0]] = datetime.strftime(task.start_timestamp, "%Y-%m-%d %H:%M")
+            elif column.key == Task.end_timestamp.key:
+                task_json[json_time_fields[1]] = datetime.strftime(task.end_timestamp, "%Y-%m-%d %H:%M")
+            elif column.key == Task.update_timestamp.key:
+                task_json[json_time_fields[2]] = datetime.strftime(task.update_timestamp, "%Y-%m-%d %H:%M")
+            else:
+                task_json[column.key] = task.__getattribute__(column.key)
 
     return task_json
 
