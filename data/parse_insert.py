@@ -13,37 +13,22 @@ def parse_task_time(line):
         give a line string, return task context and time.
     """
     stripret = "".join(line.split())
-    p = re.compile(r'\d+[.:]\d{2}-\d+[.:]\d{2}')
+    p = re.compile(r'\d+\.\d{2}-\d+\.\d{2}')
     findret = p.findall(stripret)   
     if findret:
         formatstr = " ".join(line.split())
-        timeregx = r'\d+[.:]\d{2}\s*-\s*\d+[.:]\d{2}'
+        timeregx = r'\d+\.\d{2}\s*-\s*\d+\.\d{2}'
         time = re.compile(timeregx).findall(formatstr)[0].replace(" ", "").replace(":", ".")
         taskcontext = re.sub(timeregx, "", formatstr).strip().replace(":", "")
         return [taskcontext, time]
     else:
         # log it if line can't be parse
-        logging.warning("unparsed line: [%s]" % line)
+        logging.warning("unparsed line: [%r]" % line)
 
 
 def time_plus12(time):
-    """
-    if time format is 10:00-11.00 keep as before,
-    if time format is 2.00-3.00, transfer to 14.00-15.00
-    :param time:
-    :return:
-    """
-    timelist = []
-    split01 = time.split('-')
-    for sub in split01:
-        split02 = sub.split('.')
-        timelist.append(split02[0])
-        timelist.append(split02[1])
-    if int(timelist[0]) < 9:
-        timelist[0] = str(int(timelist[0]) + 12)
-    if int(timelist[2]) < 9:
-        timelist[2] = str(int(timelist[2]) + 12)
-    return timelist[0] + '.' + timelist[1] + '-' + timelist[2] + '.' + timelist[3]
+    time_off = timedelta(hours=12)
+    return time + time_off
 
 
 def time_zone_minus_8(time):
@@ -52,15 +37,7 @@ def time_zone_minus_8(time):
     :param time:
     :return:
     """
-    timelist = []
-    split01 = time.split('-')
-    for sub in split01:
-        split02 = sub.split('.')
-        timelist.append(split02[0])
-        timelist.append(split02[1])
-    timelist[0] = str(int(timelist[0]) - 8)
-    timelist[2] = str(int(timelist[2]) - 8)
-    return timelist[0] + '.' + timelist[1] + '-' + timelist[2] + '.' + timelist[3]
+    return time + timedelta(hours=-8)
 
 
 def parse_time(time):
@@ -84,17 +61,11 @@ def parse_date(line):
         return ""
 
 
-def insert_to_db(daynode, release):
-    timestamp = datetime.strptime(daynode.get('timestamp'), "%Y-%m-%d") + timedelta(hours=-8)
-    release = release
-    tasks = daynode.findall('task')
-    for task in tasks:
-        title = task.text
-        timeperiod = task.find('time').text
-        time = float(task.find('time').find('minutes').text)
-        tmp = models.Task(title=title, timestamp=timestamp,\
-                          timeperiod=timeperiod, time=time, release=release)
-        db.session.add(tmp)
+def insert_to_db(title, release, minutes, start, end):
+
+    tmp = models.Task(title=title, release=release, minutes=minutes, start_timestamp=start, end_timestamp=end)
+
+    db.session.add(tmp)
     db.session.commit()
 
 

@@ -1,0 +1,33 @@
+5-9
+morning meeting 10.30-11.30 
+lunch 11.30-12.00
+ATDD test design (testlink case) 12.30-2.00
+Qray UP class refactor 2.00 - 6.00
+ATDD test design 6.40-8.00
+
+
+6-3
+Project meeting: 10.20 - 11.40
+new feature related and adhoc: 12.20 - 2.30
+ATDD, new case add, performance check: 2.30 - 6.00
+
+delete all cache file of company: 
+cache type check url: http://<api server address>:8080/cache?cache=<cachetype>
+delete cache data:
+check cache key:  
+ODATA_META_FRAGMENT_CACHE
+ODataMetadataCache
+COENGINE_ENTITY_CACHE
+COEngineMetaCache
+delete DB data:
+SELECT * FROM QACANDROT_SHJHUANG.SYS_CONFIG WHERE SYS_CONFIG_KEY LIKE '%odata%';
+SELECT * FROM QACANDROT_SHJHUANG.SYS_CONFIG WHERE SYS_CONFIG_KEY LIKE '%coengine%';
+SELECT * FROM QACANDROT_SHJHUANG.SYS_CONFIG WHERE SYS_CONFIG_KEY LIKE '%fragment%';
+
+7-3
+AD hoc from Xiaofeng: 10.30 -10.50
+PLT-60475 verify, env is not stable :10.50 - 11.40
+Qray fix: 12.20 - 1.30
+Metadata Driver test: 1.30 - 3.00
+Qray fix: 3.00 - 5.00
+ATDD, user experience discusses: 5.00-5.40
