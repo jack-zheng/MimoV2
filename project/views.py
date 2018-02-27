@@ -32,6 +32,8 @@ def post_task():
 
     # new a task and save it to db, return it's detail as response
     request_json = request.get_json()
+    # remove empty pairs
+    remove_empty_pair(request_json)
     # create a new task to store the post value
     task = json_to_task_obj_converter(request_json)
 
@@ -40,6 +42,12 @@ def post_task():
     response = jsonify(task_obj_to_json_converter(task))
     response.status_code = 201
     return response
+
+
+def remove_empty_pair(json_data):
+    for key in list(json_data):
+        if not json_data.get(key):
+            json_data.pop(key)
 
 
 def json_to_task_obj_converter(request_json):

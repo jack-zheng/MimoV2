@@ -84,6 +84,7 @@ class ViewTestCase(unittest.TestCase):
         db.session.add(t)
         with self.assertRaises(sqlalchemy.exc.IntegrityError):
             db.session.commit()
+        db.session.rollback()
 
     # Post
     def test_post_list(self):
@@ -143,9 +144,19 @@ class ViewTestCase(unittest.TestCase):
         json_resp = json.loads(resp.data)
 
         # assert every field in db is contains in response
-        query_task = models.Task.query.filter_by(id=1).first();
-        for column in query_task.__table__._columns:
-            self.assertEqual(query_task.__getattribute__(column.key), json_resp[column.key])
+        query_ret = models.Task.query.filter_by(id=1).first();
+        for column in query_ret.__table__._columns:
+            key = column.key
+            if query_ret.__getattribute__(key):
+                if column.key in self.api_db_map.values():
+                    timestr = query_ret.__getattribute__(key)
+                    timestr = timestr.strftime("%Y-%m-%d %H:%M")
+                    json_key = (list(self.api_db_map.keys()))[list(self.api_db_map.values()).index(key)]
+                    self.assertEqual(timestr, json_resp[json_key])
+                else:
+                    self.assertEqual(json_resp[key], query_ret.__getattribute__(key), \
+                                     "attribute: %s, entity value: %s" % (query_ret.__getattribute__(key),\
+                                                                          json_resp[key]))
 
     def test_empty_field_will_not_return(self):
         """
@@ -155,38 +166,42 @@ class ViewTestCase(unittest.TestCase):
         t = models.Task(title=title)
         db.session.add(t)
         db.session.commit()
-        ret_id = models.Task.query.filter_by(title=title).first()
-        resp = self.app.get('/todo/api/v1/tasks/{}'.format(str(ret_id)))
-        print(resp)
+        resp = self.app.get('/todo/api/v1/tasks/1')
         self.assertTrue("comment" not in json.loads(resp.data))
 
     # Update
     def test_update_list(self):
-        update_id = self.get_task_id()
-        update_task = self.update_entity.replace("id_replace", str(update_id))
+        self.insert_one_test_record()
+        update_task = self.update_entity.replace("id_replace", '1')
         json_update = json.loads(update_task)
         resp = self.app.put('/todo/api/v1/tasks', data=update_task, headers={"Content-type": "application/json"})
         self.assertEqual(resp.status_code, 201)
+        json_resp = json.loads(resp.data)
 
-        # query db and the update one is exiting
-        query_ret = models.Task.query.filter_by(id=update_id).first()
+        # assert every field in db is contains in response
+        query_ret = models.Task.query.filter_by(id=1).first();
         for column in query_ret.__table__._columns:
-            if column.key == 'timestamp':
-                pass
-            else:
-                self.assertEqual(query_ret.__getattribute__(column.key), json_update[column.key],
-                             "key: %s, expected: %s, actual: %s" % (column.key, query_ret.__getattribute__(column.key),\
-                                                                    json_update[column.key]))
+            key = column.key
+            if query_ret.__getattribute__(key):
+                if column.key in self.api_db_map.values():
+                    timestr = query_ret.__getattribute__(key)
+                    timestr = timestr.strftime("%Y-%m-%d %H:%M")
+                    json_key = (list(self.api_db_map.keys()))[list(self.api_db_map.values()).index(key)]
+                    self.assertEqual(timestr, json_resp[json_key])
+                else:
+                    self.assertEqual(json_resp.get(key), query_ret.__getattribute__(key), \
+                                     "attribute: %s, entity value: %s" % (query_ret.__getattribute__(key), \
+                                                                          json_resp.get(key)))
 
     # Delete
     def test_list_deletion(self):
-        find_id = self.get_task_id()
-        resp = self.app.delete('/todo/api/v1/tasks/{}'.format(find_id))
+        self.insert_one_test_record()
+        resp = self.app.delete('/todo/api/v1/tasks/1')
         self.assertEqual(resp.status_code, 200)
 
         # query db and check the task with special id has been deleted
-        query_ret = models.Task.query.filter_by(id=find_id).first()
-        self.assertFalse(query_ret)
+        query_ret = models.Task.query.count()
+        self.assertEqual(query_ret, 0)
 
     # get existing task id for testing, using when delete, update testing
     @staticmethod
