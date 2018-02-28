@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="demo">
+    <h2>Form Action, Get And Post</h2>
+    <form action="#" method="post">
+        <!-- this field is used to protect form against CSRF attacks -->
+        {{ form.hidden_tag()}}
+        <p>
+            {{ form.txt_field.label }}:
+            {{ form.txt_field }}
+            {% for error in form.txt_field.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+            <br>
+            {{ form.submit() }}<br>
+            <label>submit and navigate to redirect page</label>
+        </p>
+    </form>
+    <pre>
+        Flask 中， 貌似 action 属性没有很大作用， 可能是我没有找到相对应的例子。<br>
+        一般处理方式为， form 提交到当前页面，在 form.valid_on_submit 里面对提交的数据做处理， 完成表单操作。<br>
+        最后可能还有一个redirect 做页面跳转
+    </pre>
+</div>
+{% endblock %}

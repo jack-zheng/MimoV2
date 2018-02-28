@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>JS Demos</title>
-</head>
-<body>
-  <div id="demo">
+{% extends "base.html" %}
+{% block content %}
+<div id="demo">
     <h2>Form submit testing</h2>
     <form onsubmit="{console.log('tirggered'); return false;}">
-      <input type="submit" name="Submit" value="Submit">
+        <input type="submit" name="Submit" value="Submit">
     </form>
-  </div>
-  <div id="demo">
+</div>
+<div id="demo">
     <h2>Hide web element</h2>
     <div id="hide_div"> Div Need To Be Hiden</div>
     <button type="button" onclick="hideElement()">Trigger</button>
@@ -23,10 +18,11 @@
           document.getElementById('hide_div').style.display = "none";
         }
       }
-    </script>
-  </div>
 
-  <div id="demo">
+    </script>
+</div>
+
+<div id="demo">
     <h2>Ajax request forst task record and show out</h2>
     <div id="ajax get"> Before Request</div>
     <button type="button" onclick="loadDoc()">Change Content</button>
@@ -41,10 +37,11 @@
         xhttp.open("GET", "/todo/api/v1/tasks/1", true);
         xhttp.send();
       }
-    </script>
-  </div>
 
-  <div id="demo">
+    </script>
+</div>
+
+<div id="demo">
     <h2>Ajax post new task</h2>
     <p>Post Result:</p>
     <div id="post result"></div>
@@ -67,19 +64,20 @@
         xhr.setRequestHeader("content-type", "application/json");
         xhr.send(data);
       }
-    </script>
-  </div>
 
-  <div id="demo">
+    </script>
+</div>
+
+<div id="demo">
     <h2>Submit form and send request</h2>
     <form id="jsform">
-      Title:<br>
-      <input type="text" name="title"/>
-      <input type="text" name="title"/>
-      <button type="button" onclick="submitForm()">Submit</button>
+        Title:<br>
+        <input type="text" name="title"/>
+        <input type="text" name="title"/>
+        <button type="button" onclick="submitForm()">Submit</button>
     </form>
     <p>Post Result:</p>
-    <div id="submit_ret"> before submit </div>
+    <div id="submit_ret"> before submit</div>
     <script type="text/javascript">
       function submitForm(){
         var jsform = document.getElementById('jsform');
@@ -103,7 +101,7 @@
         <!-- after request, reset form value -->
         jsform.reset()
       }
+
     </script>
-  </div>
-</body>
-</html>
+</div>
+{% endblock %}

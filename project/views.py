@@ -1,7 +1,8 @@
 from project import app
-from flask import request, abort, jsonify, render_template, g
+from flask import request, abort, jsonify, render_template,redirect, url_for
 from project.models import Task
 from datetime import datetime
+from project.forms import SampleForm
 
 json_time_fields = ['start', 'end', 'updatetime']
 
@@ -15,6 +16,19 @@ def hello():
 def index():
     tasks = Task.get_all()[:10]
     return render_template('index.html', tasks=tasks)
+
+
+@app.route('/htmldemo', methods=['GET', 'POST'])
+def html_demo():
+    form = SampleForm()
+    if form.validate_on_submit():
+        return redirect(url_for('redirect_page'))
+    return render_template('html_demo.html', form=form)
+
+
+@app.route('/redirect', methods=['GET', 'POST'])
+def redirect_page():
+    return render_template('redirect.html')
 
 
 @app.route('/jsdemo', methods=["GET"])
