@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 6, Gumball</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mightygumball.css') }}">
+  
+  
+</head>
+<body>
+    <div>Microblog: <a href="/index">Home</a> </div>
+
+    <h1>Mighty Gumball Sales</h1>
+
+        <div id = "sales"></div> 
+
+    <label id="show"> Show... </label><input type="button" value="Show" onclick="show()"/>
+    <script type="text/javascript">
+        function show(){
+            var lab = document.getElementById("show");
+            lab.innerText = "asd";
+        }
+
+    </script>
+
+     <script>
+        window.onload = updateSales;
+
+        //function(){setInterval(handleRefresh, 3000)};
+
+        function handleRefresh(){
+            var url = "http://gumball.wickedlysmart.com/?callback=updateSales";
+            var newScript = documet.createElement("script");
+            newScript.setAttribute("src", url);
+            newScript.setAttribute("id", "jsonp");
+        }
+
+        function updateSales(sales){
+            var salesDiv = document.getElementById("sales");
+            for(var i=0; i<sales.length; i++){
+                var sale = sales[i];
+                var div = document.createElement("div");
+                div.setAttribute("class", "saleItem");
+                div.innerHTML = sale.name + " sold " + sale.sales + " gumballs";
+                console.log(div);
+                salesDiv.appendChild(div);
+            }
+        }
+    </script>
+       <script src="http://gumball.wickedlysmart.com/?callback=updateSales"></script>
+    <footer> -- page end -- </footer>
+</body>
+</html>

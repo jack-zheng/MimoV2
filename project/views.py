@@ -26,6 +26,26 @@ def html_demo():
     return render_template('html_demo.html', form=form)
 
 
+@app.route('/cssdemo', methods=['GET', 'POST'])
+def css_demo():
+    return render_template('css_demo.html')
+
+
+@app.route('/headfirstjs', methods=['GET'])
+def head_first_js():
+    return render_template('head_first_js.html')
+
+
+@app.route('/gumball', methods=['GET'])
+def gumball():
+    return render_template('gumball.html')
+
+
+@app.route('/gumballdata', methods=['GET'])
+def gumballdata():
+    return '''[{"name":"LOS ANGELES","time":1519999540069,"sales":9,"longitude":"-118.298662","latitude":"+33.786594"},{"name":"SAN YSIDRO","time":1519999542380,"sales":7,"longitude":"-116.997475","latitude":"+32.566356"}]'''
+
+
 @app.route('/redirect', methods=['GET', 'POST'])
 def redirect_page():
     return render_template('redirect.html')

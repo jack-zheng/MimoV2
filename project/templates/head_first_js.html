@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="demo">
+    <input id='songname' name="songname" placeholder="Add a new song here" size="40"/>
+    <input type="button" value="Add Songs" id="add" onclick="addSong()" /><br>
+    <fieldset>
+        <div id="songlist">
+        </div>
+    </fieldset>
+    <script>
+        function addSong(){
+            var list = document.getElementById('songlist');
+            var newsong = document.getElementById('songname').value;
+            var li = document.createElement('li');
+            li.innerHTML = newsong
+            list.appendChild(li);
+        }
+    </script>
+
+    <input type="text" id="i01" onclick="out()"/><br/>
+    <script type="text/javascript">
+        function out(){
+            console.log('Yoooooooooo....');
+        }
+    </script>
+
+    <label id="pos" >Show geolocation</label>
+    <input type="button" value="Show" onclick="getLocation()" />
+    <script>
+        function showLocation(position) {
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+            alert("Latitude : " + latitude + " Longitude: " + longitude);
+         }
+
+         function errorHandler(err) {
+            if(err.code == 1) {
+               alert("Error: Access is denied!");
+            }else if( err.code == 2) {
+               alert("Error: Position is unavailable!");
+            }
+         }
+
+         function getLocation(){
+
+            if(navigator.geolocation){
+               // timeout at 60000 milliseconds (60 seconds)
+               var options = {timeout:60000};
+               navigator.geolocation.getCurrentPosition(showLocation, errorHandler, options);
+            }else{
+               alert("Sorry, browser does not support geolocation!");
+            }
+         }
+    </script>
+</div>
+{% endblock %}

@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<div id="demo">
+<div class="demo">
     <h2>Form Action, Get And Post</h2>
     <form action="#" method="post">
         <!-- this field is used to protect form against CSRF attacks -->
@@ -21,5 +21,87 @@
         一般处理方式为， form 提交到当前页面，在 form.valid_on_submit 里面对提交的数据做处理， 完成表单操作。<br>
         最后可能还有一个redirect 做页面跳转
     </pre>
+</div>
+
+<div class="demo">
+    <h2>Input Element In Form</h2>
+    <form>
+        <div class="forminput">
+            Input: <br>
+            <fieldset>
+                <legend> Sets </legend>
+                Username: <input type="text" name="username" value="Jack"/><br>
+                Password: <input type="password" name="password"/><br>
+            </fieldset>
+        </div>
+        <div class="forminput">
+            Textarea:<br>
+            <textarea name="comments" cols="30" rows="6">
+            Enter your comments...
+        </textarea><br>
+        </div>
+        <div class="forminput">
+            Radio:<br>
+            <input type="radio" name="gender" value="M"/> M<br>
+            <input type="radio" name="gender" value="F"/> F<br>
+        </div>
+        <div class="forminput">
+            Checkbox:<br>
+            <input type="checkbox" name="gender" value="M"/> M<br>
+            <input type="checkbox" name="gender" value="F" checked="checked"/> F<br>
+        </div>
+        <div class="forminput">
+            Selection:<br>
+            <select name="devices">
+                <option value="ipod">iPod</option>
+                <option value="iphone">iPhone</option>
+                <option value="imac" selected>iMac</option>
+            </select>
+            Multiple selection:<br>
+            <select name="devices" multiple size="4">
+                <option value="ipod" selected>iPod</option>
+                <option value="iphone">iPhone</option>
+                <option value="imac01" selected>iMac01</option>
+                <option value="imac02">iMac02</option>
+                <option value="imac03">iMac03</option>
+                <option value="imac04">iMac04</option>
+            </select>
+        </div>
+        <div class="forminput">
+            file selection:<br>
+            <input type="file" name="filter-file"/>
+        </div>
+        <div class="forminput">
+            Label:<br>
+            <label>Age: <input type="text" name="age"/></label>
+        </div>
+        <div class="forminput">
+            Required by attribute:<br>
+            <label>required: <input type="text" name="age" required/></label>
+            <input type="submit" value="Submit">
+        </div>
+        <div class="forminput">
+            Date/Time:<br>
+            <input type="date" name="depart"/>
+            <input type="time" name="depart"/>
+        </div>
+
+    </form>
+    <form>
+        <div class="forminput">
+            Email:<br>
+            <input type="email" name="email" value="s@123.com"/>
+            <input type="url" name="webaddr" required/>
+            <input type="submit"/>
+        </div>
+    </form>
+
+     <form>
+        <div class="forminput">
+            Search:<br>
+            <input type="search" name="search" placeholder="Google it"/>
+            <input type="submit" value="Search"/>
+        </div>
+    </form>
 </div>
 {% endblock %}
