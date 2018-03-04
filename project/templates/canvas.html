@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 7, Canvas</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        window.onload = function(){
+            var button = document.getElementById("previewButton");
+            button.onclick = previewHandler;
+        }
+
+        function previewHandler() {
+
+            var canvas = document.getElementById("look");
+            var context = canvas.getContext("2d");
+            fillBackgroundColor(canvas, context);     
+
+            var selectObj = document.getElementById("shape");
+            var index = selectObj.selectedIndex;
+            var shape = selectObj[index].value;
+
+            if(shape == "squares"){
+                for(var squares=0; squares<20; squares++){
+                    drawSquare(canvas, context);
+                }
+            }else if (shape == "circles"){
+                for(var circles = 0; circles < 20; circles ++){
+                    drawCircle(canvas, context);
+                }
+            }
+
+            drawText(canvas, context);
+            drawBird(canvas, context);
+        }
+
+        function drawBird(canvas, context){
+
+            var apple = new Image();
+            apple.src = "{{ url_for('static', filename='images/apple.png') }}";
+            apple.onload = function() {
+                context.drawImage(apple, 20, 120, 70, 70);
+            };
+        }
+
+        function drawCircle(canvas, context){
+            console.log("draw cicle");
+            var w = Math.floor(Math.random() * 40);
+            var x = Math.floor(Math.random() * canvas.width);
+            var y = Math.floor(Math.random() * canvas.height);
+
+           
+            context.beginPath();
+            context.arc(x, y, w, 0, degreesToRadians(360));
+
+            context.fillStyle = "lightblue";
+            context.fill();
+        }
+
+        function degreesToRadians(degrees){
+            return (degrees * Math.PI)/180;
+        }
+
+        function drawSquare(canvas, context){
+
+            var w = Math.floor(Math.random() * 40);
+            var x = Math.floor(Math.random() * canvas.width);
+            var y = Math.floor(Math.random() * canvas.height);
+
+            context.fillStyle = "lightblue";
+            context.fillRect(x, y, w, w);
+        }
+
+        function fillBackgroundColor(canvas, context){
+            var selectObj = document.getElementById("backgroundColor");
+            var index = selectObj.selectedIndex;
+            var backgroundColor = selectObj[index].value;
+
+            context.fillStyle = backgroundColor;
+            context.fillRect(0, 0, canvas.width, canvas.height);
+        }
+
+        function updateTweets(tweets){
+            var tweetsSelection = document.getElementById("tweets");
+
+            for(var i=0; i<tweets.length; i++){
+                tweet = tweets[i];
+                var option = document.createElement("option");
+                option.text = tweet.text;
+                option.value = tweet.text.replace("\"", "'");
+
+                tweetsSelection.options.add(option);
+            }
+
+            tweetsSelection.selectedIndex = 0;
+        }
+
+        function drawText(canvas, context){
+            var selectObj = document.getElementById("foregroundColor");
+            var index = selectObj.selectedIndex;
+            var fgColor = selectObj[index].value;
+            context.fillStyle = fgColor;
+            context.font = "bold lem sans-serif";
+            context.textAlign = "left";
+            context.strokeText("I saw this tweet", 20, 40, 200);
+
+            selectObj = document.getElementById("tweets");
+            index = selectObj.selectedIndex;
+            var tweet = selectObj[index].value;
+            context.font = "italic 1.2em serif";
+            context.fillText(tweet, 30, 100);
+
+            context.font = "bold lem sans-serif";
+            context.textAlign = "right";
+            context.fillText("and all I got was this lousy t-shirt", canvas.width-20, canvas.height-40);
+        }
+    </script>
+</head>
+<body>
+    <div>Microblog: <a href="/index">Home</a> </div>
+
+    <h1>Chapter 7, Canvas</h1>
+    <canvas id="look", width="600", height="200">Hello Jack</canvas>
+
+    <form>
+        <p>
+            <label for="backgroundColor">Select background color:</label>
+            <select id="backgroundColor">
+                <option value="white" selected="selected">White</option>
+                <option value="black">Black</option>
+            </select>
+        </p>
+        <p>
+            <label for="shape">Circles or squares?</label>
+            <select id="shape">
+                <option value="none" selected="selected">Neither</option>
+                <option value="circles">Circles</option>
+                <option value="squares">Squares</optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="foregroundColor">Select text color:</label>
+            <select id="foregroundColor">
+                <option value="black" selected="selected">Black</option>
+                <option value="white">White</option>
+            </select>
+        </p>
+        <p>
+            <label for="tweets">Pick a tweet:</label>
+            <select id="tweets">
+                <option value="tweet01">tweet 01</option>
+                <option value="tweet02">tweet 02</option>
+            </select>
+
+        </p>
+        <p>
+            <input type="button" id="previewButton" value="Preview"/>
+        </p>
+    </form>
+    <footer> -- page end -- </footer>
+</body>
+</html>

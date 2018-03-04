@@ -41,9 +41,9 @@ def gumball():
     return render_template('gumball.html')
 
 
-@app.route('/gumballdata', methods=['GET'])
-def gumballdata():
-    return '''[{"name":"LOS ANGELES","time":1519999540069,"sales":9,"longitude":"-118.298662","latitude":"+33.786594"},{"name":"SAN YSIDRO","time":1519999542380,"sales":7,"longitude":"-116.997475","latitude":"+32.566356"}]'''
+@app.route('/canvas', methods=['GET'])
+def canvas():
+    return render_template('canvas.html')
 
 
 @app.route('/redirect', methods=['GET', 'POST'])
