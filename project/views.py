@@ -2,7 +2,7 @@ from project import app
 from flask import request, abort, jsonify, render_template,redirect, url_for
 from project.models import Task
 from datetime import datetime
-from project.forms import SampleForm
+from project.forms import SampleForm, TaskForm
 
 json_time_fields = ['start', 'end', 'updatetime']
 
@@ -12,10 +12,20 @@ def hello():
     return 'Hello World'
 
 
-@app.route('/index', methods=['GET'])
+@app.route('/jquery', methods=['GET'])
+def jquery():
+    return render_template('jquery.html')
+
+
+@app.route('/index', methods=['GET', 'POST'])
 def index():
+    form = TaskForm()
     tasks = Task.get_all()[:10]
-    return render_template('index.html', tasks=tasks)
+    if form.validate_on_submit():
+        for name in form._fields:
+            print("name: %s, value: %s" % (name,form.__getattribute__(name).data))
+
+    return render_template('index.html', tasks=tasks, form=form)
 
 
 @app.route('/htmldemo', methods=['GET', 'POST'])

@@ -1,0 +1,311 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="chapter">
+    <h1>Jquery Selector</h1>
+    <div class="demos">
+        <div class="type01">
+            <h3>基本选择器</h3>
+            <div class="demo">
+                <label id='select01'>id selector</label>
+                <input type="button" id="input01" value="Change">
+                <script type="text/javascript" />
+                $("#input01").click(function(){
+                    $("#select01").css("background", "#bbffaa");
+                })
+                </script>
+            </div>
+            <div class="demo">
+                <label class='select02'>class selector</label>
+                <input type="button" id="input02" value="Change">
+                <script type="text/javascript" />
+                $("#input02").click(function(){
+                    $(".select02").css("background", "#bbffaa");
+                })
+                </script>
+            </div>
+
+            <div class="demo">
+                <sp>tag name selector</sp>
+                <input type="button" id="input03" value="Change">
+                <script type="text/javascript" />
+                $("#input03").click(function(){
+                    $("sp").css("background", "#bbffaa");
+                })
+                </script>
+            </div>
+
+            <div class="demo">
+                <label>all selector</label>
+                <input type="button" id="input04" value="Change">
+                <script type="text/javascript" />
+                $("#input04").click(function(){
+                    $("*").css("background", "#bbffaa");
+                })
+                </script>
+            </div>
+
+            <div class="demo">
+                <label id="select05">collection selector</label>
+                <input type="button" id="input05" value="Change">
+                <script type="text/javascript" />
+                $("#input05").click(function(){
+                    $("input, #select05").css("background", "#bbffaa");
+                })
+                </script>
+            </div>
+        </div>
+        <hr>
+        <div class="type02">
+            <h3>层次选择器</h3>
+            <div class="demo">
+                <label id="select06">ancestor descendant selector</label>
+                <label>元素内的所有指定元素</label>
+                <input id="input06" type="button" value="Change">
+                <script type="text/javascript" />
+                $("#input06").click(function(){
+                    $(".type02 label").css("background", "#bbffaa");
+                })
+                </script>
+            </div>
+
+            <div class="demo" id="parent_child">
+                <label id="select07">parent child selector</label>
+                <label>只有自元素有效</label>
+                <div>
+                    <label>sub label</label>
+                </div>
+                <input id="input07" type="button" value="Change">
+                <script type="text/javascript" />
+                $("#input07").click(function(){
+                    $("#parent_child > label").css("background", "#bbffaa");
+                })
+                </script>
+            </div>
+
+            <div class="demo" id="prev_next">
+                <label id="select08">prev next selector</label>
+                <label>一定要相邻的才能生效， 包含在子集都不行</label>
+                <div>
+                    <label>sub label</label>
+                </div>
+                <label>same leve</label>
+                <input id="input08" type="button" value="Change">
+                <script type="text/javascript" />
+                $("#input08").click(function(){
+                    $("#select08 + label").css("background", "#bbffaa");
+                })
+                </script>
+            </div>
+
+            <div class="demo" id="prev_siblings">
+                <label id="select09">prev next selector</label>
+                <label>所有的同级的指定tag</label>
+                <div>
+                    <label>sub label</label>
+                </div>
+                <label>same leve</label>
+                <input id="input09" type="button" value="Change">
+                <script type="text/javascript" />
+                $("#input09").click(function(){
+                    $("#select09 ~ label").css("background", "#bbffaa");
+                })
+                </script>
+            </div>
+
+            <div class="demo" id="prev_next02">
+                <label id="select10">prev next selector02</label>
+                <label>一定要相邻的才能生效， 包含在子集都不行</label>
+                <div>
+                    <label>sub label</label>
+                </div>
+                <label>same leve</label>
+                <input id="input10" type="button" value="Change">
+                <script type="text/javascript" />
+                $("#input10").click(function(){
+                    $("#select10").next("label").css("background", "#bbffaa");
+                })
+                </script>
+            </div>
+
+            <div class="demo" id="prev_siblings02">
+                <label id="select11">prev next selector</label>
+                <label>所有的同级的指定tag</label>
+                <div>
+                    <label>sub label</label>
+                </div>
+                <label>same level</label>
+                <input id="input11" type="button" value="Change">
+                <script type="text/javascript" />
+                $("#input11").click(function(){
+                    $("#select11").nextAll("label").css("background", "#bbffaa");
+                })
+                </script>
+            </div>
+        </div>
+        <hr>
+        <div class="type03">
+            <h3>基本过滤器</h3>
+            <div class="demo">
+                <label class='select12'>first filter</label>
+                <label class='select12'>选取所有class 是demo 的第一个</label>
+                <input id="input12" type="button" value="Change">
+                <script type="text/javascript" />
+                $("#input12").click(function(){
+                    $(".select12:first").css("background", "#bbffaa");
+                })
+                </script>
+            </div>
+
+            <div class="demo">
+                <label id='select13' class="select13">last filter</label>
+                <label class="select13">选取所有class 是demo 的最后一个</label>
+                <label class="select13">选取所有class 是demo 的最后一个</label>
+                <input id="input13" type="button" value="Change">
+                <script type="text/javascript" />
+                $("#input13").click(function(){
+                    $(".select13:last").css("background", "#bbffaa");
+                })
+                </script>
+            </div>
+
+            <div class="demo">
+                <label class="select14">not filter</label>
+                <label>试了下貌似只有not, 没有确定过滤器， 不过想了下， 你要指定的直接在一开始就指定就行了， 类似 $(.class)</label>
+                <input id="input14" type="button" value="Change">
+                <script type="text/javascript" />
+                $("#input14").click(function(){
+                    $("label:not(.select14)").css("background", "#bbffaa");
+                })
+                </script>
+            </div>
+
+            <div class="demo">
+                <label class="select15">even filter</label>
+                <label>偶数, 所有的指定元素， 包括child</label>
+                <input id="input15" type="button" value="Change">
+                <script type="text/javascript" />
+                $("#input15").click(function(){
+                    $("label:even").css("background", "#bbffaa");
+                })
+                </script>
+            </div>
+
+            <div class="demo">
+                <label class="select16">filter</label>
+                <label>奇数, 所有的指定元素， 包括child</label>
+                <input id="input16" type="button" value="Change">
+                <script type="text/javascript" />
+                $("#input16").click(function(){
+                    $("label:odd").css("background", "#bbffaa");
+                })
+                </script>
+            </div>
+
+            <div class="demo">
+                <label class="select17"> filter</label>
+                <label class="select17"> filter</label>
+                <label class="select17"> filter</label>
+                <label>指定序列, 从0开始</label>
+                <input id="input17" type="button" value="Change">
+                <script type="text/javascript" />
+                $("#input17").click(function(){
+                    $(".select17:eq(1)").css("background", "#bbffaa");
+                })
+                </script>
+            </div>
+
+            <div class="demo">
+                <label class="select18"> filter</label>
+                <label class="select18"> filter</label>
+                <label class="select18"> filter</label>
+                <label class="select18"> filter</label>
+                <label class="select18"> filter</label>
+                <label>gt, great then, 删选大于， e.g. gt(1), 从 2 开始 </label>
+                <input id="input18" type="button" value="Change">
+                <script type="text/javascript" />
+                $("#input18").click(function(){
+                    $(".select18:gt(1)").css("background", "#bbffaa");
+                })
+                </script>
+            </div>
+
+            <div class="demo">
+                <label class="select19"> filter</label>
+                <label class="select19"> filter</label>
+                <label class="select19"> filter</label>
+                <label class="select19"> filter</label>
+                <label class="select19"> filter</label>
+                <label>lt, less then, 删选大于， e.g. lt(2), 从 1 开始 </label>
+                <input id="input19" type="button" value="Change">
+                <script type="text/javascript" />
+                $("#input19").click(function(){
+                    $(".select19:lt(2)").css("background", "#bbffaa");
+                })
+                </script>
+            </div>
+
+            <div class="demo">
+                <label class="select20">header filter, 选取标题， 类似h1, h2, h3</label>
+                <input id="input20" type="button" value="Change">
+                <script type="text/javascript" />
+                $("#input20").click(function(){
+                    $(".type03 :header").css("background", "#bbffaa");
+                })
+                </script>
+            </div>
+        <hr>
+        <div class="type04">
+            <h3>被容过滤器</h3>
+            <div class="demo">
+                <label class='select21'>全区包含关键子的元素asd</label>
+                <label class='select21'>选取所有class 是demo 的第一个</label>
+                <input id="input21" type="button" value="Change">
+                <script type="text/javascript" />
+                $("#input21").click(function(){
+                    $(".select21:contains(asd)").css("background", "#bbffaa");
+                })
+                </script>
+            </div>
+
+            <div class="demo">
+                <label class='select22'>过滤内容为empty 的元素</label>
+                <div style="width:50px; height:50px; border:#aaa 1px solid;" class='s'></div>
+                <input id="input22" type="button" value="Change">
+                <script type="text/javascript" />
+                $("#input22").click(function(){
+                    $("div:empty").css("background", "#bbffaa");
+                })
+                </script>
+            </div>
+
+            <div class="demo">
+                <label class='select23'>过滤内容为empty 的元素</label>
+                <label>这个包含可以递归<div><b></div></label><label class='select23'>和树书上写的不一样， 可能是应为版本上级了， has, 选取含有指定元素的元素<b></label>
+                <input id="input23" type="button" value="Change">
+                <script type="text/javascript" />
+                $("#input23").click(function(){
+                   $("label:has(b)").css("background", "#bbffaa");
+                })
+                </script>
+            </div>
+
+            <div class="demo">
+                <label class='select24'>删选含有子节点的元素， 文本也算子节点</label>
+                <div style="width:50px; height:50px; border:#aaa 1px solid;" class='div24'>
+                    有文本
+                </div>
+                <div style="width:50px; height:50px; border:#aaa 1px solid;" class='div24'></div>
+                <input id="input24" type="button" value="Change">
+                <script type="text/javascript" />
+                $("#input24").click(function(){
+                   $(".div24:parent").css("background", "#bbffaa");
+                })
+                </script>
+            </div>
+        </div>
+        </div>
+       
+    </div>
+</div>
+
+{% endblock %}
