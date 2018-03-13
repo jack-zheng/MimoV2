@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index Page</title>
+    <script src="{{ url_for('static', filename='js/jquery-3.3.1.js') }}"></script>
+</head>
+<body>
+    <div id="accountinfo">
+		<div>
+			<div id="testlinkinfo">
+				<div>author: <input type="text" name="author"/> </div>
+				<div>project: <input type="text" name="project"/> </div>
+				<div>suite: <input type="text" name="suite"/> </div>
+			</div>
+			
+			<div id="confluenceinfo">
+				<label>Confluence Account:</label>
+				<div>username: <input type="text" name="username"/> </div>
+				<div>password: <input type="password" name="password"/> </div>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div>
+		<div id="total_ac">
+			<div class="single_ac">
+				<div class="detail" style="float: left">
+					<p>
+						<strong>AC 01</strong>
+						title:
+						tttt01
+						 
+						acceptance criteria:
+						Given:
+							As prov admin
+						When:
+							I update multiple standard elements
+						Then:
+							multiple standard elements been updated, no user info elements updated
+						 
+						importance:
+							low
+					</p>
+				</div>
+				<div class="selector" style="float: right">
+					<input type="checkbox" name="ac01"/>
+				</div>
+			</div>
+			
+			<div class="single_ac">
+				<div class="detail" style="float: left">
+					<p>
+						<strong>AC 02</strong>
+						title:
+						tttt01
+						 
+						acceptance criteria:
+						Given:
+							As prov admin
+						When:
+							I update multiple standard elements
+						Then:
+							multiple standard elements been updated, no user info elements updated
+						 
+						importance:
+							low
+					</p>
+				</div>
+				<div class="selector"  style="float: right">
+					<input type="checkbox" name="ac02"/>
+				</div>
+			</div>
+		</div>
+		
+		<input type="button" value="Insert To Testlink">
+	</div>
+	
+</body>
+</html>
