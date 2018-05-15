@@ -12,7 +12,9 @@ ADD . /app
 #ENV https_proxy http://proxy.xx.com:8080
 
 # Install any needed packages specified in requirements.txt
+# Linux: RUN pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com -r requirements.txt
 RUN pip install -i http://pypi.douban.com/simple -r requirements.txt
+
 
 # Make port 80 available to the world outside this container
 EXPOSE 80
